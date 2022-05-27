@@ -25,11 +25,34 @@
         Place the following "script" near the end of your page, right before the
         closing "body" tag, to enable them.
       </p-tag>
+      <!-- <code-wrapper> -->
+        <ssh-pre
+          class="highlight-code"
+          language="html"
+          copy-button="true"
+          label="HTML Vue Template"
+          reactive="true"
+          dark
+        >
+          &lt;script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"&gt;
+          &lt;/script&gt; &lt;script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"&gt;&lt;/script&gt;
+        </ssh-pre>
+      <!-- </code-wrapper> -->
       <h-three>Basic usage</h-three>
       <p-tag
         >To use a built-in icon from the Ionicons package, populate the name
         attribute on the ion-icon component:
       </p-tag>
+      <ssh-pre
+        class="highlight-code"
+        language="html"
+        copy-button="true"
+        label="HTML Vue Template"
+        reactive="true"
+        dark
+      >
+        &lt;ion-icon name="heart"&gt;&lt;/ion-icon&gt;
+      </ssh-pre>
       <h-three>Custom icons</h-three>
       <p-tag>
         To use a custom SVG, provide its url in the src attribute to request the
@@ -38,6 +61,16 @@
         for the image. Additionally, the external file can only be a valid svg
         and does not allow scripts or events within the svg element.
       </p-tag>
+      <ssh-pre
+        class="highlight-code"
+        language="html"
+        copy-button="true"
+        label="HTML Vue Template"
+        reactive="true"
+        dark
+      >
+        &lt;ion-icon src="/path/to/external/file.svg"&gt;&lt;/ion-icon&gt;
+      </ssh-pre>
       <h-two>Variants</h-two>
       <p-tag>
         Each app icon in Ionicons has a filled, outline and sharp variant. These
@@ -45,22 +78,68 @@
         variety of platforms. The filled variant uses the default name without a
         suffix. Note: Logo icons do not have outline or sharp variants.
       </p-tag>
+      <ssh-pre
+        class="highlight-code"
+        language="html"
+        copy-button="true"
+        label="HTML Vue Template"
+        reactive="true"
+        dark
+      >
+        &lt;ion-icon name="heart"&gt;&lt;/ion-icon&gt; &lt;!--filled--&gt;
+        &lt;ion-icon name="heart-outline"&gt;&lt;/ion-icon&gt;
+        &lt;!--outline--&gt; &lt;ion-icon
+        name="heart-sharp"&gt;&lt;/ion-icon&gt; &lt;!--sharp--&gt;
+      </ssh-pre>
       <h-three>Platform Specificity</h-three>
       <p-tag>
         When using icons in Ionic Framework you can specify different icons per
         platform. Use the md and ios attributes and provide the platform
         specific icon/variant name.
       </p-tag>
+      <ssh-pre
+        class="highlight-code"
+        language="html"
+        copy-button="true"
+        label="HTML Vue Template"
+        reactive="true"
+        dark
+      >
+        &lt;ion-icon ios="heart-outline" md="heart-sharp"&gt;&lt;/ion-icon&gt;
+      </ssh-pre>
       <h-two>Size</h-two>
       <p-tag>
         To specify the icon size, you can use the size attribute for our
         pre-defined font sizes.
-        <br />
-        <br />
+      </p-tag>
+      <ssh-pre
+        class="highlight-code"
+        language="html"
+        copy-button="true"
+        label="HTML Vue Template"
+        reactive="true"
+        dark
+      >
+        &lt;ion-icon size="small"&gt;&lt;/ion-icon&gt; &lt;ion-icon
+        size="large"&gt;&lt;/ion-icon&gt;
+      </ssh-pre>
+      <br />
+      <br />
+      <p-tag>
         Or you can set a specific size by applying the font-size CSS property on
         the ion-icon component. It's recommended to use pixel sizes that are a
         multiple of 8 (8, 16, 32, 64, etc.)
       </p-tag>
+      <ssh-pre
+        class="highlight-code"
+        language="css"
+        copy-button="true"
+        label="css"
+        reactive="true"
+        dark
+      >
+        ion-icon { font-size: 64px; }
+      </ssh-pre>
       <h-two>Color</h-two>
       <p-tag>
         Specify the icon color by applying the color CSS property on the
@@ -74,6 +153,26 @@
         applying the --ionicon-stroke-weight CSS custom property to the ion-icon
         component. The default value is 32px
       </p-tag>
+      <ssh-pre
+        class="highlight-code"
+        language="html"
+        copy-button="true"
+        label="HTML Vue Template"
+        reactive="true"
+        dark
+      >
+        &lt;ion-icon name="heart-outline"&gt;&lt;/ion-icon&gt;
+      </ssh-pre>
+      <ssh-pre
+        class="highlight-code"
+        language="css"
+        copy-button="true"
+        label="css"
+        reactive="true"
+        dark
+      >
+        ion-icon { --ionicon-stroke-width: 16px; }
+      </ssh-pre>
       <h-two>Migration from V4</h-two>
       <p-tag>
         See the 5.0 release notes for a list of icon deletions/renames. You can
@@ -84,6 +183,10 @@
 </template>
 <script>
 import styled from 'vue3-styled-components';
+
+import SshPre from 'simple-syntax-highlighter';
+import 'simple-syntax-highlighter/dist/sshpre.css';
+
 export const HOne = styled.h1`
   margin-top: 20px;
 `;
@@ -105,10 +208,14 @@ export const DocsWrapper = styled.div`
 export const WidthSetting = styled.div`
   width: 45%;
 `;
+export const CodeWrapper = styled.div`
+  overflow: auto;
+`;
 
 export default {
   name: 'docs-view',
   components: {
+    SshPre,
     //styled-components
     HOne,
     HTwo,
@@ -116,6 +223,15 @@ export default {
     PTag,
     DocsWrapper,
     WidthSetting,
+    // CodeWrapper,
   },
 };
 </script>
+<style scoped>
+.highlight-code {
+  white-space: pre;
+  font-size: 14px;
+  padding: 0px;
+  /* overflow: hidden; */
+}
+</style>

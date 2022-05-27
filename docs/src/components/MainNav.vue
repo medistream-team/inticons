@@ -2,10 +2,10 @@
   <nav-wrapper id="main-nav">
     <width-setting>
       <nav-right>
-        <inticon-logo src="" alt="inticon-logo" @click="reload" />
+        <inticon-logo src="" alt="inticon-logo" />
         <site-version>0.1</site-version>
       </nav-right>
-      <input-wrapper>
+      <input-wrapper id="nav-search">
         <SearchInput />
       </input-wrapper>
       <nav-left>
@@ -22,7 +22,7 @@
 
 <script>
 import styled from 'vue3-styled-components';
-import SearchInput from './SearchInput.vue';
+import SearchInput from '../components/SearchInput.vue';
 
 export const NavWrapper = styled.nav`
   display: flex;
@@ -34,6 +34,7 @@ export const NavWrapper = styled.nav`
   height: 80px;
   background-color: white;
   border-bottom: 1px solid lightgray;
+  z-index: 1;
 `;
 export const WidthSetting = styled.div`
   display: flex;
@@ -81,6 +82,7 @@ export const PkgDownload = styled.button`
 export default {
   name: 'main-nav',
   components: {
+    SearchInput,
     // styled-components
     NavWrapper,
     WidthSetting,
@@ -90,10 +92,7 @@ export default {
     InputWrapper,
     NavLeft,
     PkgDownload,
-    // components
-    SearchInput,
   },
-  methods: {},
 };
 </script>
 <style scoped>

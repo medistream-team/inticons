@@ -1,9 +1,9 @@
 <template>
   <icon-box id="icon-box">
-    <p class="category-name">"App Icons"</p>
-    <div class="icon-wrap">
+    <category-name class="category-name">"App Icons"</category-name>
+    <icon-wrap class="icon-wrap">
       <div class="icon">v-for=""</div>
-    </div>
+    </icon-wrap>
   </icon-box>
 </template>
 
@@ -14,11 +14,16 @@ export const IconBox = styled.div`
   width: 100%;
   margin-top: 150px;
 `;
+export const CategoryName = styled.p``;
+export const IconWrap = styled.div``;
+
 export default {
   name: 'icons-boxs',
   components: {
     //styled-components
     IconBox,
+    CategoryName,
+    IconWrap,
   },
 };
 </script>

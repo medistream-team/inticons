@@ -12,7 +12,7 @@
           built by Ionic.
         </main-introduction-bottom>
       </main-top>
-      <input-wrapper class="search-input">
+      <input-wrapper id="main-search">
         <SearchInput />
       </input-wrapper>
       <icon-wrapper class="icon-for">
@@ -24,8 +24,8 @@
 
 <script>
 import styled from 'vue3-styled-components';
-import SearchInput from '../components/SearchInput.vue';
 import IconBoxs from '../components/IconBoxs.vue';
+import SearchInput from '../components/SearchInput.vue';
 
 export const HomeWrapper = styled.div`
   display: flex;
@@ -37,7 +37,7 @@ export const WidthSetting = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 45%;
+  width: 60%;
 `;
 export const MainTop = styled.div`
   display: flex;
@@ -68,8 +68,8 @@ export const IconWrapper = styled.div`
 export default {
   name: 'HomePage',
   components: {
-    SearchInput,
     IconBoxs,
+    SearchInput,
     // styled-components
     HomeWrapper,
     WidthSetting,

@@ -28,17 +28,6 @@ export default {
   components: {
     SearchBox,
   },
-  data() {
-    return {
-      scrollposition: 0,
-    };
-  },
-  method: {
-    handleScroll(e) {
-      this.scrollposition = e.target.scrollTop;
-      console.log(e.target.scrollTop);
-    },
-  },
 };
 </script>
 
