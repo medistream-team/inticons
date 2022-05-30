@@ -9,7 +9,7 @@ const makeGlyphs = json => {
     glyphs.push({ uid, css, search })
   );
 
-  return JSON.stringify(glyphs);
+  return JSON.stringify(glyphs, null, 2);
 };
 
 function readConfigFile(filePath) {

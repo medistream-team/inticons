@@ -11,12 +11,12 @@
 </template>
 
 <script>
-import config from './config.json';
+import glyphs from './config.json';
 
 export default {
   data: function () {
     return {
-      glyphs: config.glyphs,
+      glyphs,
       userInput: '',
     };
   },
