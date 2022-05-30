@@ -1,4 +1,5 @@
 const fs = require('fs');
+const svgpath = require('svgpath');
 
 (() => {
   const writeFilePath = 'fonts/test.json';
@@ -9,6 +10,12 @@ const fs = require('fs');
   files.forEach((file, index) => {
     const fileData = fs.readFileSync(`${svgs}/${file}`, 'utf-8');
     const path = fileData.split('path d="')[1].slice(0, -9);
+    const scaledPath = svgpath(path)
+      .scale(1000 / 24)
+      .abs()
+      .round(0)
+      .rel()
+      .toString();
 
     glyphs.push({
       uid: (index + 1).toString(),
@@ -17,8 +24,8 @@ const fs = require('fs');
       src: 'custom_icons',
       selected: true,
       svg: {
-        path,
-        width: 24,
+        path: scaledPath,
+        width: 1000,
       },
       search: [file.slice(0, -4)],
     });
