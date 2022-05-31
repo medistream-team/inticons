@@ -13,6 +13,11 @@ const routes = [
     name: 'docs',
     component: () => import('../views/DocsView.vue'),
   },
+  {
+    path: '/usage',
+    name: 'usage',
+    component: () => import('../views/UsageView.vue'),
+  },
 ];
 
 const router = createRouter({
