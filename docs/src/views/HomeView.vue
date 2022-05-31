@@ -12,9 +12,13 @@
           built by Ionic.
         </main-introduction-bottom>
       </main-top>
-      <input-wrapper id="main-search">
-        <SearchInput />
-      </input-wrapper>
+      <search-target id="target-scroll" />
+      <search-box
+        v-model="this.$store.state.handleInput"
+        type="text"
+        id="target-focus"
+        placeholder="search icons..."
+      />
       <icon-wrapper class="icon-for">
         <IconBoxs />
       </icon-wrapper>
@@ -25,19 +29,21 @@
 <script>
 import styled from 'vue3-styled-components';
 import IconBoxs from '../components/IconBoxs.vue';
-import SearchInput from '../components/SearchInput.vue';
 
 export const HomeWrapper = styled.div`
   display: flex;
-  justify-content: center;
-  height: 1000px;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  min-height: 1000px;
   margin: 150px 0px;
 `;
 export const WidthSetting = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 60%;
+  width: 45%;
+  padding: 30px;
 `;
 export const MainTop = styled.div`
   display: flex;
@@ -56,31 +62,58 @@ export const MainIntroductionBottom = styled.article`
   font-size: 20px;
   text-align: center;
 `;
-export const InputWrapper = styled.div`
-  margin-top: 40px;
-  width: 70%;
-  height: 50px;
+export const SearchBox = styled.input`
+  border-style: none;
+  width: 100%;
+  height: 40px;
+  padding: 0px 20px;
+  border-radius: 5px;
+  background-color: #f8f8fc;
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    color: rgb(196, 196, 196);
+    font-size: 15px;
+  }
 `;
 export const IconWrapper = styled.div`
   width: 100%;
+`;
+export const SearchBtn = styled.button`
+  position: fixed;
+  bottom: 170px;
+  right: 100px;
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  cursor: pointer;
+  @media() {
+    display: none;
+  }
+`;
+export const SearchTarget = styled.div`
+  width: 100px;
+  height: 100px;
+  display: flex;
+  &:focus {
+    border: 2px solid red;
+  }
 `;
 
 export default {
   name: 'HomePage',
   components: {
     IconBoxs,
-    SearchInput,
     // styled-components
     HomeWrapper,
     WidthSetting,
     MainTop,
     MainIntroductionTop,
     MainIntroductionBottom,
-    InputWrapper,
     IconWrapper,
-  },
-  created() {
-    // fetch('').then(res => res.json()).then(data => console.log(data))
+    SearchTarget,
+    SearchBox,
   },
 };
 </script>
