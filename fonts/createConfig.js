@@ -3,12 +3,12 @@ const svgpath = require('svgpath');
 
 (() => {
   const writeFilePath = 'fonts/test.json';
-  const svgs = 'icons';
-  const files = fs.readdirSync(svgs);
+  const svgsPath = 'icons';
+  const files = fs.readdirSync(svgsPath);
   const glyphs = [];
 
   files.forEach((file, index) => {
-    const fileData = fs.readFileSync(`${svgs}/${file}`, 'utf-8');
+    const fileData = fs.readFileSync(`${svgsPath}/${file}`, 'utf-8');
     const path = fileData.split('path d="')[1].slice(0, -9);
     const scaledPath = svgpath(path)
       .scale(1000 / 24)

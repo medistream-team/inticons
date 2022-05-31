@@ -1,8 +1,5 @@
 const fs = require('fs');
 
-const readFilePath = './fonts/config.json';
-const writeFilePath = './docs/src/views/config.json';
-
 const makeGlyphs = json => {
   const glyphs = [];
   JSON.parse(json).glyphs.forEach(({ uid, css, search }) =>
@@ -12,12 +9,15 @@ const makeGlyphs = json => {
   return JSON.stringify(glyphs, null, 2);
 };
 
-function readConfigFile(filePath) {
+const readConfigFile = filePath => {
   const configJson = fs.readFileSync(filePath, 'utf-8');
   return makeGlyphs(configJson);
-}
+};
 
 (() => {
+  const readFilePath = './fonts/config.json';
+  const writeFilePath = './docs/src/views/config.json';
+
   const fontelloConfig = readConfigFile(readFilePath);
   fs.writeFileSync(writeFilePath, fontelloConfig);
 })();
