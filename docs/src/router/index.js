@@ -18,6 +18,11 @@ const routes = [
     name: 'usage',
     component: () => import('../views/UsageView.vue'),
   },
+  {
+    path: '/cheatsheet',
+    name: 'cheatsheet',
+    component: () => import('../views/CheatSheetView.vue'),
+  },
 ];
 
 const router = createRouter({
