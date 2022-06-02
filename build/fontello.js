@@ -38,7 +38,7 @@ const svgpath = require('svgpath');
     hinting: true,
     units_per_em: 1000,
     ascent: 850,
-    copyright: 'medistream',
+    copyright: 'INTEGRATION Corp.',
     glyphs,
   };
 
