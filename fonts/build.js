@@ -2,8 +2,8 @@ const fs = require('fs');
 
 const makeGlyphs = json => {
   const glyphs = [];
-  JSON.parse(json).glyphs.forEach(({ uid, css, search }) =>
-    glyphs.push({ uid, css, search })
+  JSON.parse(json).glyphs.forEach(({ uid, css, code, search }) =>
+    glyphs.push({ uid, css, code, search })
   );
 
   return JSON.stringify(glyphs, null, 2);
