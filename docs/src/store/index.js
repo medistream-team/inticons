@@ -3,7 +3,8 @@ import { createStore } from 'vuex';
 export default createStore({
   state: {
     handleInput: '',
-    searchTargetScroll: 650,
+    searchTargetScroll: 550,
+    clickedIcon: 'adidas',
   },
   getters: {},
   mutations: {},

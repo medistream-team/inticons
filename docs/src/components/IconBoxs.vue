@@ -1,54 +1,60 @@
 <template>
-  <icon-box>
-    <category-name class="category-name">"App Icons"</category-name>
-    <icon-wrap class="icon-wrap">
-      <div class="icon">v-for=""</div>
-    </icon-wrap>
-  </icon-box>
-  <icon-box>
-    <category-name class="category-name">"Brand"</category-name>
-    <icon-wrap class="icon-wrap">
-      <div class="icon">v-for=""</div>
-    </icon-wrap>
-  </icon-box>
+  <div class="icon-box">
+    <div class="category-name">App Icon</div>
+    <div class="icon-wrap">
+      <div class="icon-list" v-for="glyph in filteredGlyphs" :key="glyph.uid">
+        <i v-bind:class="`ii-${glyph.css} ii-2x`"></i>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-import styled from 'vue3-styled-components';
+export default {
+  name: 'icons-boxs',
+  props: ['glyphs'],
+  computed: {
+    filteredGlyphs() {
+      return this.glyphs.filter(glyph =>
+        glyph.search.some(word => word.includes(this.$store.state.handleInput))
+      );
+    },
+  },
+};
+</script>
 
-export const IconBox = styled.div`
+<style scoped lang="scss">
+.icon-box {
   position: relative;
   width: 100%;
   min-height: 400px;
   margin-top: 50px;
   font-size: 20px;
-`;
-export const CategoryName = styled.p`
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  position: sticky;
-  top: 80px;
-  height: 30px;
-  background-color: white;
-  border-bottom: 1px solid #1d77ff;
-`;
-export const IconWrap = styled.div``;
-
-export default {
-  name: 'icons-boxs',
-  components: {
-    //styled-components
-    IconBox,
-    CategoryName,
-    IconWrap,
-  },
-};
-</script>
-
-<style scoped>
-#icons {
-  width: 100%;
-  margin-top: 150px;
+  .category-name {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: sticky;
+    top: 80px;
+    height: 30px;
+    background-color: white;
+    border-bottom: 1px solid #1d77ff;
+  }
+  .icon-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    .icon-list {
+      list-style: none;
+      display: inline-block;
+      width: 56px;
+      height: 56px;
+      padding: 10px;
+      margin: 5px;
+      border: 2px solid white;
+      &:hover {
+        border: 2px solid lightgray;
+      }
+    }
+  }
 }
 </style>
