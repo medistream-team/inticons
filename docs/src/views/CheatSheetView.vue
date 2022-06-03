@@ -11,8 +11,11 @@
         clipboard.
       </blockquote>
     </div>
+
     <div class="icons">
-      <h3>All Icons</h3>
+      <h3>
+        All Icons <small>({{ icons.length }})</small>
+      </h3>
       <ul class="icons-list">
         <li
           @click="copy"
