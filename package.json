@@ -6,7 +6,9 @@
     "serve": "vue-cli-service serve docs/src/main.js",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build-font": "node-sass ./fonts/scss/main.scss ./fonts/inticon.bundle.css"
+    "build-font": "node-sass ./fonts/scss/main.scss ./fonts/inticon.bundle.css",
+    "fontello": "node ./build/fontello && fontello-cli install --config ./fonts/config.json --css ./fonts/css --font ./fonts/font",
+    "postfontello": "npm run build-font"
   },
   "dependencies": {
     "axios": "^0.27.2",
