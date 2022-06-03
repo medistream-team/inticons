@@ -1,53 +1,60 @@
 <template>
-  <div class="icon-modal-wrapper">
+  <div ref="modal" id="icon-modal-wrapper">
     <div class="modal-left">
-      <p class="icon-name">adidas</p>
-      <div>selected Icon</div>
+      <p class="icon-name">{{ glyph }}</p>
+      <i v-bind:class="`ii-${glyph}`"></i>
     </div>
     <div class="modal-right">
       <div class="modal-right-left">
         <div class="right-left-top">
           <p class="html-code">WEB COMPONENT CODE</p>
-          <button class="icon-usage">USAGE</button>
+          <router-link to="/usage" class="icon-usage">Usage</router-link>
         </div>
-        <ssh-pre
-          class="modal-icon-code"
-          language="html"
-          reactive="true"
-          dark
-          copy-button
-        >
-          &lt;i class="ii ii-arrow-right"&gt;&lt;/i&gt;
-        </ssh-pre>
+        <div class="code-wrapper" @click="showProps">
+          <div class="code-block">
+            &lt;i class="ii ii-{{ glyph }}&gt;&lt;/i&gt;
+          </div>
+          <button class="copy-btn" @click="copyThat">copy</button>
+        </div>
       </div>
       <div class="modal-right-right">
-        <button class="svg-download">svg Download</button>
+        <button class="svg-download" @click="downSVG">SVG</button>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import SshPre from 'simple-syntax-highlighter';
 import 'simple-syntax-highlighter/dist/sshpre.css';
 export default {
   name: 'IconModal',
-  components: {
-    SshPre,
+  props: ['glyph'],
+  methods: {
+    copyThat() {
+      console.log('copy that');
+    },
+    downSVG() {
+      console.log('download SVG');
+    },
   },
 };
 </script>
 
 <style scoped lang="scss">
-.icon-modal-wrapper {
+#icon-modal-wrapper {
   display: flex;
+  position: fixed;
+  bottom: 5px;
   justify-content: space-between;
-  width: 150%;
+  width: 55%;
   height: 90px;
   padding: 0px 30px;
   border-radius: 20px;
   background-color: rgb(59, 59, 59);
   color: white;
+  opacity: 0;
+  transition-duration: 1s;
+  visibility: hidden;
   .modal-left {
     display: flex;
     justify-content: flex-start;
@@ -72,14 +79,13 @@ export default {
         font-size: 12px;
         .icon-usage {
           border-style: none;
-          padding: 0px;
+          outline: none;
+          padding: 10px;
           color: white;
-          font-size: 12px;
+          font-size: 15px;
           background-color: rgb(59, 59, 59);
-          cursor: pointer;
-          &:hover {
-            border-bottom: 1px solid white;
-          }
+          text-decoration: none;
+          cursor: default;
         }
       }
       .modal-icon-code {
@@ -88,6 +94,26 @@ export default {
         padding: 0px;
         margin: -5px;
         font-size: 14px;
+      }
+    }
+    .code-wrapper {
+      display: flex;
+      justify-content: space-between;
+      .code-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 40px;
+        font-size: 19px;
+        background-color: black;
+      }
+      .copy-btn {
+        border-style: none;
+        background-color: transparent;
+        font-size: 20px;
+        color: rgb(255, 131, 152);
+        cursor: pointer;
       }
     }
     .modal-right-right {
@@ -102,6 +128,7 @@ export default {
         border-radius: 10px;
         color: white;
         background-color: rgb(141, 141, 141);
+        cursor: pointer;
       }
     }
   }

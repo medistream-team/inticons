@@ -79,6 +79,7 @@ export default {
       align-items: center;
       width: 50%;
       .inticon-logo {
+        border: 1px solid white;
       }
       .site-version {
         padding: 2px;

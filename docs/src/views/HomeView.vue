@@ -24,7 +24,6 @@
       <div class="icon-wrapper">
         <IconBoxs :glyphs="glyphs" />
       </div>
-      <IconModal />
     </div>
   </div>
 </template>
@@ -32,7 +31,6 @@
 <script>
 import IconBoxs from '../components/IconBoxs.vue';
 import glyphs from './config.json';
-import IconModal from '../components/IconModal.vue';
 
 export default {
   name: 'HomePage',
@@ -46,7 +44,6 @@ export default {
   },
   components: {
     IconBoxs,
-    IconModal,
   },
   methods: {
     goSearch() {
