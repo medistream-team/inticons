@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve docs/src/main.js",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "sass": "node-sass fonts/scss/main.scss ./style.css"
+    "build-font": "node-sass ./fonts/scss/main.scss ./fonts/inticon.bundle.css"
   },
   "dependencies": {
     "axios": "^0.27.2",
