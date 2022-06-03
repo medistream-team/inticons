@@ -31,6 +31,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.0.3",
     "fontello-cli": "^0.6.2",
+    "fs-extra": "^10.1.0",
     "highlight.js": "^11.5.1",
     "marked": "^4.0.16",
     "node-sass": "^7.0.1",
