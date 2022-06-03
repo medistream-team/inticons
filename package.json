@@ -38,6 +38,7 @@
     "marked": "^4.0.16",
     "node-sass": "^7.0.1",
     "prettier": "^2.6.2",
+    "raw-loader": "^4.0.2",
     "svgpath": "^2.5.0",
     "webpack-chain": "^6.5.1"
   },
