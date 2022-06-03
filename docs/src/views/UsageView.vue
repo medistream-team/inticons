@@ -1,13 +1,16 @@
 <template>
   <div class="usage">
     <h1>This is an usage page</h1>
-    <div v-html="changeMarkdown"></div>
+    <div class="markdown-body">
+      <div v-html="changeMarkdown"></div>
+    </div>
   </div>
 </template>
 
 <script>
 import { marked } from 'marked';
-import 'highlight.js/styles/a11y-dark.css';
+import 'github-markdown-css/github-markdown-light.css';
+import 'highlight.js/styles/stackoverflow-light.css';
 import usage from '../assets/README.md';
 
 export default {
@@ -43,7 +46,7 @@ export default {
 
 <style scoped>
 .usage {
-  max-width: 640px;
+  max-width: 80%;
   margin: 0 auto;
   text-align: left;
 }
