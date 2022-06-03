@@ -34,10 +34,10 @@
     "fontello-cli": "^0.6.2",
     "fs-extra": "^10.1.0",
     "github-markdown-css": "^5.1.0",
-    "highlight.js": "^11.5.1",
     "marked": "^4.0.16",
     "node-sass": "^7.0.1",
     "prettier": "^2.6.2",
+    "prismjs": "^1.28.0",
     "raw-loader": "^4.0.2",
     "svgpath": "^2.5.0",
     "webpack-chain": "^6.5.1"

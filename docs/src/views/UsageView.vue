@@ -8,9 +8,10 @@
 </template>
 
 <script>
-import { marked } from 'marked';
+const prism = require('prismjs');
+const { marked } = require('marked');
+import 'prismjs/themes/prism.min.css';
 import 'github-markdown-css/github-markdown-light.css';
-import 'highlight.js/styles/stackoverflow-light.css';
 import usage from '../assets/README.md';
 
 export default {
@@ -23,12 +24,14 @@ export default {
     changeMarkdown() {
       marked.setOptions({
         renderer: new marked.Renderer(),
-        highlight: function (code, lang) {
-          const hljs = require('highlight.js');
-          const language = hljs.getLanguage(lang) ? lang : 'plaintext';
-          return hljs.highlight(code, { language }).value;
+        highlight: (code, lang) => {
+          if (prism.languages[lang]) {
+            return prism.highlight(code, prism.languages[lang], lang);
+          } else {
+            return code;
+          }
         },
-        langPrefix: 'hljs language-', // highlight.js css expects a top-level 'hljs' class.
+        langPrefix: 'language-',
         pedantic: false,
         gfm: true,
         breaks: false,
