@@ -59,7 +59,7 @@ export default {
   flex-direction: column;
   position: relative;
   align-items: center;
-  min-height: 1000px;
+  min-height: 700px;
   margin: 150px 0px;
 }
 .width-setting {

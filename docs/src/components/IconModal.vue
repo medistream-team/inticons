@@ -28,10 +28,12 @@
 import 'simple-syntax-highlighter/dist/sshpre.css';
 export default {
   name: 'IconModal',
-  props: ['glyph'],
+  props: ['glyph', 'nextSelectIcon'],
   methods: {
     copyThat() {
-      console.log('copy that');
+      navigator.clipboard.writeText(
+        document.querySelector('.code-block').innerText
+      );
     },
     downSVG() {
       console.log('download SVG');
@@ -44,26 +46,30 @@ export default {
 #icon-modal-wrapper {
   display: flex;
   position: fixed;
-  bottom: 5px;
+  bottom: 20px;
   justify-content: space-between;
   width: 55%;
   height: 90px;
+  margin-left: -100px;
   padding: 0px 30px;
   border-radius: 20px;
   background-color: rgb(59, 59, 59);
   color: white;
   opacity: 0;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   visibility: hidden;
   .modal-left {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
-    width: 40%;
+    width: 250px;
     font-weight: 700;
     font-size: 18px;
+    i {
+      font-size: 25px;
+    }
     .icon-name {
-      margin-right: 30%;
+      width: 150px;
     }
   }
   .modal-right {
@@ -100,13 +106,15 @@ export default {
       display: flex;
       justify-content: space-between;
       .code-block {
+        border-style: none;
         display: flex;
         justify-content: center;
         align-items: center;
         width: 80%;
         height: 40px;
-        font-size: 19px;
+        font-size: 14px;
         background-color: black;
+        color: white;
       }
       .copy-btn {
         border-style: none;

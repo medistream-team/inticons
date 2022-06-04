@@ -13,7 +13,6 @@
     "core-js": "^3.8.3",
     "simple-syntax-highlighter": "^2.2.0",
     "vue": "^3.2.13",
-    "vue-final-modal": "^3.4.4",
     "vue-loader": "^17.0.0",
     "vue-router": "^4.0.3",
     "vuex": "^4.0.0"

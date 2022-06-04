@@ -3,7 +3,7 @@
     <div class="width-setting">
       <div class="nav-left">
         <img src="" alt="inticon-logo" class="inticon-logo" />
-        <div class="site-version">0.1</div>
+        <div class="site-version">{{ siteVersion.version }}</div>
       </div>
       <input
         class="search-box"
@@ -32,6 +32,7 @@ export default {
   data() {
     return {
       notvisible: true,
+      siteVersion: require('../../../package.json'),
     };
   },
   created() {
@@ -77,14 +78,14 @@ export default {
     .nav-left {
       display: flex;
       align-items: center;
-      width: 50%;
+      width: 60%;
       .inticon-logo {
         border: 1px solid white;
       }
       .site-version {
-        padding: 2px;
-        width: 20px;
-        height: 12px;
+        /* padding: 2px; */
+        width: 40px;
+        height: 14px;
         margin-left: 10px;
         font-size: 12px;
         color: rgb(90, 90, 90);

@@ -3,7 +3,6 @@
     <div class="category-name">App Icon</div>
     <div class="icon-wrap">
       <button
-        ref="icon"
         class="icon-list"
         v-for="glyph in filteredGlyphs"
         :key="glyph"
@@ -14,7 +13,10 @@
       </button>
     </div>
     <div class="target-modal">
-      <IconModal :glyph="this.selectIcon" />
+      <IconModal
+        :glyph="this.selectIcon"
+        :nextSelectIcon="this.nextSelectIcon"
+      />
     </div>
   </div>
 </template>
@@ -60,7 +62,7 @@ export default {
 .icon-box {
   position: relative;
   width: 100%;
-  min-height: 400px;
+  min-height: 200px;
   margin-top: 50px;
   font-size: 20px;
   .category-name {
@@ -83,13 +85,18 @@ export default {
       height: 80.585px;
       padding: 10px;
       margin: 5px;
+      border-radius: 50%;
       background-color: white;
       border: 2px solid white;
       i {
         pointer-events: none;
       }
       &:hover {
-        border: 2px solid lightgray;
+        border: 2px solid #1d77ff60;
+      }
+      &:focus {
+        background-color: #1d77ff;
+        color: white;
       }
     }
   }
