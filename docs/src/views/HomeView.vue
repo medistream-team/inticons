@@ -30,13 +30,13 @@
 
 <script>
 import IconBoxs from '../components/IconBoxs.vue';
-import glyphs from './config.json';
+import glyphs from '../assets/config.json';
 
 export default {
   name: 'HomePage',
   data() {
     return {
-      glyphs,
+      glyphs: glyphs.glyphs,
     };
   },
   created() {
