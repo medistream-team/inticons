@@ -33,13 +33,13 @@
 </template>
 
 <script>
-import config from './config.json';
+import config from '../assets/config.json';
 
 export default {
   data() {
     return {
-      icons: config,
-      usageIcon: config[0].css,
+      icons: config.glyphs,
+      usageIcon: config.glyphs[0].css,
     };
   },
   methods: {
