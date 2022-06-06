@@ -2,8 +2,8 @@ const fs = require('fs');
 const svgpath = require('svgpath');
 
 (() => {
-  const writeFilePath = 'fonts/test.json';
-  const svgsPath = 'icons';
+  const writeFilePath = './fonts/config.json';
+  const svgsPath = './icons';
   const files = fs.readdirSync(svgsPath);
   const glyphs = [];
 
@@ -33,12 +33,12 @@ const svgpath = require('svgpath');
 
   const config = {
     name: 'inticon',
-    css_prefix_text: 'ii ii-',
+    css_prefix_text: 'ii-',
     css_use_suffix: false,
     hinting: true,
     units_per_em: 1000,
     ascent: 850,
-    copyright: 'medistream',
+    copyright: 'INTEGRATION Corp.',
     glyphs,
   };
 

@@ -2,6 +2,9 @@ const { defineConfig } = require('@vue/cli-service');
 
 module.exports = defineConfig({
   transpileDependencies: true,
+  configureWebpack: {
+    entry: './docs/src/main.js',
+  },
   chainWebpack: config => {
     config.module
       .rule('vue')
@@ -18,5 +21,12 @@ module.exports = defineConfig({
       args[0].template = 'docs/index.html';
       return args;
     });
+
+    config.module
+      .rule('md')
+      .test(/\.md?$/)
+      .use('raw-loader')
+      .loader('raw-loader')
+      .end();
   },
 });

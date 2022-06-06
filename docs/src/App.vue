@@ -18,7 +18,7 @@ export default {
 </script>
 
 <style scoped>
-@import url('/style.css');
+@import url('./assets/fonts/inticon.bundle.css');
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

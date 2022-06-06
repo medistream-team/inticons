@@ -1,39 +1,37 @@
 <template>
   <div class="usage">
     <h1>This is an usage page</h1>
-    <div v-html="changeMarkdown"></div>
+    <div class="markdown-body">
+      <div v-html="changeMarkdown"></div>
+    </div>
   </div>
 </template>
 
 <script>
-import axios from 'axios';
-import { marked } from 'marked';
-import 'highlight.js/styles/a11y-dark.css';
+const prism = require('prismjs');
+const { marked } = require('marked');
+import 'prismjs/themes/prism.min.css';
+import 'github-markdown-css/github-markdown-light.css';
+import usage from '../assets/README.md';
 
 export default {
   data: function () {
     return {
-      markdown: '',
+      markdown: usage,
     };
   },
-  mounted() {
-    this.getMarkdown();
-  },
   computed: {
-    filteredGlyphs() {
-      return this.glyphs.filter(glyph =>
-        glyph.search.map(x => x.startsWith(this.userInput)).includes(true)
-      );
-    },
     changeMarkdown() {
       marked.setOptions({
         renderer: new marked.Renderer(),
-        highlight: function (code, lang) {
-          const hljs = require('highlight.js');
-          const language = hljs.getLanguage(lang) ? lang : 'plaintext';
-          return hljs.highlight(code, { language }).value;
+        highlight: (code, lang) => {
+          if (prism.languages[lang]) {
+            return prism.highlight(code, prism.languages[lang], lang);
+          } else {
+            return code;
+          }
         },
-        langPrefix: 'hljs language-', // highlight.js css expects a top-level 'hljs' class.
+        langPrefix: 'language-',
         pedantic: false,
         gfm: true,
         breaks: false,
@@ -46,21 +44,12 @@ export default {
       return marked.parse(this.markdown);
     },
   },
-  methods: {
-    getMarkdown() {
-      axios
-        .get(
-          'https://raw.githubusercontent.com/medistream-team/inticon/main/README.md'
-        )
-        .then(res => (this.markdown = res.data));
-    },
-  },
 };
 </script>
 
 <style scoped>
 .usage {
-  max-width: 640px;
+  max-width: 80%;
   margin: 0 auto;
   text-align: left;
 }
