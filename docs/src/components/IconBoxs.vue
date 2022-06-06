@@ -1,54 +1,117 @@
 <template>
-  <icon-box>
-    <category-name class="category-name">"App Icons"</category-name>
-    <icon-wrap class="icon-wrap">
-      <div class="icon">v-for=""</div>
-    </icon-wrap>
-  </icon-box>
-  <icon-box>
-    <category-name class="category-name">"Brand"</category-name>
-    <icon-wrap class="icon-wrap">
-      <div class="icon">v-for=""</div>
-    </icon-wrap>
-  </icon-box>
+  <div class="icon-box" @click="asdf">
+    <div class="category-name">App Icon</div>
+    <div class="icon-wrap">
+      <button
+        ref="icon-list"
+        class="icon-list"
+        v-for="glyph in filteredGlyphs"
+        :key="glyph"
+        @click="this.targetModal"
+        :value="`${glyph.css}`"
+      >
+        <i v-bind:class="`ii-${glyph.css} ii-2x`" ref="icon"></i>
+      </button>
+    </div>
+    <div ref="target-modal" class="target-modal">
+      <IconModal
+        :glyph="this.selectIcon"
+        :nextSelectIcon="this.nextSelectIcon"
+      />
+    </div>
+  </div>
 </template>
 
 <script>
-import styled from 'vue3-styled-components';
+import IconModal from './IconModal.vue';
 
-export const IconBox = styled.div`
-  position: relative;
-  width: 100%;
-  min-height: 400px;
-  margin-top: 50px;
-  font-size: 20px;
-`;
-export const CategoryName = styled.p`
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  position: sticky;
-  top: 80px;
-  height: 30px;
-  background-color: white;
-  border-bottom: 1px solid #1d77ff;
-`;
-export const IconWrap = styled.div``;
+document.getElementById('app').addEventListener('click', e => {
+  if (
+    !(
+      e.target.className === 'icon-list' || e.target.className.includes('modal')
+    )
+  ) {
+    document.getElementById('icon-modal-wrapper').style.opacity = '';
+    document.getElementById('icon-modal-wrapper').style.visibility = 'hidden';
+  }
+});
 
 export default {
   name: 'icons-boxs',
-  components: {
-    //styled-components
-    IconBox,
-    CategoryName,
-    IconWrap,
+  props: ['glyphs'],
+  components: { IconModal },
+  data: () => ({
+    isModal: false,
+    selectIcon: null,
+    nextSelectIcon: null,
+  }),
+  computed: {
+    filteredGlyphs() {
+      return this.glyphs.filter(glyph =>
+        glyph.search.some(word => word.includes(this.$store.state.handleInput))
+      );
+    },
+  },
+  methods: {
+    targetModal(e) {
+      this.selectIcon = e.target.value;
+      document.getElementById('icon-modal-wrapper').style.opacity = 1;
+      document.getElementById('icon-modal-wrapper').style.visibility =
+        'visible';
+      if (this.nextSelectIcon !== e.target.value) {
+        this.nextSelectIcon = this.selectIcon;
+      } else {
+        document.getElementById('icon-modal-wrapper').style.opacity = '';
+        document.getElementById('icon-modal-wrapper').style.visibility =
+          'hidden';
+        this.nextSelectIcon = null;
+      }
+    },
   },
 };
 </script>
 
-<style scoped>
-#icons {
+<style scoped lang="scss">
+.icon-box {
+  position: relative;
   width: 100%;
-  margin-top: 150px;
+  min-height: 50px;
+  margin-top: 50px;
+  font-size: 20px;
+  .category-name {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: sticky;
+    top: 80px;
+    height: 30px;
+    background-color: white;
+    border-bottom: 1px solid #1d77ff;
+  }
+  .icon-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    .icon-list {
+      border-style: none;
+      display: inline-block;
+      width: 80.585px;
+      height: 80.585px;
+      padding: 10px;
+      margin: 5px;
+      border-radius: 50%;
+      background-color: white;
+      border: 2px solid white;
+      i {
+        pointer-events: none;
+      }
+      &:hover {
+        border: 2px solid #1d77ff60;
+      }
+      &:focus {
+        background-color: #1d77ff;
+        color: white;
+      }
+    }
+  }
 }
 </style>

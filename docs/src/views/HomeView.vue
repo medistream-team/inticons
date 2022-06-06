@@ -1,71 +1,99 @@
 <template>
-  <home-wrapper>
-    <width-setting>
-      <main-top class="main-top">
-        <main-introduction-top class="main-introduction-top">
+  <div class="home-wrapper">
+    <div class="width-setting">
+      <div class="main-top">
+        <div class="main-introduction-top">
           Open source icons. <br />
           Lovingly hand-crafted.
-        </main-introduction-top>
-        <main-introduction-bottom class="main-introduction-bottom">
+        </div>
+        <div class="main-introduction-bottom">
           Premium designed icons for use in web, iOS, Android, and desktop apps.
           Support for SVG and web font. Completely open source, MIT licensed and
           built by Ionic.
-        </main-introduction-bottom>
-      </main-top>
-      <search-target id="target-scroll" />
-      <search-box
+        </div>
+      </div>
+      <div class="search-target" id="target-scroll"></div>
+      <input
+        class="search-box"
         v-model="this.$store.state.handleInput"
         type="text"
         id="target-focus"
         placeholder="search icons..."
+        @keyup="this.goSearch"
       />
-      <icon-wrapper class="icon-for">
-        <IconBoxs />
-      </icon-wrapper>
-    </width-setting>
-  </home-wrapper>
+      <div class="icon-wrapper">
+        <IconBoxs :glyphs="glyphs" />
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-import styled from 'vue3-styled-components';
 import IconBoxs from '../components/IconBoxs.vue';
+import glyphs from './config.json';
 
-export const HomeWrapper = styled.div`
+export default {
+  name: 'HomePage',
+  data() {
+    return {
+      glyphs,
+    };
+  },
+  created() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  components: {
+    IconBoxs,
+  },
+  methods: {
+    goSearch() {
+      document.getElementById('target-scroll').scrollIntoView(true);
+      document.getElementById('target-focus').focus();
+    },
+  },
+};
+</script>
+<style scoped lang="scss">
+.home-wrapper {
   display: flex;
   flex-direction: column;
   position: relative;
   align-items: center;
-  min-height: 1000px;
+  min-height: 700px;
   margin: 150px 0px;
-`;
-export const WidthSetting = styled.div`
+}
+.width-setting {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 45%;
-  padding: 30px;
-`;
-export const MainTop = styled.div`
+}
+.main-top {
   display: flex;
   flex-direction: column;
   align-items: center;
-`;
-export const MainIntroductionTop = styled.article`
-  margin-top: 100px;
-  font-size: 35px;
-  text-align: center;
-  line-height: 1.3;
-`;
-export const MainIntroductionBottom = styled.article`
+}
+.main-introduction-top {
   width: 50%;
   margin-top: 30px;
   font-size: 20px;
   text-align: center;
-`;
-export const SearchBox = styled.input`
+}
+.main-introduction-bottom {
+  width: 50%;
+  margin-top: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+.search-target {
+  width: 100px;
+  height: 100px;
+  display: flex;
+}
+.search-box {
   border-style: none;
   width: 100%;
-  height: 40px;
+  height: 60px;
   padding: 0px 20px;
   border-radius: 5px;
   background-color: #f8f8fc;
@@ -76,44 +104,8 @@ export const SearchBox = styled.input`
     color: rgb(196, 196, 196);
     font-size: 15px;
   }
-`;
-export const IconWrapper = styled.div`
+}
+.icon-wrapper {
   width: 100%;
-`;
-export const SearchBtn = styled.button`
-  position: fixed;
-  bottom: 170px;
-  right: 100px;
-  width: 50px;
-  height: 50px;
-  border-style: none;
-  cursor: pointer;
-  @media() {
-    display: none;
-  }
-`;
-export const SearchTarget = styled.div`
-  width: 100px;
-  height: 100px;
-  display: flex;
-  &:focus {
-    border: 2px solid red;
-  }
-`;
-
-export default {
-  name: 'HomePage',
-  components: {
-    IconBoxs,
-    // styled-components
-    HomeWrapper,
-    WidthSetting,
-    MainTop,
-    MainIntroductionTop,
-    MainIntroductionBottom,
-    IconWrapper,
-    SearchTarget,
-    SearchBox,
-  },
-};
-</script>
+}
+</style>
