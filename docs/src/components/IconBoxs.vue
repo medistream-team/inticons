@@ -1,18 +1,19 @@
 <template>
-  <div class="icon-box">
+  <div class="icon-box" @click="asdf">
     <div class="category-name">App Icon</div>
     <div class="icon-wrap">
       <button
+        ref="icon-list"
         class="icon-list"
         v-for="glyph in filteredGlyphs"
         :key="glyph"
         @click="this.targetModal"
         :value="`${glyph.css}`"
       >
-        <i v-bind:class="`ii-${glyph.css} ii-2x`"></i>
+        <i v-bind:class="`ii-${glyph.css} ii-2x`" ref="icon"></i>
       </button>
     </div>
-    <div class="target-modal">
+    <div ref="target-modal" class="target-modal">
       <IconModal
         :glyph="this.selectIcon"
         :nextSelectIcon="this.nextSelectIcon"
@@ -23,6 +24,18 @@
 
 <script>
 import IconModal from './IconModal.vue';
+
+document.getElementById('app').addEventListener('click', e => {
+  if (
+    !(
+      e.target.className === 'icon-list' || e.target.className.includes('modal')
+    )
+  ) {
+    document.getElementById('icon-modal-wrapper').style.opacity = '';
+    document.getElementById('icon-modal-wrapper').style.visibility = 'hidden';
+  }
+});
+
 export default {
   name: 'icons-boxs',
   props: ['glyphs'],
@@ -62,7 +75,7 @@ export default {
 .icon-box {
   position: relative;
   width: 100%;
-  min-height: 200px;
+  min-height: 50px;
   margin-top: 50px;
   font-size: 20px;
   .category-name {

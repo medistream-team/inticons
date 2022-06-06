@@ -1,24 +1,24 @@
 <template>
-  <div ref="modal" id="icon-modal-wrapper">
+  <div ref="target-modal" id="icon-modal-wrapper">
     <div class="modal-left">
-      <p class="icon-name">{{ glyph }}</p>
+      <p class="modal-icon-name">{{ glyph }}</p>
       <i v-bind:class="`ii-${glyph}`"></i>
     </div>
     <div class="modal-right">
       <div class="modal-right-left">
-        <div class="right-left-top">
-          <p class="html-code">WEB COMPONENT CODE</p>
-          <router-link to="/usage" class="icon-usage">Usage</router-link>
+        <div class="modal-right-left-top">
+          <p class="modal-html-code">WEB COMPONENT CODE</p>
+          <router-link to="/usage" class="modal-icon-usage">Usage</router-link>
         </div>
-        <div class="code-wrapper" @click="showProps">
-          <div class="code-block">
+        <div class="modal-code-wrapper" @click="showProps">
+          <div class="modal-code-block">
             &lt;i class="ii ii-{{ glyph }}&gt;&lt;/i&gt;
           </div>
-          <button class="copy-btn" @click="copyThat">copy</button>
+          <button class="modal-copy-btn" @click="copyThat">copy</button>
         </div>
       </div>
       <div class="modal-right-right">
-        <button class="svg-download" @click="downSVG">SVG</button>
+        <button class="modal-svg-download" @click="downSVG">SVG</button>
       </div>
     </div>
   </div>
@@ -26,13 +26,14 @@
 
 <script>
 import 'simple-syntax-highlighter/dist/sshpre.css';
+
 export default {
   name: 'IconModal',
   props: ['glyph', 'nextSelectIcon'],
   methods: {
     copyThat() {
       navigator.clipboard.writeText(
-        document.querySelector('.code-block').innerText
+        document.querySelector('.modal-code-block').innerText
       );
     },
     downSVG() {
@@ -68,7 +69,7 @@ export default {
     i {
       font-size: 25px;
     }
-    .icon-name {
+    .modal-icon-name {
       width: 150px;
     }
   }
@@ -79,14 +80,15 @@ export default {
     height: 100%;
     .modal-right-left {
       width: 70%;
-      .right-left-top {
+      .modal-right-left-top {
         display: flex;
         justify-content: space-between;
         font-size: 12px;
-        .icon-usage {
+        .modal-icon-usage {
           border-style: none;
           outline: none;
-          padding: 10px;
+          height: 20px;
+          padding: 10px 0px 0px 0px;
           color: white;
           font-size: 15px;
           background-color: rgb(59, 59, 59);
@@ -102,10 +104,10 @@ export default {
         font-size: 14px;
       }
     }
-    .code-wrapper {
+    .modal-code-wrapper {
       display: flex;
       justify-content: space-between;
-      .code-block {
+      .modal-code-block {
         border-style: none;
         display: flex;
         justify-content: center;
@@ -116,7 +118,7 @@ export default {
         background-color: black;
         color: white;
       }
-      .copy-btn {
+      .modal-copy-btn {
         border-style: none;
         background-color: transparent;
         font-size: 20px;
@@ -129,7 +131,7 @@ export default {
       justify-content: center;
       align-items: center;
       width: 25%;
-      .svg-download {
+      .modal-svg-download {
         border-style: none;
         height: 35px;
         padding: 0px 10px;

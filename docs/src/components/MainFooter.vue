@@ -6,7 +6,7 @@
           <img src="" alt="inticon-logo" class="inticon-logo" />
           <p>inticon open source</p>
         </div>
-        <div class="footer-left-bottom">Released by Medistream</div>
+        <div class="footer-left-bottom">Released by INTEGRATION Corp.</div>
       </div>
       <div class="footer-right">
         <p class="cheatsheet">Cheatsheet</p>

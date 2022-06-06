@@ -3,6 +3,7 @@
     <div class="width-setting">
       <div class="nav-left">
         <img src="" alt="inticon-logo" class="inticon-logo" />
+        <router-link to="/" class="site-title">INTICON</router-link>
         <div class="site-version">{{ siteVersion.version }}</div>
       </div>
       <input
@@ -94,6 +95,11 @@ export default {
         border-radius: 3px;
         background-color: rgb(235, 235, 235);
       }
+      .site-title {
+        margin-left: 20px;
+        text-decoration: none;
+        color: black;
+      }
     }
     .search-box {
       border-style: none;
@@ -126,10 +132,12 @@ export default {
         width: 100px;
         height: 40px;
         cursor: pointer;
-      }
-      .nav-docs,
-      .pkg-download {
         margin-left: 30px;
+      }
+      .nav-docs {
+        margin-left: 30px;
+        text-decoration: none;
+        color: black;
       }
     }
   }
