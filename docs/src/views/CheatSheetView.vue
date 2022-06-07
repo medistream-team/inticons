@@ -1,7 +1,7 @@
 <template>
   <div class="cheatsheet">
     <h2>cheatsheet</h2>
-    <div class="usage">
+    <section class="usage">
       <h3>Usage</h3>
       <pre
         class="usage-icon"
@@ -10,11 +10,11 @@
         Click the hex codepoint or name below to copy the value to your
         clipboard.
       </blockquote>
-    </div>
+    </section>
 
-    <div class="icons">
+    <section class="icons">
       <h3>
-        All Icons <small>({{ icons.length }})</small>
+        All Icons <span class="icons-count">({{ icons.length }})</span>
       </h3>
       <ul class="icons-list">
         <li
@@ -28,7 +28,31 @@
           <span @click="changeUsageIcon">ii-{{ icon.css }}</span>
         </li>
       </ul>
-    </div>
+    </section>
+
+    <section class="extras">
+      <h3>Extras</h3>
+      <p>The helper CSS classes are listed below.</p>
+
+      <ul>
+        <li>
+          <h4>Rotate</h4>
+          <div></div>
+        </li>
+        <li>
+          <h4>Flip</h4>
+          <div></div>
+        </li>
+        <li>
+          <h4>Size</h4>
+          <div></div>
+        </li>
+        <li>
+          <h4>Spin</h4>
+          <div></div>
+        </li>
+      </ul>
+    </section>
 
     <div v-if="isIconClicked" class="copied">Copied to clipboard</div>
   </div>
@@ -79,6 +103,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
 .cheatsheet {
   width: 80%;
   height: 100vh;
@@ -110,10 +139,13 @@ export default {
   }
 
   .icons {
+    &-count {
+      font-size: 16px;
+    }
+
     &-list {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      padding: 0;
     }
 
     &-item {
@@ -121,10 +153,6 @@ export default {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-
-      &::marker {
-        display: none;
-      }
 
       code,
       span {
@@ -156,7 +184,7 @@ export default {
     text-align: center;
     background-color: #1d77ff;
     transform: translateX(-50%);
-    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
 
   @media screen and (min-width: 640px) {
