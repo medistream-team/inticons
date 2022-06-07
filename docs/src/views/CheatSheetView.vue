@@ -79,22 +79,22 @@ export default {
       border: 1px solid #ddd;
       background-color: #f1f1f1;
     }
-  }
 
-  &-note {
-    position: relative;
-    padding: 8px 8px 8px 12px;
-    margin: 16px 0 0;
+    &-note {
+      position: relative;
+      padding: 8px 8px 8px 12px;
+      margin: 16px 0 0;
 
-    &::before {
-      content: ' ';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 0.25rem;
-      height: 100%;
-      border-radius: 0.25rem;
-      background-color: #ddd;
+      &::before {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0.25rem;
+        height: 100%;
+        border-radius: 0.25rem;
+        background-color: #ddd;
+      }
     }
   }
 
