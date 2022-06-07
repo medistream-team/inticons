@@ -42,6 +42,12 @@ export default {
   box-sizing: border-box;
 }
 
+code {
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
+    Liberation Mono, monospace;
+  font-size: 12px;
+}
+
 .extras-example-list {
   display: flex;
   flex-wrap: wrap;
@@ -88,7 +94,7 @@ export default {
       height: 50px;
       padding: 0 12px;
       color: #fff;
-      background: #222;
+      background-color: #222;
     }
   }
 }

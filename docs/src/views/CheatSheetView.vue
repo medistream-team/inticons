@@ -127,6 +127,12 @@ ul {
   list-style-type: none;
 }
 
+code {
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
+    Liberation Mono, monospace;
+  font-size: 12px;
+}
+
 .cheatsheet {
   width: 80%;
   margin: 0 auto;
