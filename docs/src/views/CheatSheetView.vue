@@ -34,23 +34,12 @@
       <h3>Extras</h3>
       <p>The helper CSS classes are listed below.</p>
 
-      <ul>
-        <li>
-          <h4>Rotate</h4>
-          <div></div>
-        </li>
-        <li>
-          <h4>Flip</h4>
-          <div></div>
-        </li>
-        <li>
-          <h4>Size</h4>
-          <div></div>
-        </li>
-        <li>
-          <h4>Spin</h4>
-          <div></div>
-        </li>
+      <ul class="extras-list">
+        <ExtraItem
+          v-for="extra in $options.extras"
+          :key="extra.header"
+          v-bind="extra"
+        />
       </ul>
     </section>
 
@@ -60,8 +49,35 @@
 
 <script>
 import config from '../assets/config.json';
+import ExtraItem from '../components/ExtraItem.vue';
 
 export default {
+  extras: [
+    {
+      header: 'Size',
+      examples: ['ii-2x', 'ii-3x', 'ii-4x'],
+    },
+    {
+      header: 'Rotate',
+      examples: [
+        'ii-rotate-45',
+        'ii-rotate-90',
+        'ii-rotate-135',
+        'ii-rotate-180',
+        'ii-rotate-215',
+        'ii-rotate-270',
+        'ii-rotate-315',
+      ],
+    },
+    {
+      header: 'Flip',
+      examples: ['ii-flip-horizontal', 'ii-flip-vertical'],
+    },
+    {
+      header: 'Spin',
+      examples: ['ii-spin'],
+    },
+  ],
   data() {
     return {
       icons: config.glyphs,
@@ -99,6 +115,9 @@ export default {
       return !this.isIconClicked;
     },
   },
+  components: {
+    ExtraItem,
+  },
 };
 </script>
 
@@ -110,7 +129,6 @@ ul {
 
 .cheatsheet {
   width: 80%;
-  height: 100vh;
   margin: 0 auto;
 
   .usage {
