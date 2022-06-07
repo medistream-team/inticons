@@ -47,6 +47,10 @@ export default {
   },
   methods: {
     copy(e) {
+      if (!this.isClickable) {
+        return;
+      }
+
       const isHexOrName = !(
         e.target.classList.contains('icons-item') ||
         e.target.classList.contains('ii')
@@ -57,11 +61,18 @@ export default {
         navigator.clipboard.writeText(e.target.innerHTML);
         setTimeout(() => {
           this.isIconClicked = false;
-        }, 1500);
+        }, 500);
       }
     },
     changeUsageIcon(e) {
-      this.usageIcon = e.target.innerHTML.substring(3);
+      if (this.isClickable) {
+        this.usageIcon = e.target.innerHTML.substring(3);
+      }
+    },
+  },
+  computed: {
+    isClickable() {
+      return !this.isIconClicked;
     },
   },
 };
