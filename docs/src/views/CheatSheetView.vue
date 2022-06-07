@@ -120,7 +120,7 @@ export default {
         cursor: pointer;
 
         &:hover {
-          color: #3c90be;
+          color: #1d77ff;
         }
       }
 
@@ -139,11 +139,11 @@ export default {
     left: 50%;
     width: 200px;
     padding: 10px 15px;
-    border: 1px solid #3c90be;
+    border: 1px solid #1d77ff;
     border-radius: 4px;
     color: #fff;
     text-align: center;
-    background-color: #3c90be;
+    background-color: #1d77ff;
     transform: translateX(-50%);
     box-shadow: 0 0 10px rgb(0 0 0 / 20%);
   }
