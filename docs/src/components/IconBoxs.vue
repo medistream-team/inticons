@@ -112,10 +112,16 @@ export default {
       }
       &:hover {
         border: 2px solid #1d77ff60;
+        box-shadow: 1px 1px 1px #1d77ff70;
       }
       &:focus {
         background-color: #1d77ff;
+        box-shadow: 7px 7px 7px #1d77ff70;
+        border: 2px solid #1d77ff60;
         color: white;
+      }
+      @media (max-width: 1000px) {
+        width: 76px;
       }
     }
   }

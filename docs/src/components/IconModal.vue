@@ -14,7 +14,7 @@
           <div class="modal-code-block" @click="codeCopy">
             &lt;i class="ii ii-{{ glyph }}&gt;&lt;/i&gt;
           </div>
-          <div class="modal-copied" v-if="copied" @click="codeCopy">copied</div>
+          <div class="modal-copied" v-show="copied">copied</div>
         </div>
       </div>
       <div class="modal-right-right">
@@ -39,7 +39,9 @@ export default {
         document.querySelector('.modal-code-block').innerText
       );
       this.copied = true;
-      setTimeout(() => (this.copied = false), 500);
+      setTimeout(() => {
+        return (this.copied = false);
+      }, 500);
     },
     downSVG() {
       console.log('download SVG');
@@ -54,9 +56,9 @@ export default {
   position: fixed;
   bottom: 20px;
   justify-content: space-between;
-  width: 55%;
+  width: 70%;
   height: 90px;
-  margin-left: -100px;
+  margin-left: -200px;
   padding: 0px 30px;
   border-radius: 20px;
   background-color: rgb(59, 59, 59);
@@ -64,6 +66,7 @@ export default {
   opacity: 0;
   transition-duration: 0.5s;
   visibility: hidden;
+  box-shadow: 7px 7px 7px #00000080;
   @media (max-width: 1000px) {
     flex-direction: column;
     position: fixed;
@@ -76,7 +79,7 @@ export default {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 250px;
+    width: 200px;
     font-weight: 700;
     font-size: 18px;
     @media (max-width: 1000px) {
@@ -95,7 +98,7 @@ export default {
   .modal-right {
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    width: 70%;
     height: 100%;
     @media (max-width: 1000px) {
       width: 130%;
@@ -132,16 +135,18 @@ export default {
       justify-content: space-between;
       align-items: center;
       background-color: black;
+      overflow: auto;
       .modal-code-block {
         border-style: none;
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        width: 60%;
+        width: 250px;
         height: 40px;
         padding: 0px 20px;
-        font-size: 14px;
+        font-size: 15px;
         color: white;
+        font-weight: bold;
         @media (max-width: 1000px) {
           width: 100%;
         }
@@ -158,9 +163,10 @@ export default {
         height: 20px;
         color: black;
         font-size: 15px;
-        background-color: gray;
+        background-color: white;
+        font-weight: bold;
         cursor: pointer;
-        transition-duration: 1s;
+        transition: 0.5s;
         @media (max-width: 1000px) {
         }
       }
@@ -175,8 +181,9 @@ export default {
         height: 35px;
         padding: 0px 10px;
         border-radius: 10px;
-        color: white;
-        background-color: rgb(141, 141, 141);
+        color: black;
+        background-color: white;
+        font-weight: bold;
         cursor: pointer;
         @media (max-width: 1000px) {
           display: none;
