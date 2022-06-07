@@ -1,5 +1,5 @@
 <template>
-  <div class="home-wrapper">
+  <div class="home-wrapper" id="home-target-wrapper">
     <div class="width-setting">
       <div class="main-top">
         <div class="main-introduction-top">
@@ -67,6 +67,9 @@ export default {
   flex-direction: column;
   align-items: center;
   width: 45%;
+  @media (max-width: 1000px) {
+    width: 90%;
+  }
 }
 .main-top {
   display: flex;
@@ -103,6 +106,9 @@ export default {
   &::placeholder {
     color: rgb(196, 196, 196);
     font-size: 15px;
+  }
+  @media (max-width: 1000px) {
+    width: 90%;
   }
 }
 .icon-wrapper {

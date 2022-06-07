@@ -11,10 +11,10 @@
           <router-link to="/usage" class="modal-icon-usage">Usage</router-link>
         </div>
         <div class="modal-code-wrapper" @click="showProps">
-          <div class="modal-code-block">
+          <div class="modal-code-block" @click="codeCopy">
             &lt;i class="ii ii-{{ glyph }}&gt;&lt;/i&gt;
           </div>
-          <button class="modal-copy-btn" @click="copyThat">copy</button>
+          <div class="modal-copied" v-if="copied" @click="codeCopy">copied</div>
         </div>
       </div>
       <div class="modal-right-right">
@@ -25,16 +25,21 @@
 </template>
 
 <script>
-import 'simple-syntax-highlighter/dist/sshpre.css';
-
 export default {
   name: 'IconModal',
   props: ['glyph', 'nextSelectIcon'],
+  data() {
+    return {
+      copied: false,
+    };
+  },
   methods: {
-    copyThat() {
+    codeCopy() {
       navigator.clipboard.writeText(
         document.querySelector('.modal-code-block').innerText
       );
+      this.copied = true;
+      setTimeout(() => (this.copied = false), 500);
     },
     downSVG() {
       console.log('download SVG');
@@ -59,6 +64,14 @@ export default {
   opacity: 0;
   transition-duration: 0.5s;
   visibility: hidden;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    width: 80%;
+    height: 130px;
+  }
   .modal-left {
     display: flex;
     justify-content: space-around;
@@ -66,8 +79,14 @@ export default {
     width: 250px;
     font-weight: 700;
     font-size: 18px;
+    @media (max-width: 1000px) {
+      margin-bottom: -20px;
+    }
     i {
       font-size: 25px;
+      @media (max-width: 1000px) {
+        display: none;
+      }
     }
     .modal-icon-name {
       width: 150px;
@@ -78,6 +97,10 @@ export default {
     justify-content: space-between;
     width: 60%;
     height: 100%;
+    @media (max-width: 1000px) {
+      width: 130%;
+      font-size: 10px;
+    }
     .modal-right-left {
       width: 70%;
       .modal-right-left-top {
@@ -107,23 +130,39 @@ export default {
     .modal-code-wrapper {
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      background-color: black;
       .modal-code-block {
+        border-style: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 60%;
+        height: 40px;
+        padding: 0px 20px;
+        font-size: 14px;
+        color: white;
+        @media (max-width: 1000px) {
+          width: 100%;
+        }
+      }
+      .modal-copied {
         border-style: none;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 80%;
-        height: 40px;
-        font-size: 14px;
-        background-color: black;
-        color: white;
-      }
-      .modal-copy-btn {
-        border-style: none;
-        background-color: transparent;
-        font-size: 20px;
-        color: rgb(255, 131, 152);
+        margin: 0px 10px;
+        padding: 0px 5px;
+        border-radius: 10px;
+        width: 15%;
+        height: 20px;
+        color: black;
+        font-size: 15px;
+        background-color: gray;
         cursor: pointer;
+        transition-duration: 1s;
+        @media (max-width: 1000px) {
+        }
       }
     }
     .modal-right-right {
@@ -139,6 +178,9 @@ export default {
         color: white;
         background-color: rgb(141, 141, 141);
         cursor: pointer;
+        @media (max-width: 1000px) {
+          display: none;
+        }
       }
     }
   }

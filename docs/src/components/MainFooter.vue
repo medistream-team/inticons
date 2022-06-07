@@ -52,6 +52,10 @@ export default {
       display: flex;
       justify-content: space-around;
       width: 20%;
+      @media (max-width: 1000px) {
+        width: 80%;
+        margin-top: 20px;
+      }
       .footer-link {
         display: inline;
         text-decoration: none;
@@ -59,7 +63,17 @@ export default {
       }
       .cheatsheet {
         margin-top: 11px;
+        @media (max-width: 1000px) {
+          margin-right: 20px;
+        }
       }
+    }
+    @media (max-width: 1000px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 120%;
     }
   }
 }

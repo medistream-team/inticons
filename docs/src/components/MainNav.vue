@@ -83,8 +83,13 @@ export default {
       .inticon-logo {
         border: 1px solid white;
       }
+      .site-title {
+        @media (max-width: 1000px) {
+          font-size: 12px;
+          margin: 0px 30px;
+        }
+      }
       .site-version {
-        /* padding: 2px; */
         width: 40px;
         height: 14px;
         margin-left: 10px;
@@ -94,6 +99,9 @@ export default {
         border: 1px solid rgb(235, 235, 235);
         border-radius: 3px;
         background-color: rgb(235, 235, 235);
+        @media (max-width: 1000px) {
+          display: none;
+        }
       }
       .site-title {
         margin-left: 20px;
@@ -123,6 +131,9 @@ export default {
     .nav-right {
       display: flex;
       align-items: center;
+      @media (max-width: 1000px) {
+        display: none;
+      }
       .pkg-download {
         border-style: none;
         border: 1px solid gray;

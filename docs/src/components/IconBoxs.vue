@@ -25,17 +25,6 @@
 <script>
 import IconModal from './IconModal.vue';
 
-document.getElementById('app').addEventListener('click', e => {
-  if (
-    !(
-      e.target.className === 'icon-list' || e.target.className.includes('modal')
-    )
-  ) {
-    document.getElementById('icon-modal-wrapper').style.opacity = '';
-    document.getElementById('icon-modal-wrapper').style.visibility = 'hidden';
-  }
-});
-
 export default {
   name: 'icons-boxs',
   props: ['glyphs'],
@@ -51,6 +40,23 @@ export default {
         glyph.search.some(word => word.includes(this.$store.state.handleInput))
       );
     },
+  },
+  mounted() {
+    document
+      .getElementById('home-target-wrapper')
+      .addEventListener('click', e => {
+        if (
+          !(
+            e.target.className === 'icon-list' ||
+            e.target.className.includes('modal') ||
+            e.target.className.includes('ii')
+          )
+        ) {
+          document.getElementById('icon-modal-wrapper').style.opacity = '';
+          document.getElementById('icon-modal-wrapper').style.visibility =
+            'hidden';
+        }
+      });
   },
   methods: {
     targetModal(e) {
