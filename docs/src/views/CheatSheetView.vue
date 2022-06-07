@@ -6,16 +6,16 @@
       <pre
         class="usage-icon"
       ><code>&lt;i class="ii ii-{{usageIcon}}"&gt;&lt;/i&gt;</code></pre>
-      <blockquote class="usage-note">
-        Click the hex codepoint or name below to copy the value to your
-        clipboard.
-      </blockquote>
     </section>
 
     <section class="icons">
       <h3>
         All Icons <span class="icons-count">({{ icons.length }})</span>
       </h3>
+      <blockquote class="icons-note">
+        Click the hex codepoint or name below to copy the value to your
+        clipboard.
+      </blockquote>
       <ul class="icons-list">
         <li
           @click="copy"
@@ -143,28 +143,19 @@ code {
       border: 1px solid #ddd;
       background-color: #f1f1f1;
     }
-
-    &-note {
-      position: relative;
-      padding: 8px 8px 8px 12px;
-      margin: 16px 0 0;
-
-      &::before {
-        content: ' ';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0.25rem;
-        height: 100%;
-        border-radius: 0.25rem;
-        background-color: #ddd;
-      }
-    }
   }
 
   .icons {
     &-count {
       font-size: 16px;
+    }
+
+    &-note {
+      padding: 0 16px;
+      border-left: 4px solid #d0d7de;
+      margin: 0;
+      color: #57606a;
+      line-height: 2;
     }
 
     &-list {
