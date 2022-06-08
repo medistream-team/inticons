@@ -38,7 +38,6 @@ export default {
   created() {
     window.addEventListener('scroll', this.handleScroll);
   },
-  computed: {},
   methods: {
     handleScroll() {
       this.scrollY = window.scrollY;

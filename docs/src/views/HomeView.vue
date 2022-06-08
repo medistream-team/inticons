@@ -39,9 +39,6 @@ export default {
       glyphs: glyphs.glyphs,
     };
   },
-  created() {
-    window.addEventListener('scroll', this.handleScroll);
-  },
   components: {
     IconBoxs,
   },
