@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 const svgpath = require('svgpath');
 
 (() => {
@@ -6,28 +7,41 @@ const svgpath = require('svgpath');
   const svgsPath = './icons';
   const files = fs.readdirSync(svgsPath);
   const glyphs = [];
+  let uid = 1;
 
-  files.forEach((file, index) => {
-    const fileData = fs.readFileSync(`${svgsPath}/${file}`, 'utf-8');
-    const path = fileData.split('path d="')[1].slice(0, -9);
-    const scaledPath = svgpath(path)
-      .scale(1000 / 24)
+  files.forEach(file => {
+    const isSvg = file.match(/\.svg/);
+
+    if (!isSvg) {
+      return;
+    }
+
+    const filePath = path.join(svgsPath, file);
+    const fileData = fs.readFileSync(filePath, 'utf8');
+    const fileName = file.replace(/\.svg/, '');
+
+    const svgPathData = fileData.match(/<path\sd="([\s\S]*?)"\/>/)[1];
+    const svgViewBoxWidth = fileData
+      .match(/viewBox="([\s\S]*?)"/)[1]
+      .split(' ')[3];
+    const scaledPath = svgpath(svgPathData)
+      .scale(1000 / parseInt(svgViewBoxWidth))
       .abs()
       .round(0)
       .rel()
       .toString();
 
     glyphs.push({
-      uid: (index + 1).toString(),
-      css: file.slice(0, -4),
-      code: index + 59392,
+      uid: uid.toString(),
+      css: fileName,
+      code: uid++ + 59391,
       src: 'custom_icons',
       selected: true,
       svg: {
         path: scaledPath,
         width: 1000,
       },
-      search: [file.slice(0, -4)],
+      search: [fileName],
     });
   });
 
