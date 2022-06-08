@@ -7,6 +7,7 @@
           <p>inticon open source</p>
         </div>
         <div class="footer-left-bottom">Released by INTEGRATION Corp.</div>
+        <div class="footer-left-bottom">Copyright © 2022</div>
       </div>
       <div class="footer-right">
         <router-link to="/cheatsheet" class="footer-link cheatsheet">
