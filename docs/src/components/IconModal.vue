@@ -1,5 +1,5 @@
 <template>
-  <div ref="target-modal" id="icon-modal-wrapper">
+  <div class="icon-modal-wrapper">
     <div class="modal-left">
       <p class="modal-icon-name">{{ glyph }}</p>
       <i v-bind:class="`ii-${glyph}`"></i>
@@ -10,48 +10,50 @@
           <p class="modal-html-code">WEB COMPONENT CODE</p>
           <router-link to="/usage" class="modal-icon-usage">Usage</router-link>
         </div>
-        <div class="modal-code-wrapper" @click="showProps">
-          <div class="modal-code-block">
+        <div class="modal-code-wrapper">
+          <div class="modal-code-block" @click="codeCopy">
             &lt;i class="ii ii-{{ glyph }}&gt;&lt;/i&gt;
           </div>
-          <button class="modal-copy-btn" @click="copyThat">copy</button>
+          <div class="modal-copied" v-show="copied">copied</div>
         </div>
       </div>
       <div class="modal-right-right">
-        <button class="modal-svg-download" @click="downSVG">SVG</button>
+        <button class="modal-svg-download">SVG</button>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import 'simple-syntax-highlighter/dist/sshpre.css';
-
 export default {
   name: 'IconModal',
-  props: ['glyph', 'nextSelectIcon'],
+  props: ['glyph'],
+  data() {
+    return {
+      copied: false,
+    };
+  },
   methods: {
-    copyThat() {
+    codeCopy() {
       navigator.clipboard.writeText(
         document.querySelector('.modal-code-block').innerText
       );
-    },
-    downSVG() {
-      console.log('download SVG');
+      this.copied = true;
+      setTimeout(() => (this.copied = false), 500);
     },
   },
 };
 </script>
 
 <style scoped lang="scss">
-#icon-modal-wrapper {
+.icon-modal-wrapper {
   display: flex;
   position: fixed;
   bottom: 20px;
   justify-content: space-between;
-  width: 55%;
+  width: 70%;
   height: 90px;
-  margin-left: -100px;
+  margin-left: -200px;
   padding: 0px 30px;
   border-radius: 20px;
   background-color: rgb(59, 59, 59);
@@ -59,15 +61,30 @@ export default {
   opacity: 0;
   transition-duration: 0.5s;
   visibility: hidden;
+  box-shadow: 7px 7px 7px #00000080;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    width: 80%;
+    height: 130px;
+  }
   .modal-left {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 250px;
+    width: 200px;
     font-weight: 700;
     font-size: 18px;
+    @media (max-width: 1000px) {
+      margin-bottom: -20px;
+    }
     i {
       font-size: 25px;
+      @media (max-width: 1000px) {
+        display: none;
+      }
     }
     .modal-icon-name {
       width: 150px;
@@ -76,8 +93,12 @@ export default {
   .modal-right {
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    width: 70%;
     height: 100%;
+    @media (max-width: 1000px) {
+      width: 130%;
+      font-size: 10px;
+    }
     .modal-right-left {
       width: 70%;
       .modal-right-left-top {
@@ -107,23 +128,42 @@ export default {
     .modal-code-wrapper {
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      background-color: black;
+      overflow: auto;
       .modal-code-block {
+        border-style: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 210px;
+        height: 40px;
+        padding: 0px 20px;
+        font-size: 15px;
+        color: white;
+        font-weight: bold;
+        @media (max-width: 1000px) {
+          // 374px 까지 커버가능
+          font-size: 11px;
+          width: 100%;
+        }
+      }
+      .modal-copied {
         border-style: none;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 80%;
-        height: 40px;
-        font-size: 14px;
-        background-color: black;
-        color: white;
-      }
-      .modal-copy-btn {
-        border-style: none;
-        background-color: transparent;
-        font-size: 20px;
-        color: rgb(255, 131, 152);
+        margin: 0px 10px;
+        padding: 0px 5px;
+        border-radius: 10px;
+        width: 50px;
+        height: 20px;
+        color: black;
+        font-size: 15px;
+        background-color: white;
+        font-weight: bold;
         cursor: pointer;
+        transition: 0.5s;
       }
     }
     .modal-right-right {
@@ -136,9 +176,13 @@ export default {
         height: 35px;
         padding: 0px 10px;
         border-radius: 10px;
-        color: white;
-        background-color: rgb(141, 141, 141);
+        color: black;
+        background-color: white;
+        font-weight: bold;
         cursor: pointer;
+        @media (max-width: 1000px) {
+          display: none;
+        }
       }
     }
   }
