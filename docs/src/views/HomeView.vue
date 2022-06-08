@@ -60,7 +60,7 @@ export default {
   position: relative;
   align-items: center;
   min-height: 700px;
-  margin: 50px 0px;
+  padding: 50px 0px;
 }
 .width-setting {
   display: flex;
