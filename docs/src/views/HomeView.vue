@@ -14,7 +14,7 @@
       </div>
       <div class="search-target" id="target-scroll"></div>
       <input
-        class="search-box"
+        class="home-search-box"
         v-model="this.$store.state.handleInput"
         type="text"
         id="target-focus"
@@ -60,13 +60,16 @@ export default {
   position: relative;
   align-items: center;
   min-height: 700px;
-  margin: 150px 0px;
+  margin: 50px 0px;
 }
 .width-setting {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 45%;
+  @media (max-width: 1000px) {
+    width: 90%;
+  }
 }
 .main-top {
   display: flex;
@@ -90,7 +93,7 @@ export default {
   height: 100px;
   display: flex;
 }
-.search-box {
+.home-search-box {
   border-style: none;
   width: 100%;
   height: 60px;
@@ -103,6 +106,9 @@ export default {
   &::placeholder {
     color: rgb(196, 196, 196);
     font-size: 15px;
+  }
+  @media (max-width: 1000px) {
+    width: 90%;
   }
 }
 .icon-wrapper {

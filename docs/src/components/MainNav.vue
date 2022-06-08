@@ -1,5 +1,5 @@
 <template>
-  <div class="nav-wrapper" id="main-nav">
+  <div class="nav-wrapper">
     <div class="width-setting">
       <div class="nav-left">
         <img src="" alt="inticon-logo" class="inticon-logo" />
@@ -7,11 +7,10 @@
         <div class="site-version">{{ siteVersion.version }}</div>
       </div>
       <input
-        class="search-box"
+        class="nav-search-box"
         :class="{ notvisible: notvisible }"
         v-model="this.$store.state.handleInput"
         type="text"
-        id="target-search"
         placeholder="search icons..."
         @keyup="this.goSearch"
       />
@@ -83,8 +82,13 @@ export default {
       .inticon-logo {
         border: 1px solid white;
       }
+      .site-title {
+        @media (max-width: 1000px) {
+          font-size: 12px;
+          margin: 0px 30px;
+        }
+      }
       .site-version {
-        /* padding: 2px; */
         width: 40px;
         height: 14px;
         margin-left: 10px;
@@ -94,6 +98,9 @@ export default {
         border: 1px solid rgb(235, 235, 235);
         border-radius: 3px;
         background-color: rgb(235, 235, 235);
+        @media (max-width: 1000px) {
+          display: none;
+        }
       }
       .site-title {
         margin-left: 20px;
@@ -101,7 +108,7 @@ export default {
         color: black;
       }
     }
-    .search-box {
+    .nav-search-box {
       border-style: none;
       width: 100%;
       height: 40px;
@@ -123,6 +130,9 @@ export default {
     .nav-right {
       display: flex;
       align-items: center;
+      @media (max-width: 1000px) {
+        display: none;
+      }
       .pkg-download {
         border-style: none;
         border: 1px solid gray;
