@@ -4,7 +4,7 @@
     <ul class="extras-example-list">
       <li class="extras-example-item" :class="{ isSize: isHeaderSize }">
         <div class="item-icon">
-          <i :class="['ii', 'ii-adidas', !isHeaderSize && 'ii-2x']"></i>
+          <i :class="`ii ii-adidas ${!isHeaderSize && 'ii-2x'}`"></i>
         </div>
       </li>
       <li
@@ -14,9 +14,7 @@
         :class="{ isSize: isHeaderSize }"
       >
         <div class="item-icon">
-          <i
-            :class="['ii', 'ii-adidas', `${example}`, !isHeaderSize && 'ii-2x']"
-          ></i>
+          <i :class="`ii ii-adidas ${example} ${!isHeaderSize && 'ii-2x'}`"></i>
         </div>
         <div class="item-name">
           <pre><code>{{ example }}</code></pre>

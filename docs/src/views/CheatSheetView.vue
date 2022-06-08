@@ -64,7 +64,7 @@ export default {
         'ii-rotate-90',
         'ii-rotate-135',
         'ii-rotate-180',
-        'ii-rotate-215',
+        'ii-rotate-225',
         'ii-rotate-270',
         'ii-rotate-315',
       ],
