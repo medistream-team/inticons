@@ -1,5 +1,5 @@
 <template>
-  <div class="footer-wrapper" id="main-footer">
+  <div class="footer-wrapper">
     <div class="width-setting">
       <div class="footer-left">
         <div class="footer-left-top">

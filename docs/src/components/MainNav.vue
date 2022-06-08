@@ -1,5 +1,5 @@
 <template>
-  <div class="nav-wrapper" id="main-nav">
+  <div class="nav-wrapper">
     <div class="width-setting">
       <div class="nav-left">
         <img src="" alt="inticon-logo" class="inticon-logo" />
@@ -7,11 +7,10 @@
         <div class="site-version">{{ siteVersion.version }}</div>
       </div>
       <input
-        class="search-box"
+        class="nav-search-box"
         :class="{ notvisible: notvisible }"
         v-model="this.$store.state.handleInput"
         type="text"
-        id="target-search"
         placeholder="search icons..."
         @keyup="this.goSearch"
       />
@@ -109,7 +108,7 @@ export default {
         color: black;
       }
     }
-    .search-box {
+    .nav-search-box {
       border-style: none;
       width: 100%;
       height: 40px;

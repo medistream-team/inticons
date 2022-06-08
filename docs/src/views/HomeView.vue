@@ -1,5 +1,5 @@
 <template>
-  <div class="home-wrapper" id="home-target-wrapper">
+  <div class="home-wrapper">
     <div class="width-setting">
       <div class="main-top">
         <div class="main-introduction-top">
@@ -14,7 +14,7 @@
       </div>
       <div class="search-target" id="target-scroll"></div>
       <input
-        class="search-box"
+        class="home-search-box"
         v-model="this.$store.state.handleInput"
         type="text"
         id="target-focus"
@@ -60,7 +60,7 @@ export default {
   position: relative;
   align-items: center;
   min-height: 700px;
-  margin: 150px 0px;
+  margin: 50px 0px;
 }
 .width-setting {
   display: flex;
@@ -93,7 +93,7 @@ export default {
   height: 100px;
   display: flex;
 }
-.search-box {
+.home-search-box {
   border-style: none;
   width: 100%;
   height: 60px;

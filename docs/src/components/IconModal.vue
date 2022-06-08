@@ -1,5 +1,5 @@
 <template>
-  <div ref="target-modal" id="icon-modal-wrapper">
+  <div class="icon-modal-wrapper">
     <div class="modal-left">
       <p class="modal-icon-name">{{ glyph }}</p>
       <i v-bind:class="`ii-${glyph}`"></i>
@@ -10,7 +10,7 @@
           <p class="modal-html-code">WEB COMPONENT CODE</p>
           <router-link to="/usage" class="modal-icon-usage">Usage</router-link>
         </div>
-        <div class="modal-code-wrapper" @click="showProps">
+        <div class="modal-code-wrapper">
           <div class="modal-code-block" @click="codeCopy">
             &lt;i class="ii ii-{{ glyph }}&gt;&lt;/i&gt;
           </div>
@@ -18,7 +18,7 @@
         </div>
       </div>
       <div class="modal-right-right">
-        <button class="modal-svg-download" @click="downSVG">SVG</button>
+        <button class="modal-svg-download">SVG</button>
       </div>
     </div>
   </div>
@@ -27,7 +27,7 @@
 <script>
 export default {
   name: 'IconModal',
-  props: ['glyph', 'nextSelectIcon'],
+  props: ['glyph'],
   data() {
     return {
       copied: false,
@@ -39,19 +39,14 @@ export default {
         document.querySelector('.modal-code-block').innerText
       );
       this.copied = true;
-      setTimeout(() => {
-        return (this.copied = false);
-      }, 500);
-    },
-    downSVG() {
-      console.log('download SVG');
+      setTimeout(() => (this.copied = false), 500);
     },
   },
 };
 </script>
 
 <style scoped lang="scss">
-#icon-modal-wrapper {
+.icon-modal-wrapper {
   display: flex;
   position: fixed;
   bottom: 20px;
@@ -141,13 +136,15 @@ export default {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        width: 250px;
+        width: 210px;
         height: 40px;
         padding: 0px 20px;
         font-size: 15px;
         color: white;
         font-weight: bold;
         @media (max-width: 1000px) {
+          // 374px 까지 커버가능
+          font-size: 11px;
           width: 100%;
         }
       }
@@ -159,7 +156,7 @@ export default {
         margin: 0px 10px;
         padding: 0px 5px;
         border-radius: 10px;
-        width: 15%;
+        width: 50px;
         height: 20px;
         color: black;
         font-size: 15px;
@@ -167,8 +164,6 @@ export default {
         font-weight: bold;
         cursor: pointer;
         transition: 0.5s;
-        @media (max-width: 1000px) {
-        }
       }
     }
     .modal-right-right {
