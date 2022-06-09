@@ -3,11 +3,12 @@
     <div class="width-setting">
       <div class="footer-left">
         <div class="footer-left-top">
-          <img src="" alt="inticon-logo" class="inticon-logo" />
-          <p>inticon open source</p>
+          <img :src="logoSrc" height="30" alt="IntIcon" />
         </div>
-        <div class="footer-left-bottom">Released by INTEGRATION Corp.</div>
-        <div class="footer-left-bottom">Copyright © 2022</div>
+        <div class="footer-left-bottom">
+          Released by INTEGRATION Corp.<br />
+          Copyright © 2022
+        </div>
       </div>
       <div class="footer-right">
         <router-link to="/cheatsheet" class="footer-link cheatsheet">
@@ -21,6 +22,11 @@
 <script>
 export default {
   name: 'main-footer',
+  data() {
+    return {
+      logoSrc: require('../assets/images/inticon.svg'),
+    };
+  },
 };
 </script>
 <style scoped lang="scss">
@@ -33,7 +39,6 @@ export default {
   font-size: 12px;
   background-color: #f8f8fc;
   color: rgb(118, 118, 118);
-  font-weight: bold;
   .width-setting {
     display: flex;
     justify-content: space-between;
@@ -47,6 +52,9 @@ export default {
         .inticon-logo {
           margin-right: 10px;
         }
+      }
+      .footer-left-bottom {
+        margin-top: 10px;
       }
     }
     .footer-right {

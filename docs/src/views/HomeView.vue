@@ -3,13 +3,14 @@
     <div class="width-setting">
       <div class="main-top">
         <div class="main-introduction-top">
-          Open source icons. <br />
+          <strong>Open source icons.</strong>
+          <br />
           Lovingly hand-crafted.
         </div>
         <div class="main-introduction-bottom">
           Premium designed icons for use in web, iOS, Android, and desktop apps.
           Support for SVG and web font. Completely open source, MIT licensed and
-          built by Ionic.
+          built by <u>INTEGRATION Corp</u>.
         </div>
       </div>
       <div class="search-target" id="target-scroll"></div>
@@ -74,16 +75,29 @@ export default {
   align-items: center;
 }
 .main-introduction-top {
-  width: 50%;
+  width: 70%;
   margin-top: 30px;
-  font-size: 20px;
+  color: #607d8b;
+  font-size: 50px;
   text-align: center;
+  strong {
+    color: #000;
+    font-weight: 700;
+  }
+  @media (max-width: 1000px) {
+    width: auto;
+  }
 }
 .main-introduction-bottom {
-  width: 50%;
+  width: 70%;
   margin-top: 30px;
+  color: #607d8b;
   font-size: 20px;
+  line-height: 160%;
   text-align: center;
+  @media (max-width: 1000px) {
+    width: auto;
+  }
 }
 .search-target {
   width: 100px;

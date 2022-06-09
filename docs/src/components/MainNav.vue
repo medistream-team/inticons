@@ -2,8 +2,9 @@
   <div class="nav-wrapper">
     <div class="width-setting">
       <div class="nav-left">
-        <img src="" alt="inticon-logo" class="inticon-logo" />
-        <router-link to="/" class="site-title">INTICON</router-link>
+        <router-link to="/">
+          <img :src="logoSrc" height="40" alt="IntIcon" />
+        </router-link>
         <div class="site-version">{{ siteVersion.version }}</div>
       </div>
       <input
@@ -11,7 +12,7 @@
         :class="{ notvisible: notvisible }"
         v-model="this.$store.state.handleInput"
         type="text"
-        placeholder="search icons..."
+        placeholder="Search icons..."
         @keyup="this.goSearch"
       />
       <div class="nav-right">
@@ -33,6 +34,7 @@ export default {
     return {
       notvisible: true,
       siteVersion: require('../../../package.json'),
+      logoSrc: require('../assets/images/inticon.svg'),
     };
   },
   created() {
@@ -78,15 +80,6 @@ export default {
       display: flex;
       align-items: center;
       width: 60%;
-      .inticon-logo {
-        border: 1px solid white;
-      }
-      .site-title {
-        @media (max-width: 1000px) {
-          font-size: 12px;
-          margin: 0px 30px;
-        }
-      }
       .site-version {
         width: 40px;
         height: 14px;
@@ -100,11 +93,6 @@ export default {
         @media (max-width: 1000px) {
           display: none;
         }
-      }
-      .site-title {
-        margin-left: 20px;
-        text-decoration: none;
-        color: black;
       }
     }
     .nav-search-box {
