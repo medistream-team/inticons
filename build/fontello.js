@@ -20,7 +20,7 @@ const svgpath = require('svgpath');
     const fileData = fs.readFileSync(filePath, 'utf8');
     const fileName = file.replace(/\.svg/, '');
 
-    const svgPathData = fileData.match(/<path\sd="([\s\S]*?)"\/>/)[1];
+    const svgPathData = fileData.match(/\bd=(['"])(.*?)\1/)[2];
     const svgViewBoxWidth = fileData
       .match(/viewBox="([\s\S]*?)"/)[1]
       .split(' ')[3];
