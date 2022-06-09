@@ -68,7 +68,7 @@ export default {
     flex-direction: column;
     position: fixed;
     bottom: 20px;
-    right: 10px;
+    right: 50px;
     width: 80%;
     height: 130px;
   }

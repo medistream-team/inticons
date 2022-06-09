@@ -17,9 +17,9 @@
       <div class="nav-right">
         <router-link to="/" class="nav-docs">icons</router-link>
         <router-link to="/usage" class="nav-docs">Usage</router-link>
-        <a href="https://github.com/medistream-team/inticon" class="nav-docs"
-          >Github</a
-        >
+        <a href="https://github.com/medistream-team/inticon" class="nav-docs">
+          Github
+        </a>
         <button class="pkg-download">Design Pack</button>
       </div>
     </div>
