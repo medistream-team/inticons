@@ -14,7 +14,9 @@
           <div class="modal-code-block" @click="codeCopy">
             &lt;i class="ii ii-{{ glyph }}&gt;&lt;/i&gt;
           </div>
-          <div class="modal-copied" v-show="copied">copied</div>
+          <transition>
+            <div class="modal-copied" v-show="copied">copied</div>
+          </transition>
         </div>
       </div>
       <div class="modal-right-right">
@@ -61,7 +63,7 @@ export default {
   opacity: 0;
   transition-duration: 0.5s;
   visibility: hidden;
-  box-shadow: 7px 7px 7px #00000080;
+  box-shadow: 7px 7px gray;
   @media (max-width: 1000px) {
     flex-direction: column;
     position: fixed;
@@ -165,6 +167,15 @@ export default {
         cursor: pointer;
         transition: 0.5s;
       }
+      .v-enter-active,
+      .v-leave-active {
+        transition: opacity 0.5s;
+      }
+
+      .v-enter-from,
+      .v-leave-to {
+        opacity: 0;
+      }
     }
     .modal-right-right {
       display: flex;
@@ -180,6 +191,9 @@ export default {
         background-color: white;
         font-weight: bold;
         cursor: pointer;
+        &:active {
+          background-color: gray;
+        }
         @media (max-width: 1000px) {
           display: none;
         }

@@ -8,7 +8,8 @@
     "build": "npm run fontello && npm run build-font && npm run build-docs",
     "fontello": "node ./build/fontello && fontello-cli install --config ./fonts/config.json --css ./fonts/css --font ./fonts/font",
     "build-font": "node-sass ./fonts/scss/main.scss ./fonts/inticon.bundle.css",
-    "build-docs": "node ./build/build-docs && vue-cli-service build"
+    "build-docs": "node ./build/build-docs && vue-cli-service build",
+    "start": "npm run fontello && npm run build-font && npm run build-docs && npm run serve"
   },
   "dependencies": {
     "core-js": "^3.8.3",

@@ -110,11 +110,11 @@ export default {
       }
       &:hover {
         border: 2px solid #1d77ff60;
-        box-shadow: 1px 1px 1px #1d77ff70;
+        box-shadow: 2px 2px #1d77ff70;
       }
       &:focus {
         background-color: #1d77ff;
-        box-shadow: 7px 7px 7px #1d77ff70;
+        box-shadow: 6px 6px #1d77ff70;
         border: 2px solid #1d77ff60;
         color: white;
       }
