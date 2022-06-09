@@ -1,6 +1,5 @@
 <template>
   <div class="usage">
-    <h1>This is an usage page</h1>
     <div class="markdown-body">
       <div v-html="changeMarkdown"></div>
     </div>
@@ -47,10 +46,14 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .usage {
   max-width: 80%;
   margin: 0 auto;
   text-align: left;
+
+  .markdown-body {
+    margin-top: 80px - 24px;
+  }
 }
 </style>

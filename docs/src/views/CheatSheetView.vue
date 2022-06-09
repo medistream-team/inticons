@@ -1,6 +1,6 @@
 <template>
   <div class="cheatsheet">
-    <h2>cheatsheet</h2>
+    <h2>Cheatsheet</h2>
     <section class="usage">
       <h3>Usage</h3>
       <pre
@@ -16,16 +16,11 @@
         Click the hex codepoint or name below to copy the value to your
         clipboard.
       </blockquote>
-      <ul class="icons-list">
-        <li
-          @click="copy"
-          class="icons-item"
-          v-for="icon in icons"
-          :key="icon.uid"
-        >
+      <ul @click="copy" class="icons-list">
+        <li class="icons-item" v-for="icon in icons" :key="icon.uid">
           <i class="ii" :class="`ii-${icon.css}`"></i>
-          <code>{{ icon.code.toString(16) }}</code>
-          <span @click="changeUsageIcon">ii-{{ icon.css }}</span>
+          <code class="icons-item-hex">{{ icon.code.toString(16) }}</code>
+          <span class="icons-item-name">ii-{{ icon.css }}</span>
         </li>
       </ul>
     </section>
@@ -91,21 +86,21 @@ export default {
         return;
       }
 
-      const isHexOrName = !(
-        e.target.classList.contains('icons-item') ||
-        e.target.classList.contains('ii')
-      );
+      const isHex = e.target.classList.contains('icons-item-hex');
+      const isName = e.target.classList.contains('icons-item-name');
 
-      if (isHexOrName) {
+      if (isHex || isName) {
         this.isIconClicked = true;
         navigator.clipboard.writeText(e.target.innerHTML);
+        this.changeUsageIcon(e, isName);
+
         setTimeout(() => {
           this.isIconClicked = false;
         }, 500);
       }
     },
-    changeUsageIcon(e) {
-      if (this.isClickable) {
+    changeUsageIcon(e, isName) {
+      if (isName) {
         this.usageIcon = e.target.innerHTML.substring(3);
       }
     },
@@ -136,6 +131,10 @@ code {
 .cheatsheet {
   width: 80%;
   margin: 0 auto;
+
+  h2 {
+    margin-top: 80px;
+  }
 
   .usage {
     &-icon {
