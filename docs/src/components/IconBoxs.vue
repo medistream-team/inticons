@@ -32,7 +32,11 @@ export default {
   computed: {
     filteredGlyphs() {
       return this.glyphs.filter(glyph =>
-        glyph.search.some(word => word.includes(this.$store.state.handleInput))
+        glyph.search.some(word =>
+          word
+            .toLowerCase()
+            .includes(this.$store.state.handleInput.toLowerCase())
+        )
       );
     },
   },

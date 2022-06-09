@@ -145,7 +145,6 @@ export default {
         color: white;
         font-weight: bold;
         @media (max-width: 1000px) {
-          // 374px 까지 커버가능
           font-size: 11px;
           width: 100%;
         }
@@ -191,9 +190,6 @@ export default {
         background-color: white;
         font-weight: bold;
         cursor: pointer;
-        &:active {
-          background-color: gray;
-        }
         @media (max-width: 1000px) {
           display: none;
         }
