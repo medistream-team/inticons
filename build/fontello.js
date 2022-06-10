@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const svgpath = require('svgpath');
+const { optimize } = require('svgo');
 
 (() => {
   const writeFilePath = './fonts/config.json';
@@ -20,10 +21,26 @@ const svgpath = require('svgpath');
     const fileData = fs.readFileSync(filePath, 'utf8');
     const fileName = file.replace(/\.svg/, '');
 
-    const svgPathData = fileData.match(/\bd=(['"])(.*?)\1/)[2];
-    const svgViewBoxWidth = fileData
-      .match(/viewBox="([\s\S]*?)"/)[1]
-      .split(' ')[3];
+    const { data } = optimize(fileData, {
+      plugins: [
+        {
+          name: 'preset-default',
+          params: {
+            overrides: {
+              removeViewBox: false,
+              convertPathData: false,
+            },
+          },
+        },
+      ],
+    });
+
+    const svgPathData = data
+      .match(/\bd=(['"])(.*?)\1/g)
+      .map(path => path.match(/d="([\s\S]*?)"/)[1])
+      .join(' ');
+
+    const svgViewBoxWidth = data.match(/viewBox="([\s\S]*?)"/)[1].split(' ')[3];
     const scaledPath = svgpath(svgPathData)
       .scale(1000 / parseInt(svgViewBoxWidth))
       .abs()
