@@ -28,6 +28,7 @@ const { optimize } = require('svgo');
           params: {
             overrides: {
               removeViewBox: false,
+              convertPathData: false,
             },
           },
         },
