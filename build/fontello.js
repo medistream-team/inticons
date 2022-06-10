@@ -34,7 +34,11 @@ const { optimize } = require('svgo');
       ],
     });
 
-    const svgPathData = data.match(/\bd=(['"])(.*?)\1/)[2];
+    const svgPathData = data
+      .match(/\bd=(['"])(.*?)\1/g)
+      .map(path => path.match(/d="([\s\S]*?)"/)[1])
+      .join(' ');
+
     const svgViewBoxWidth = data.match(/viewBox="([\s\S]*?)"/)[1].split(' ')[3];
     const scaledPath = svgpath(svgPathData)
       .scale(1000 / parseInt(svgViewBoxWidth))
@@ -58,7 +62,7 @@ const { optimize } = require('svgo');
   });
 
   const config = {
-    name: 'IntIcon',
+    name: 'inticon',
     css_prefix_text: 'ii-',
     css_use_suffix: false,
     hinting: true,
