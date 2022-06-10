@@ -72,6 +72,9 @@ export default {
     width: 80%;
     height: 130px;
   }
+  @media (max-width: 500px) {
+    right: 8px;
+  }
   .modal-left {
     display: flex;
     justify-content: space-around;
