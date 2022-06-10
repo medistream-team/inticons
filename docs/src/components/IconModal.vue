@@ -68,9 +68,12 @@ export default {
     flex-direction: column;
     position: fixed;
     bottom: 20px;
-    right: 10px;
+    right: 30px;
     width: 80%;
     height: 130px;
+  }
+  @media (max-width: 500px) {
+    right: 8px;
   }
   .modal-left {
     display: flex;
@@ -145,7 +148,6 @@ export default {
         color: white;
         font-weight: bold;
         @media (max-width: 1000px) {
-          // 374px 까지 커버가능
           font-size: 11px;
           width: 100%;
         }
@@ -191,9 +193,6 @@ export default {
         background-color: white;
         font-weight: bold;
         cursor: pointer;
-        &:active {
-          background-color: gray;
-        }
         @media (max-width: 1000px) {
           display: none;
         }

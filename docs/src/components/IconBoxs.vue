@@ -32,7 +32,11 @@ export default {
   computed: {
     filteredGlyphs() {
       return this.glyphs.filter(glyph =>
-        glyph.search.some(word => word.includes(this.$store.state.handleInput))
+        glyph.search.some(word =>
+          word
+            .toLowerCase()
+            .includes(this.$store.state.handleInput.toLowerCase())
+        )
       );
     },
   },
@@ -96,8 +100,8 @@ export default {
     .icon-list {
       border-style: none;
       display: inline-block;
-      width: 80.585px;
-      height: 80.585px;
+      width: 69.2578px;
+      height: 69.2578px;
       padding: 10px;
       margin: 5px;
       border-radius: 50%;
@@ -119,7 +123,8 @@ export default {
         color: white;
       }
       @media (max-width: 1000px) {
-        width: 76px;
+        width: 65px;
+        height: 65px;
       }
     }
   }

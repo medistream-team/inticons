@@ -18,10 +18,15 @@
       <div class="nav-right">
         <router-link to="/" class="nav-docs">icons</router-link>
         <router-link to="/usage" class="nav-docs">Usage</router-link>
-        <a href="https://github.com/medistream-team/inticon" class="nav-docs"
-          >Github</a
-        >
+        <router-link to="/cheatsheet" class="nav-docs">Cheatsheet</router-link>
         <button class="pkg-download">Design Pack</button>
+        <a
+          href="https://github.com/medistream-team/inticon"
+          target="_blank"
+          class="nav-docs"
+        >
+          <u>Github</u>
+        </a>
       </div>
     </div>
   </div>
@@ -122,14 +127,25 @@ export default {
       }
       .pkg-download {
         border-style: none;
-        border: 1px solid gray;
+        border: 1px solid #1d77ff;
         border-radius: 10px;
         background-color: white;
-        color: gray;
+        color: #1d77ff;
         width: 100px;
         height: 40px;
         cursor: pointer;
         margin-left: 30px;
+        box-shadow: 2px 2px #1d77ff;
+        &:active {
+          box-shadow: 4px 4px #1d77ff60 inset;
+        }
+      }
+      .download-link {
+        text-decoration: none;
+        color: black;
+        &:active {
+          color: black;
+        }
       }
       .nav-docs {
         margin-left: 30px;
