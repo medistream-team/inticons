@@ -123,7 +123,8 @@ export default {
         color: white;
       }
       @media (max-width: 1000px) {
-        width: 76px;
+        width: 65px;
+        height: 65px;
       }
     }
   }
