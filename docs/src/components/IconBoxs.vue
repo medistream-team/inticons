@@ -100,8 +100,8 @@ export default {
     .icon-list {
       border-style: none;
       display: inline-block;
-      width: 80.585px;
-      height: 80.585px;
+      width: 69.2578px;
+      height: 69.2578px;
       padding: 10px;
       margin: 5px;
       border-radius: 50%;
