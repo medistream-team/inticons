@@ -1,12 +1,44 @@
-# Inticon
+<p align="center">
+  <a href="https://github.com/medistream-team/vue-fullpage-modal" target="_blank">
+    <img width="150px" src="docs/src/assets/images/inticon.svg" />
+  </a>
+</p>
+<p align="center">
+  <img alt="Version" src="https://img.shields.io/npm/v/inticon?color=blue" />
+  <a href="#" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+</p>
 
-## Installation
+## Install
 
-```shell
+```sh
 npm install inticon
 ```
 
 ## Usage
+
+### Import
+
+#### CSS
+
+```css
+@import url('inticon/fonts/inticon.bundle.css');
+```
+
+#### Vue
+
+```html
+<script>
+  import 'inticon/fonts/inticon.bundle.css';
+
+  export default {
+    // ...
+  };
+</script>
+```
+
+### Component
 
 Each icon can be referenced by their name prefixed with `ii-`. For example, You can get the arrow-right icon with using `ii-arrow-right`. You can use `font-size` and `color` properties to change the icon appearance.
 
@@ -14,11 +46,11 @@ Each icon can be referenced by their name prefixed with `ii-`. For example, You 
 <i class="ii ii-arrow-right"></i>
 ```
 
-## Helper Classes
+### Helper Classes
 
 Inticon contains many helper classes to quickly modify the look of the icons.
 
-### Rotate
+#### Rotate
 
 - `ii-rotate-45`: Rotate icon 45 Degrees.
 - `ii-rotate-90`: Rotate icon 90 Degrees.
@@ -32,7 +64,7 @@ Inticon contains many helper classes to quickly modify the look of the icons.
 <i class="ii ii-arrow-right ii-rotate-45"></i>
 ```
 
-### Flip
+#### Flip
 
 - `ii-flip-h`: Flip icon horizontal.
 - `ii-flip-v`: Flip icon vertical.
@@ -43,7 +75,7 @@ Inticon contains many helper classes to quickly modify the look of the icons.
 
 > `ii-rotate-*` and `ii-flip-*` classes cannot be used on the same element at the same time.
 
-### Size
+#### Size
 
 - `ii-2x`: Doubles the size.
 - `ii-3x`: Triples the size.
@@ -53,7 +85,7 @@ Inticon contains many helper classes to quickly modify the look of the icons.
 <i class="ii ii-arrow-right ii-4x"></i>
 ```
 
-### Spin
+#### Spin
 
 - `ii-spin`: Spinning icon.
 
@@ -61,16 +93,14 @@ Inticon contains many helper classes to quickly modify the look of the icons.
 <i class="ii ii-arrow-right ii-spin"></i>
 ```
 
-## Contributors
+## Contributor
 
-**👥 [INTEGRATION Corp.](https://github.com/medistream-team)**
+### 👥 [**INTEGRATION Corp.**](https://github.com/medistream-team)
 
 - [garudanish](https://github.com/garudanish)
 - [HyungwonJang0327](https://github.com/HyungwonJang0327)
 
-## License
+## 📝 License
 
-Copyright © 2022 INTEGRATION Corp.
-
-This project is MIT licensed.
-This font is SIL licensed.
+Copyright © 2022 [INTEGRATION Corp.](https://github.com/medistream-team)<br />
+This project is [MIT](https://github.com/medistream-team/inticon/blob/master/LICENSE) licensed.
