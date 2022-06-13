@@ -14,14 +14,17 @@
         </div>
       </div>
       <div class="search-target" id="target-scroll"></div>
-      <input
-        class="home-search-box"
-        v-model="this.$store.state.handleInput"
-        type="text"
-        id="target-focus"
-        placeholder="search icons..."
-        @keyup="this.goSearch"
-      />
+      <div class="home-search-wrapper">
+        <i class="ii ii-search-outline home-icon" v-if="showHomeIcon"></i>
+        <input
+          class="home-search-box"
+          v-model="this.$store.state.handleInput"
+          type="text"
+          id="target-focus"
+          placeholder="search icons..."
+          @keyup="this.goSearch"
+        />
+      </div>
       <div class="icon-wrapper">
         <IconBoxs :glyphs="glyphs" />
       </div>
@@ -42,6 +45,11 @@ export default {
   },
   components: {
     IconBoxs,
+  },
+  computed: {
+    showHomeIcon() {
+      return !this.$store.state.handleInput;
+    },
   },
   methods: {
     goSearch() {
@@ -104,22 +112,33 @@ export default {
   height: 100px;
   display: flex;
 }
-.home-search-box {
-  border-style: none;
+.home-search-wrapper {
+  position: relative;
   width: 100%;
-  height: 60px;
-  padding: 0px 20px;
-  border-radius: 5px;
-  background-color: #f8f8fc;
-  &:focus {
-    outline: none;
-  }
-  &::placeholder {
+  .home-icon {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    font-size: 30px;
     color: rgb(196, 196, 196);
-    font-size: 15px;
   }
-  @media (max-width: 1000px) {
-    width: 90%;
+  .home-search-box {
+    border-style: none;
+    width: 100%;
+    height: 60px;
+    padding: 0px 0 0 60px;
+    border-radius: 5px;
+    background-color: #f8f8fc;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: rgb(196, 196, 196);
+      font-size: 15px;
+    }
+    @media (max-width: 1000px) {
+      width: 90%;
+    }
   }
 }
 .icon-wrapper {

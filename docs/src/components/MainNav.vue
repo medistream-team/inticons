@@ -7,16 +7,22 @@
         </router-link>
         <div class="site-version">{{ siteVersion.version }}</div>
       </div>
-      <input
-        class="nav-search-box"
-        :class="{ notvisible: notvisible }"
-        v-model="this.$store.state.handleInput"
-        type="text"
-        placeholder="Search icons..."
-        @keyup="this.goSearch"
-      />
+      <div class="nav-search-wrapper">
+        <i
+          class="ii ii-search-outline nav-icon"
+          :class="{ notvisible: notvisible }"
+        ></i>
+        <input
+          class="nav-search-box"
+          :class="{ notvisible: notvisible }"
+          v-model="this.$store.state.handleInput"
+          type="text"
+          placeholder="Search icons..."
+          @keyup="this.goSearch"
+        />
+      </div>
       <div class="nav-right">
-        <router-link to="/" class="nav-docs">icons</router-link>
+        <router-link to="/" class="nav-docs">Icons</router-link>
         <router-link to="/usage" class="nav-docs">Usage</router-link>
         <router-link to="/cheatsheet" class="nav-docs">Cheatsheet</router-link>
         <button class="pkg-download">Design Pack</button>
@@ -100,19 +106,29 @@ export default {
         }
       }
     }
-    .nav-search-box {
-      border-style: none;
+    .nav-search-wrapper {
+      position: relative;
       width: 100%;
-      height: 40px;
-      padding: 0px 20px;
-      border-radius: 5px;
-      background-color: #f8f8fc;
-      &:focus {
-        outline: none;
-      }
-      &::placeholder {
+      .nav-icon {
+        position: absolute;
+        top: 11px;
+        left: 10px;
         color: rgb(196, 196, 196);
-        font-size: 15px;
+      }
+      .nav-search-box {
+        border-style: none;
+        width: 90%;
+        height: 40px;
+        padding: 0 0 0 35px;
+        border-radius: 5px;
+        background-color: #f8f8fc;
+        &:focus {
+          outline: none;
+        }
+        &::placeholder {
+          color: rgb(196, 196, 196);
+          font-size: 15px;
+        }
       }
     }
     .notvisible {
