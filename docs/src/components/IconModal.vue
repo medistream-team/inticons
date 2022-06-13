@@ -77,11 +77,11 @@ export default {
   }
   .modal-left {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 200px;
+    width: 30%;
+    padding: 0 20px;
     font-weight: 700;
-    font-size: 18px;
     @media (max-width: 1000px) {
       margin-bottom: -20px;
       width: 100%;
@@ -93,10 +93,8 @@ export default {
       }
     }
     .modal-icon-name {
-      width: 150px;
-      @media (max-width: 1000px) {
-        width: 80%;
-      }
+      font-size: 16px;
+      width: 80%;
     }
   }
   .modal-right {
@@ -164,10 +162,10 @@ export default {
         margin: 0px 10px;
         padding: 0px 5px;
         border-radius: 10px;
-        width: 30px;
-        height: 15px;
+        width: 35px;
+        height: 25px;
         color: black;
-        font-size: 12px;
+        font-size: 13px;
         background-color: white;
         font-weight: bold;
         cursor: pointer;
