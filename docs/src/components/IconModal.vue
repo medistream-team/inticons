@@ -12,7 +12,7 @@
         </div>
         <div class="modal-code-wrapper">
           <div class="modal-code-block" @click="codeCopy">
-            &lt;i class="ii ii-{{ glyph }}&gt;&lt;/i&gt;
+            &lt;i class="ii ii-{{ glyph }}"&gt;&lt;/i&gt;
           </div>
           <transition>
             <div class="modal-copied" v-show="copied">copied</div>
