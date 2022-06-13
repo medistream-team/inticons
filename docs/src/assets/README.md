@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://github.com/medistream-team/vue-fullpage-modal" target="_blank">
-    <img width="150px" src="docs/src/assets/images/inticon.svg" />
+  <a href="https://github.com/medistream-team/inticon" target="_blank">
+  <img alt="inticons" src="https://user-images.githubusercontent.com/73154157/173287685-f48b2a71-de64-458f-80a1-573424da2a14.svg" width="150" />
   </a>
 </p>
 <p align="center">

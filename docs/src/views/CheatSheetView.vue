@@ -66,7 +66,7 @@ export default {
     },
     {
       header: 'Flip',
-      examples: ['ii-flip-horizontal', 'ii-flip-vertical'],
+      examples: ['ii-flip-h', 'ii-flip-v'],
     },
     {
       header: 'Spin',
