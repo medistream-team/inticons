@@ -3,9 +3,17 @@
     <div class="width-setting">
       <div class="main-top">
         <div class="main-introduction-top">
-          <strong>Open source icons.</strong>
-          <br />
-          Lovingly hand-crafted.
+          <i :class="`ii ii-${shownIcon}`"></i>
+        </div>
+        <div class="typing-effect">
+          &lt;i class="ii ii-
+          <VueWriter
+            :array="arr"
+            :typeSpeed="120"
+            :eraseSpeed="20"
+            :intervals="50"
+            @typed="changeIcon"
+          />"&gt;&lt;/i&gt;
         </div>
         <div class="main-introduction-bottom">
           Premium designed icons for use in web, iOS, Android, and desktop apps.
@@ -15,7 +23,6 @@
       </div>
       <div class="search-target" id="target-scroll"></div>
       <div class="home-search-wrapper">
-        <i class="ii ii-search-outline home-icon" v-if="showHomeIcon"></i>
         <input
           class="home-search-box"
           v-model="this.$store.state.handleInput"
@@ -24,6 +31,7 @@
           placeholder="search icons..."
           @keyup="this.goSearch"
         />
+        <i class="ii ii-x search-reset" @click="inputReset"></i>
       </div>
       <div class="icon-wrapper">
         <IconBoxs :glyphs="glyphs" />
@@ -35,26 +43,48 @@
 <script>
 import IconBoxs from '../components/IconBoxs.vue';
 import glyphs from '../assets/config.json';
+import VueWriter from 'vue-writer/src/vue-writer.vue';
+
+const cssGlyphs = glyphs.glyphs.map(glyph => glyph.css);
+
+const shuffle = arr => {
+  const strikeOut = [];
+  while (arr.length) {
+    const lastIdx = arr.length - 1;
+    let roll = Math.floor(Math.random() * arr.length);
+    [arr[lastIdx], arr[roll]] = [arr[roll], arr[lastIdx]];
+    strikeOut.push(arr.pop());
+  }
+  return strikeOut;
+};
+
+const shuffledArr = shuffle(cssGlyphs);
 
 export default {
   name: 'HomePage',
   data() {
     return {
       glyphs: glyphs.glyphs,
+      arr: shuffledArr,
+      shownIcon: shuffledArr[0],
     };
   },
   components: {
     IconBoxs,
-  },
-  computed: {
-    showHomeIcon() {
-      return !this.$store.state.handleInput;
-    },
+    VueWriter,
   },
   methods: {
     goSearch() {
-      document.getElementById('target-scroll').scrollIntoView(true);
+      document
+        .getElementById('target-scroll')
+        .scrollIntoView({ behavior: 'smooth' });
       document.getElementById('target-focus').focus();
+    },
+    inputReset() {
+      return (this.$store.state.handleInput = '');
+    },
+    changeIcon(icon) {
+      this.shownIcon = icon;
     },
   },
 };
@@ -66,7 +96,7 @@ export default {
   position: relative;
   align-items: center;
   min-height: 700px;
-  padding: 50px 0px;
+  margin-top: 100px;
 }
 .width-setting {
   display: flex;
@@ -78,9 +108,24 @@ export default {
   }
 }
 .main-top {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.typing-effect {
+  display: flex;
+  margin-top: 20px;
+  font-size: 18px;
+  color: black;
+  padding: 0px 20px;
+  font-family: 'monaco';
+  @media (max-width: 1100px) {
+    font-size: 15px;
+  }
+  @media (max-width: 700px) {
+    font-size: 10px;
+  }
 }
 .main-introduction-top {
   width: 70%;
@@ -88,9 +133,11 @@ export default {
   color: #607d8b;
   font-size: 50px;
   text-align: center;
-  strong {
-    color: #000;
-    font-weight: 700;
+  i {
+    color: black;
+    @media (max-width: 700px) {
+      font-size: 30px;
+    }
   }
   @media (max-width: 1000px) {
     width: auto;
@@ -98,18 +145,19 @@ export default {
 }
 .main-introduction-bottom {
   width: 70%;
-  margin-top: 30px;
-  color: #607d8b;
+  margin-top: 60px;
+  color: gray;
   font-size: 20px;
   line-height: 160%;
   text-align: center;
   @media (max-width: 1000px) {
     width: auto;
+    font-size: 14px;
   }
 }
 .search-target {
   width: 100px;
-  height: 100px;
+  height: 50px;
   display: flex;
 }
 .home-search-wrapper {
@@ -126,7 +174,7 @@ export default {
     border-style: none;
     width: 100%;
     height: 60px;
-    padding: 0px 0 0 60px;
+    padding: 0 0 0 20px;
     border-radius: 5px;
     background-color: #f8f8fc;
     &:focus {
@@ -137,8 +185,16 @@ export default {
       font-size: 15px;
     }
     @media (max-width: 1000px) {
-      width: 90%;
+      width: 100%;
     }
+  }
+  .search-reset {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    font-size: 30px;
+    color: rgb(196, 196, 196);
+    cursor: pointer;
   }
 }
 .icon-wrapper {
