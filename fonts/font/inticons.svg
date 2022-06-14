@@ -3,8 +3,8 @@
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>INTEGRATION Corp.</metadata>
 <defs>
-<font id="inticon" horiz-adv-x="1000" >
-<font-face font-family="inticon" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<font id="inticons" horiz-adv-x="1000" >
+<font-face font-family="inticons" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
 <missing-glyph horiz-adv-x="1000" />
 <glyph glyph-name="add-fill" unicode="&#xe800;" d="M500-108c253 0 458 205 458 458 0 253-205 458-458 458-253 0-458-205-458-458 0-253 205-458 458-458z m0 702c15 0 27-12 27-27v-190h190c15 0 27-12 27-27 0-15-12-27-27-27h-190v-190c0-15-12-27-27-27-15 0-27 12-27 27v190h-190c-15 0-27 12-27 27 0 15 12 27 27 27h190v190c0 15 12 27 27 27z" horiz-adv-x="1000" />
 
