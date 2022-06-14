@@ -102,7 +102,6 @@ export default {
     align-items: center;
     padding: 20px 0;
     position: sticky;
-    width: 100%;
     top: 80px;
     height: 30px;
     background-color: white;
