@@ -13,7 +13,7 @@
             :eraseSpeed="20"
             :intervals="50"
             @typed="changeIcon"
-          />"&gt;&lt;/i&gt;
+          /><span class="typing-effect-span">"&gt;&lt;/i&gt;</span>
         </div>
         <div class="main-introduction-bottom">
           Premium designed icons for use in web, iOS, Android, and desktop apps.
@@ -122,6 +122,10 @@ export default {
   }
   @media (max-width: 700px) {
     font-size: 10px;
+  }
+
+  &-span {
+    margin-left: -1.2em;
   }
 }
 .main-introduction-top {
