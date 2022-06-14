@@ -1,7 +1,6 @@
 {
   "name": "inticons",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve docs/src/main.js",
     "lint": "vue-cli-service lint",
