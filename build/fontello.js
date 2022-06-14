@@ -63,7 +63,7 @@ const { optimize } = require('svgo');
   });
 
   const config = {
-    name: 'inticon',
+    name: 'inticons',
     css_prefix_text: 'ii-',
     css_use_suffix: false,
     hinting: true,

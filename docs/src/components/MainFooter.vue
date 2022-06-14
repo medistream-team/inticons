@@ -3,7 +3,7 @@
     <div class="width-setting">
       <div class="footer-left">
         <div class="footer-left-top">
-          <img :src="logoSrc" height="30" alt="IntIcon" />
+          <img :src="logoSrc" height="30" alt="IntIcons" />
         </div>
         <div class="footer-left-bottom">
           Released by INTEGRATION Corp.<br />

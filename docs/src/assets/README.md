@@ -4,7 +4,7 @@
   </a>
 </p>
 <p align="center">
-  <img alt="Version" src="https://img.shields.io/npm/v/inticon?color=blue" />
+  <img alt="Version" src="https://img.shields.io/npm/v/inticons?color=blue" />
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
@@ -13,7 +13,7 @@
 ## Install
 
 ```sh
-npm install inticon
+npm install inticons
 ```
 
 ## Usage
@@ -23,14 +23,14 @@ npm install inticon
 #### CSS
 
 ```css
-@import url('inticon/fonts/inticon.bundle.css');
+@import url('inticons/fonts/inticons.bundle.min.css');
 ```
 
 #### Vue
 
 ```html
 <script>
-  import 'inticon/fonts/inticon.bundle.css';
+  import 'inticons/fonts/inticons.bundle.min.css';
 
   export default {
     // ...
@@ -48,7 +48,7 @@ Each icon can be referenced by their name prefixed with `ii-`. For example, You 
 
 ### Helper Classes
 
-Inticon contains many helper classes to quickly modify the look of the icons.
+Inticons contains many helper classes to quickly modify the look of the icons.
 
 #### Rotate
 

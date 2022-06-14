@@ -1,16 +1,30 @@
 {
-  "name": "inticon",
+  "name": "inticons",
   "version": "0.1.0",
-  "private": true,
+  "description": "Icon font built by INTEGRATION Corp.",
+  "main": "fonts/inticons.bundle.min.css",
   "scripts": {
     "serve": "vue-cli-service serve docs/src/main.js",
     "lint": "vue-cli-service lint",
     "build": "npm run fontello && npm run build-font && npm run build-docs",
     "fontello": "node ./build/fontello && fontello-cli install --config ./fonts/config.json --css ./fonts/css --font ./fonts/font",
-    "build-font": "node-sass ./fonts/scss/main.scss ./fonts/inticon.bundle.css",
+    "build-font": "node-sass ./fonts/scss/main.scss ./fonts/inticons.bundle.css && node-sass --output-style compressed ./fonts/scss/main.scss ./fonts/inticons.bundle.min.css",
     "build-docs": "node ./build/build-docs && vue-cli-service build",
     "start": "npm run fontello && npm run build-font && npm run build-docs && npm run serve"
   },
+  "files": [
+    "fonts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/medistream-team/inticon"
+  },
+  "keywords": [
+    "vuejs",
+    "font",
+    "icon",
+    "webfont"
+  ],
   "dependencies": {
     "core-js": "^3.8.3",
     "vue": "^3.2.13",
