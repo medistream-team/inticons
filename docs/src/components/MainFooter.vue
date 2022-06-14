@@ -38,12 +38,19 @@ export default {
   height: 150px;
   font-size: 12px;
   background-color: #f8f8fc;
+  @media (max-width: 1000px) {
+    height: 100px;
+  }
   color: rgb(118, 118, 118);
   .width-setting {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 80%;
+    @media (max-width: 1000px) {
+      display: flex;
+      justify-content: space-between;
+    }
     .footer-left {
       width: 50%;
       .footer-left-top {
@@ -62,27 +69,20 @@ export default {
       justify-content: space-around;
       width: 20%;
       @media (max-width: 1000px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
         width: 80%;
-        margin-top: 20px;
       }
       .footer-link {
-        display: inline;
+        display: block;
         text-decoration: none;
         color: black;
       }
       .cheatsheet {
         margin-top: 11px;
-        @media (max-width: 1000px) {
-          margin-right: 20px;
-        }
       }
-    }
-    @media (max-width: 1000px) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 120%;
     }
   }
 }

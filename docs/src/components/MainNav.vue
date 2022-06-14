@@ -11,7 +11,8 @@
         <i
           class="ii ii-search-outline nav-icon"
           :class="{ notvisible: notvisible }"
-        ></i>
+        >
+        </i>
         <input
           class="nav-search-box"
           :class="{ notvisible: notvisible }"
@@ -63,7 +64,9 @@ export default {
       }
     },
     goSearch() {
-      document.getElementById('target-scroll').scrollIntoView(true);
+      document
+        .getElementById('target-scroll')
+        .scrollIntoView({ behavior: 'smooth' });
       document.getElementById('target-focus').focus();
     },
   },
@@ -78,7 +81,7 @@ export default {
   position: sticky;
   top: 0;
   width: 100%;
-  height: 80px;
+  min-height: 80px;
   background-color: white;
   border-bottom: 1px solid lightgray;
   z-index: 1;
@@ -87,9 +90,16 @@ export default {
     justify-content: space-between;
     align-items: center;
     width: 80%;
+    @media (max-width: 1000px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 0;
+    }
     .nav-left {
       display: flex;
       align-items: center;
+      justify-content: center;
       width: 60%;
       .site-version {
         width: 40px;
@@ -101,9 +111,6 @@ export default {
         border: 1px solid rgb(235, 235, 235);
         border-radius: 3px;
         background-color: rgb(235, 235, 235);
-        @media (max-width: 1000px) {
-          display: none;
-        }
       }
     }
     .nav-search-wrapper {
@@ -114,6 +121,9 @@ export default {
         top: 11px;
         left: 10px;
         color: rgb(196, 196, 196);
+        @media (max-width: 1000px) {
+          display: none;
+        }
       }
       .nav-search-box {
         border-style: none;
@@ -122,6 +132,9 @@ export default {
         padding: 0 0 0 35px;
         border-radius: 5px;
         background-color: #f8f8fc;
+        @media (max-width: 1000px) {
+          display: none;
+        }
         &:focus {
           outline: none;
         }
@@ -139,8 +152,13 @@ export default {
       display: flex;
       align-items: center;
       @media (max-width: 1000px) {
+        margin-top: 10px;
+        font-size: 14px;
+      }
+      @media (max-width: 450px) {
         display: none;
       }
+
       .pkg-download {
         border-style: none;
         border: 1px solid #1d77ff;
@@ -151,9 +169,14 @@ export default {
         height: 40px;
         cursor: pointer;
         margin-left: 30px;
-        box-shadow: 2px 2px #1d77ff;
+        box-shadow: 2px 2px 2px #1d77ff;
         &:active {
-          box-shadow: 4px 4px #1d77ff60 inset;
+          box-shadow: 4px 4px 4px #1d77ff60 inset;
+        }
+        @media (max-width: 1000px) {
+          font-size: 11px;
+          width: 80px;
+          height: 30px;
         }
       }
       .download-link {

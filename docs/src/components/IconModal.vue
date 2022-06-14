@@ -149,6 +149,7 @@ export default {
         font-size: 12px;
         color: white;
         font-weight: bold;
+        cursor: pointer;
         @media (max-width: 1000px) {
           font-size: 11px;
           width: 100%;
