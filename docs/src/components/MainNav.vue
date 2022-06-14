@@ -64,9 +64,7 @@ export default {
       }
     },
     goSearch() {
-      document
-        .getElementById('target-scroll')
-        .scrollIntoView({ behavior: 'smooth' });
+      document.getElementById('target-scroll').scrollIntoView(true);
       document.getElementById('target-focus').focus();
     },
   },

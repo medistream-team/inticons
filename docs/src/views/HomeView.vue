@@ -18,10 +18,9 @@
         <div class="main-introduction-bottom">
           Premium designed icons for use in web, iOS, Android, and desktop apps.
           Support for SVG and web font. Completely open source, MIT licensed and
-          built by <u>INTEGRATION Corp</u>.
+          built by <u id="target-scroll">INTEGRATION Corp</u>.
         </div>
       </div>
-      <div class="search-target" id="target-scroll"></div>
       <div class="home-search-wrapper">
         <input
           class="home-search-box"
@@ -75,9 +74,7 @@ export default {
   },
   methods: {
     goSearch() {
-      document
-        .getElementById('target-scroll')
-        .scrollIntoView({ behavior: 'smooth' });
+      document.getElementById('target-scroll').scrollIntoView(true);
       document.getElementById('target-focus').focus();
     },
     inputReset() {
@@ -155,14 +152,10 @@ export default {
     font-size: 14px;
   }
 }
-.search-target {
-  width: 100px;
-  height: 50px;
-  display: flex;
-}
 .home-search-wrapper {
   position: relative;
   width: 100%;
+  margin-top: 70px;
   .home-icon {
     position: absolute;
     top: 15px;
