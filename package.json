@@ -6,11 +6,11 @@
   "scripts": {
     "serve": "vue-cli-service serve docs/src/main.js",
     "lint": "vue-cli-service lint",
-    "build": "npm run fontello && npm run build-font && npm run build-docs",
     "fontello": "node ./build/fontello && fontello-cli install --config ./fonts/config.json --css ./fonts/css --font ./fonts/font",
     "build-font": "node-sass ./fonts/scss/main.scss ./fonts/inticons.bundle.css && node-sass --output-style compressed ./fonts/scss/main.scss ./fonts/inticons.bundle.min.css",
     "build-docs": "node ./build/build-docs && vue-cli-service build",
-    "start": "npm run fontello && npm run build-font && npm run build-docs && npm run serve"
+    "build": "npm run fontello && npm run build-font && npm run build-docs",
+    "start": "npm run build && npm run serve"
   },
   "files": [
     "fonts"
