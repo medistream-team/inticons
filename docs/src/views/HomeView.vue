@@ -44,7 +44,27 @@ import IconBoxs from '../components/IconBoxs.vue';
 import glyphs from '../assets/config.json';
 import VueWriter from 'vue-writer/src/vue-writer.vue';
 
-const cssGlyphs = glyphs.glyphs.map(glyph => glyph.css);
+const cssAniArr = [
+  'ii-spin',
+  'ii-flip-v',
+  'ii-flip-h',
+  'ii-rotate-45',
+  'ii-rotate-90',
+  'ii-rotate-135',
+  'ii-rotate-180',
+  'ii-rotate-225',
+  'ii-rotate-270',
+  'ii-rotate-315',
+];
+
+const cssGlyphs = glyphs.glyphs.map(
+  glyph =>
+    `${glyph.css} ${
+      Math.floor(Math.random() * 2)
+        ? `${cssAniArr[Math.floor(Math.random() * cssAniArr.length)]}`
+        : ''
+    }`
+);
 
 const shuffle = arr => {
   const strikeOut = [];
