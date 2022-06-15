@@ -136,6 +136,7 @@ export default {
         border: 2px solid white;
         transition-duration: 0.4s;
         color: black;
+        cursor: pointer;
 
         i {
           pointer-events: none;
