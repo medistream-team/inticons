@@ -51,6 +51,7 @@
     "github-markdown-css": "^5.1.0",
     "marked": "^4.0.16",
     "node-sass": "^7.0.1",
+    "pretendard": "^1.2.2",
     "prettier": "^2.6.2",
     "prismjs": "^1.28.0",
     "raw-loader": "^4.0.2",
