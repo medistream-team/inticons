@@ -1,7 +1,8 @@
 {
   "name": "inticons",
   "version": "0.1.0",
-  "description": "Icon font built by INTEGRATION Corp.",
+  "description": "Icons library and toolkit built by INTEGRATION Corp.",
+  "author": "INTEGRATION Corp.",
   "main": "fonts/inticons.bundle.min.css",
   "scripts": {
     "serve": "vue-cli-service serve docs/src/main.js",
