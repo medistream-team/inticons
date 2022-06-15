@@ -1,16 +1,37 @@
 {
-  "name": "inticon",
-  "version": "0.1.0",
-  "private": true,
+  "name": "inticons",
+  "version": "0.2.0",
+  "description": "Icons library and toolkit built by INTEGRATION Corp.",
+  "author": "INTEGRATION Corp.",
+  "main": "fonts/inticons.bundle.min.css",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "serve": "vue-cli-service serve docs/src/main.js",
+    "lint": "vue-cli-service lint",
+    "fontello": "node ./build/fontello && fontello-cli install --config ./fonts/config.json --css ./fonts/css --font ./fonts/font",
+    "build-font": "node-sass ./fonts/scss/main.scss ./fonts/inticons.bundle.css && node-sass --output-style compressed ./fonts/scss/main.scss ./fonts/inticons.bundle.min.css",
+    "build-docs": "node ./build/build-docs && vue-cli-service build",
+    "build": "npm run fontello && npm run build-font && npm run build-docs",
+    "start": "npm run build && npm run serve"
   },
+  "files": [
+    "fonts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/medistream-team/inticon"
+  },
+  "keywords": [
+    "vuejs",
+    "font",
+    "icon",
+    "webfont"
+  ],
   "dependencies": {
     "core-js": "^3.8.3",
     "vue": "^3.2.13",
+    "vue-loader": "^17.0.0",
     "vue-router": "^4.0.3",
+    "vue-writer": "github:quelchx/vue-writer",
     "vuex": "^4.0.0"
   },
   "devDependencies": {
@@ -25,7 +46,19 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.0.3",
-    "prettier": "^2.6.2"
+    "fontello-cli": "^0.6.2",
+    "fs-extra": "^10.1.0",
+    "github-markdown-css": "^5.1.0",
+    "marked": "^4.0.16",
+    "node-sass": "^7.0.1",
+    "prettier": "^2.6.2",
+    "prismjs": "^1.28.0",
+    "raw-loader": "^4.0.2",
+    "sass": "^1.52.1",
+    "sass-loader": "^13.0.0",
+    "svgo": "^2.8.0",
+    "svgpath": "^2.5.0",
+    "webpack-chain": "^6.5.1"
   },
   "eslintConfig": {
     "root": true,
