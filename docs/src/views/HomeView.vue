@@ -16,8 +16,8 @@
           /><span class="typing-effect-span">"&gt;&lt;/i&gt;</span>
         </div>
         <div class="main-introduction-bottom">
-          Premium designed icons for use in web, iOS, Android, and desktop apps.
-          Support for SVG and web font. Completely open source, MIT licensed and
+          Collaborative multi-platform icons library and toolkit<br />
+          for developers and designers<br />
           built by <u id="target-scroll">INTEGRATION Corp</u>.
         </div>
       </div>
@@ -145,7 +145,6 @@ export default {
   }
 }
 .main-introduction-bottom {
-  width: 70%;
   margin-top: 60px;
   color: gray;
   font-size: 20px;
