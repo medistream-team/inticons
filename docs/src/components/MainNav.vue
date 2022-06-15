@@ -28,7 +28,7 @@
         <router-link to="/cheatsheet" class="nav-docs">Cheatsheet</router-link>
         <button class="pkg-download">Design Pack</button>
         <a
-          href="https://github.com/medistream-team/inticon"
+          href="https://github.com/medistream-team/inticons"
           target="_blank"
           class="nav-docs"
         >
