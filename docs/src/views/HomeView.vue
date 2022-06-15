@@ -141,6 +141,8 @@ export default {
     font-size: 15px;
   }
   @media (max-width: 700px) {
+    flex-wrap: wrap;
+    justify-content: center;
     font-size: 10px;
   }
 
