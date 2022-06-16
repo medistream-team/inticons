@@ -2,7 +2,7 @@
   <div class="nav-wrapper">
     <div class="width-setting">
       <div class="nav-left">
-        <router-link to="/">
+        <router-link :to="{ name: 'Home' }">
           <img :src="logoSrc" height="40" alt="IntIcon" />
         </router-link>
         <div class="site-version">{{ siteVersion.version }}</div>
@@ -24,21 +24,21 @@
       </div>
       <div class="nav-right">
         <router-link
-          to="/"
+          :to="{ name: 'Home' }"
           class="nav-docs"
           :class="{ active: $route.name === 'Home' }"
         >
           Icons
         </router-link>
         <router-link
-          to="/usage"
+          :to="{ name: 'Usage' }"
           class="nav-docs"
           :class="{ active: $route.name === 'Usage' }"
         >
           Usage
         </router-link>
         <router-link
-          to="/cheatsheet"
+          :to="{ name: 'CheatSheet' }"
           class="nav-docs"
           :class="{ active: $route.name === 'CheatSheet' }"
         >
