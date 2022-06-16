@@ -1,8 +1,21 @@
 {
   "name": "inticons",
-  "version": "0.2.1",
+  "version": "0.2.3",
   "description": "Icons library and toolkit built by INTEGRATION Corp.",
+  "keywords": [
+    "font",
+    "icon",
+    "webfont"
+  ],
+  "homepage": "https://inticons.com",
   "author": "INTEGRATION Corp.",
+  "contributors": [
+    "Hyeonsu Kim (https://github.com/garudanish)",
+    "Hyungwon Jang (https://github.com/HyungwonJang0327)",
+    "Hansol Kim (https://github.com/gliburch)",
+    "Bohyeon Seo (https://github.com/ktseo41)"
+  ],
+  "license": "MIT",
   "main": "fonts/inticons.bundle.min.css",
   "scripts": {
     "serve": "vue-cli-service serve docs/src/main.js",
@@ -20,12 +33,6 @@
     "type": "git",
     "url": "https://github.com/medistream-team/inticons"
   },
-  "keywords": [
-    "vuejs",
-    "font",
-    "icon",
-    "webfont"
-  ],
   "dependencies": {
     "core-js": "^3.8.3",
     "vue": "^3.2.13",

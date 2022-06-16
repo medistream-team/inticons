@@ -8,6 +8,9 @@
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
+  <a href="#" target="_blank">
+    <img src="https://img.shields.io/badge/License-copyright-green" alt="License: copyright">
+  </a>
 </p>
 
 ## Install
@@ -102,5 +105,5 @@ Inticons contains many helper classes to quickly modify the look of the icons.
 
 ## 📝 License
 
-Copyright © 2022 [INTEGRATION Corp.](https://github.com/medistream-team)<br />
-This project is [MIT](https://github.com/medistream-team/inticon/blob/master/LICENSE) licensed.
+Inticons's code (all files, except fonts and svg icons) is distributed under MIT license.<br>
+Embedded fonts and svg icons are distributed under [UI8](https://ui8.net) primary licenses. See icons info on UI8 website for [licensing agreement](https://ui8.net/licensing).
