@@ -131,14 +131,23 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 .typing-effect {
-  display: flex;
+  display: block;
   margin-top: 20px;
   font-size: 18px;
   color: black;
   padding: 0px 20px;
   font-family: 'monaco';
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  .is-typed {
+    display: inline;
+    margin-left: -7px;
+  }
   @media (max-width: 1100px) {
     font-size: 15px;
   }
@@ -172,13 +181,14 @@ export default {
   margin-top: 60px;
   color: gray;
   font-size: 20px;
+  width: 100%;
   line-height: 160%;
   text-align: center;
   p {
     margin: 10px 0;
   }
   @media (max-width: 1000px) {
-    width: auto;
+    width: 100%;
     font-size: 14px;
     br {
       display: none;
