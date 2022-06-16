@@ -21,6 +21,7 @@ export default {
 <style scoped lang="scss">
 .footer-wrapper {
   width: 100%;
+  margin-top: 50px;
   padding: 30px 0;
   font-size: 12px;
   background-color: #f8f8fc;
