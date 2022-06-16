@@ -1,6 +1,5 @@
 <template>
   <div class="icon-box">
-    <div class="category-name">INTICONS</div>
     <div class="icon-wrap">
       <div class="icon-all">
         <button
@@ -96,20 +95,6 @@ export default {
     margin-top: 80px;
     margin-bottom: 100px;
   }
-  .category-name {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-    position: sticky;
-    top: 80px;
-    height: 30px;
-    background-color: white;
-    border-bottom: 1px solid #1d77ff;
-    @media (max-width: 1000px) {
-      padding: 40px 20px 20px 20px;
-    }
-  }
   .icon-wrap {
     display: flex;
     flex-direction: column;
@@ -137,7 +122,6 @@ export default {
         transition-duration: 0.4s;
         color: black;
         cursor: pointer;
-
         i {
           pointer-events: none;
           font-size: 30px;
