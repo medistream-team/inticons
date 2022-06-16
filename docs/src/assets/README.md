@@ -8,6 +8,9 @@
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
+  <a href="#" target="_blank">
+    <img src="https://img.shields.io/badge/License-copyright-green" alt="License: copyright">
+  </a>
 </p>
 
 ## Install
