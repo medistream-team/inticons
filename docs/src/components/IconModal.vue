@@ -19,9 +19,9 @@
           </transition>
         </div>
       </div>
-      <div class="modal-right-right">
+      <!-- <div class="modal-svg-download-wrapper">
         <button class="modal-svg-download">SVG</button>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -53,9 +53,9 @@ export default {
   position: fixed;
   bottom: 20px;
   justify-content: space-between;
-  width: 70%;
+  width: 45%;
   height: 90px;
-  margin-left: -200px;
+  margin-left: -30px;
   padding: 0px 30px;
   border-radius: 20px;
   background-color: rgb(59, 59, 59);
@@ -65,50 +65,70 @@ export default {
   visibility: hidden;
   box-shadow: 7px 7px gray;
   @media (max-width: 1000px) {
+    padding: 0 30px;
+    display: flex;
     flex-direction: column;
-    position: fixed;
     bottom: 20px;
-    right: 30px;
-    width: 80%;
+    right: 20px;
+    width: 90%;
     height: 130px;
   }
+  @media (max-width: 700px) {
+    width: 80%;
+    right: 40px;
+  }
   @media (max-width: 500px) {
-    right: 8px;
+    width: 75%;
+    right: 20px;
   }
   .modal-left {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 30%;
-    padding: 0 20px;
+    width: 27%;
+    padding: 5px 0;
     font-weight: 700;
+    font-size: 12px;
     @media (max-width: 1000px) {
       margin-bottom: -20px;
       width: 100%;
+      padding: 0;
     }
     i {
-      font-size: 25px;
+      font-size: 30px;
       @media (max-width: 1000px) {
         display: none;
       }
     }
     .modal-icon-name {
-      font-size: 16px;
-      width: 80%;
+      font-size: 12px;
+      width: 100%;
+      text-align: center;
+      @media (max-width: 1000px) {
+        font-size: 16px;
+      }
     }
   }
   .modal-right {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     width: 70%;
     height: 100%;
     @media (max-width: 1000px) {
-      width: 130%;
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
       font-size: 10px;
     }
     .modal-right-left {
-      width: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      width: 100%;
       .modal-right-left-top {
+        width: 100%;
         display: flex;
         justify-content: space-between;
         font-size: 12px;
@@ -124,35 +144,34 @@ export default {
           cursor: default;
         }
       }
-      .modal-icon-code {
-        display: flex;
-        height: 20px;
-        padding: 0px;
-        margin: -5px;
-        font-size: 14px;
-      }
     }
     .modal-code-wrapper {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      width: 100%;
       background-color: black;
       overflow: auto;
+      overflow: hidden;
+      padding: 0 0 0 10px;
+      @media (max-width: 1000px) {
+        font-size: 11px;
+        width: 100%;
+      }
       .modal-code-block {
         border-style: none;
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        width: 350px;
+        width: 80%;
         height: 40px;
-        padding: 0px 20px;
         font-size: 12px;
         color: white;
         font-weight: bold;
         cursor: pointer;
         @media (max-width: 1000px) {
           font-size: 11px;
-          width: 100%;
+          width: 70%;
         }
       }
       .modal-copied {
@@ -182,7 +201,7 @@ export default {
         opacity: 0;
       }
     }
-    .modal-right-right {
+    /* .modal-svg-download-wrapper {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -200,7 +219,7 @@ export default {
           display: none;
         }
       }
-    }
+    } */
   }
 }
 </style>

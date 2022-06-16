@@ -26,7 +26,7 @@
         <router-link to="/" class="nav-docs">Icons</router-link>
         <router-link to="/usage" class="nav-docs">Usage</router-link>
         <router-link to="/cheatsheet" class="nav-docs">Cheatsheet</router-link>
-        <button class="pkg-download">Design Pack</button>
+        <!-- <button class="pkg-download">Design Pack</button> -->
         <a
           href="https://github.com/medistream-team/inticons"
           target="_blank"
@@ -98,11 +98,10 @@ export default {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 60%;
       .site-version {
         width: 40px;
         height: 14px;
-        margin-left: 10px;
+        margin-right: 10px;
         font-size: 12px;
         color: rgb(90, 90, 90);
         text-align: center;
@@ -157,7 +156,7 @@ export default {
         display: none;
       }
 
-      .pkg-download {
+      /* .pkg-download {
         border-style: none;
         border: 1px solid #1d77ff;
         border-radius: 10px;
@@ -183,7 +182,7 @@ export default {
         &:active {
           color: black;
         }
-      }
+      } */
       .nav-docs {
         margin-left: 30px;
         text-decoration: none;

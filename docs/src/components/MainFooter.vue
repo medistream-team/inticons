@@ -10,12 +10,6 @@
           Copyright © 2022
         </div>
       </div>
-      <div class="footer-right">
-        <router-link to="/cheatsheet" class="footer-link cheatsheet">
-          Cheatsheet
-        </router-link>
-        <p class="footer-link">ReleaseNote</p>
-      </div>
     </div>
   </div>
 </template>
@@ -44,7 +38,7 @@ export default {
   color: rgb(118, 118, 118);
   .width-setting {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 80%;
     @media (max-width: 1000px) {
@@ -52,6 +46,10 @@ export default {
       justify-content: space-between;
     }
     .footer-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       width: 50%;
       .footer-left-top {
         display: flex;
@@ -61,27 +59,8 @@ export default {
         }
       }
       .footer-left-bottom {
+        text-align: center;
         margin-top: 10px;
-      }
-    }
-    .footer-right {
-      display: flex;
-      justify-content: space-around;
-      width: 20%;
-      @media (max-width: 1000px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
-        width: 80%;
-      }
-      .footer-link {
-        display: block;
-        text-decoration: none;
-        color: black;
-      }
-      .cheatsheet {
-        margin-top: 11px;
       }
     }
   }
