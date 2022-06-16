@@ -16,9 +16,11 @@
           /><span class="typing-effect-span">"&gt;&lt;/i&gt;</span>
         </div>
         <div class="main-introduction-bottom">
-          Collaborative multi-platform icons library and toolkit<br />
-          for developers and designers<br />
-          built by <u id="target-scroll">INTEGRATION Corp</u>.
+          <p>
+            Collaborative multi-platform icons library and toolkit<br />
+            for developers and designers
+          </p>
+          <p>built by <u id="target-scroll">INTEGRATION Corp</u>.</p>
         </div>
       </div>
       <div class="home-search-wrapper">
@@ -27,7 +29,7 @@
           v-model="this.$store.state.handleInput"
           type="text"
           id="target-focus"
-          placeholder="search icons..."
+          placeholder="Search icons..."
           @keyup="this.goSearch"
         />
         <i class="ii ii-x search-reset" @click="inputReset"></i>
@@ -172,9 +174,15 @@ export default {
   font-size: 20px;
   line-height: 160%;
   text-align: center;
+  p {
+    margin: 10px 0;
+  }
   @media (max-width: 1000px) {
     width: auto;
     font-size: 14px;
+    br {
+      display: none;
+    }
   }
 }
 .home-search-wrapper {

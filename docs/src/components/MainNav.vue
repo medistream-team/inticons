@@ -2,7 +2,7 @@
   <div class="nav-wrapper">
     <div class="width-setting">
       <div class="nav-left">
-        <router-link to="/">
+        <router-link :to="{ name: 'Home' }">
           <img :src="logoSrc" height="40" alt="IntIcon" />
         </router-link>
         <div class="site-version">{{ siteVersion.version }}</div>
@@ -23,16 +23,34 @@
         />
       </div>
       <div class="nav-right">
-        <router-link to="/" class="nav-docs">Icons</router-link>
-        <router-link to="/usage" class="nav-docs">Usage</router-link>
-        <router-link to="/cheatsheet" class="nav-docs">Cheatsheet</router-link>
+        <router-link
+          :to="{ name: 'Home' }"
+          class="nav-docs"
+          :class="{ active: $route.name === 'Home' }"
+        >
+          Icons
+        </router-link>
+        <router-link
+          :to="{ name: 'Usage' }"
+          class="nav-docs"
+          :class="{ active: $route.name === 'Usage' }"
+        >
+          Usage
+        </router-link>
+        <router-link
+          :to="{ name: 'CheatSheet' }"
+          class="nav-docs"
+          :class="{ active: $route.name === 'CheatSheet' }"
+        >
+          Cheatsheet
+        </router-link>
         <!-- <button class="pkg-download">Design Pack</button> -->
         <a
           href="https://github.com/medistream-team/inticons"
           target="_blank"
           class="nav-docs"
         >
-          <u>Github</u>
+          <u>GitHub</u>
         </a>
       </div>
     </div>
@@ -187,6 +205,9 @@ export default {
         margin-left: 30px;
         text-decoration: none;
         color: black;
+      }
+      .nav-docs.active {
+        opacity: 0.5;
       }
     }
   }
