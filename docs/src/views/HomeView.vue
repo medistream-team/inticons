@@ -27,7 +27,7 @@
           v-model="this.$store.state.handleInput"
           type="text"
           id="target-focus"
-          placeholder="search icons..."
+          placeholder="Search icons..."
           @keyup="this.goSearch"
         />
         <i class="ii ii-x search-reset" @click="inputReset"></i>

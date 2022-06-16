@@ -32,7 +32,7 @@
           target="_blank"
           class="nav-docs"
         >
-          <u>Github</u>
+          <u>GitHub</u>
         </a>
       </div>
     </div>
