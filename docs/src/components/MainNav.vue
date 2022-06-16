@@ -23,9 +23,27 @@
         />
       </div>
       <div class="nav-right">
-        <router-link to="/" class="nav-docs">Icons</router-link>
-        <router-link to="/usage" class="nav-docs">Usage</router-link>
-        <router-link to="/cheatsheet" class="nav-docs">Cheatsheet</router-link>
+        <router-link
+          to="/"
+          class="nav-docs"
+          :class="{ active: $route.name === 'Home' }"
+        >
+          Icons
+        </router-link>
+        <router-link
+          to="/usage"
+          class="nav-docs"
+          :class="{ active: $route.name === 'Usage' }"
+        >
+          Usage
+        </router-link>
+        <router-link
+          to="/cheatsheet"
+          class="nav-docs"
+          :class="{ active: $route.name === 'CheatSheet' }"
+        >
+          Cheatsheet
+        </router-link>
         <!-- <button class="pkg-download">Design Pack</button> -->
         <a
           href="https://github.com/medistream-team/inticons"
@@ -187,6 +205,9 @@ export default {
         margin-left: 30px;
         text-decoration: none;
         color: black;
+      }
+      .nav-docs.active {
+        opacity: 0.5;
       }
     }
   }
