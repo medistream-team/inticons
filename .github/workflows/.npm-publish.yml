@@ -3,7 +3,7 @@ name: Npm Publish
 on: 
   push:
     branches:
-      - deploy-test
+      - main
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest

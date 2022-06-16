@@ -1,6 +1,6 @@
 {
   "name": "inticons",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Icons library and toolkit built by INTEGRATION Corp.",
   "author": "INTEGRATION Corp.",
   "main": "fonts/inticons.bundle.min.css",
