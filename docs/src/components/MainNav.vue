@@ -3,7 +3,7 @@
     <div class="width-setting">
       <div class="nav-left">
         <router-link :to="{ name: 'Home' }">
-          <img :src="logoSrc" height="40" alt="IntIcon" />
+          <img :src="logoSrc" height="20" alt="IntIcons" />
         </router-link>
         <div class="site-version">{{ siteVersion.version }}</div>
       </div>
@@ -64,7 +64,7 @@ export default {
     return {
       notvisible: true,
       siteVersion: require('../../../package.json'),
-      logoSrc: require('../assets/images/inticon.svg'),
+      logoSrc: require('../assets/images/inticons.svg'),
     };
   },
   created() {
@@ -119,7 +119,7 @@ export default {
       .site-version {
         width: 40px;
         height: 14px;
-        margin-right: 10px;
+        margin: 0 20px 0 10px;
         font-size: 12px;
         color: rgb(90, 90, 90);
         text-align: center;
