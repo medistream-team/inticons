@@ -2,20 +2,8 @@
   <div class="home-wrapper">
     <div class="width-setting">
       <div class="main-top">
-        <div class="main-introduction-top">
-          <i :class="`ii ii-${shownIcon}`"></i>
-        </div>
-        <div class="typing-effect">
-          &lt;i class="ii ii-
-          <VueWriter
-            :array="arr"
-            :typeSpeed="120"
-            :eraseSpeed="20"
-            :intervals="50"
-            @typed="changeIcon"
-          /><span class="typing-effect-span">"&gt;&lt;/i&gt;</span>
-        </div>
-        <div class="main-introduction-bottom">
+        <typing-effect />
+        <div class="introduction">
           <p>
             Collaborative multi-platform icons library and toolkit<br />
             for developers and designers
@@ -47,57 +35,20 @@
 </template>
 
 <script>
+import TypingEffect from '../components/TypingEffect.vue';
 import IconBoxs from '../components/IconBoxs.vue';
 import glyphs from '../assets/config.json';
-import VueWriter from 'vue-writer/src/vue-writer.vue';
-
-const cssAniArr = [
-  'ii-spin',
-  'ii-flip-v',
-  'ii-flip-h',
-  'ii-rotate-45',
-  'ii-rotate-90',
-  'ii-rotate-135',
-  'ii-rotate-180',
-  'ii-rotate-225',
-  'ii-rotate-270',
-  'ii-rotate-315',
-];
-
-const cssGlyphs = glyphs.glyphs.map(
-  glyph =>
-    `${glyph.css} ${
-      Math.floor(Math.random() * 2)
-        ? `${cssAniArr[Math.floor(Math.random() * cssAniArr.length)]}`
-        : ''
-    }`
-);
-
-const shuffle = arr => {
-  const strikeOut = [];
-  while (arr.length) {
-    const lastIdx = arr.length - 1;
-    let roll = Math.floor(Math.random() * arr.length);
-    [arr[lastIdx], arr[roll]] = [arr[roll], arr[lastIdx]];
-    strikeOut.push(arr.pop());
-  }
-  return strikeOut;
-};
-
-const shuffledArr = shuffle(cssGlyphs);
 
 export default {
   name: 'HomePage',
   data() {
     return {
       glyphs: glyphs.glyphs,
-      arr: shuffledArr,
-      shownIcon: shuffledArr[0],
     };
   },
   components: {
+    TypingEffect,
     IconBoxs,
-    VueWriter,
   },
   methods: {
     goSearch() {
@@ -106,9 +57,6 @@ export default {
     },
     inputReset() {
       return (this.$store.state.handleInput = '');
-    },
-    changeIcon(icon) {
-      this.shownIcon = icon;
     },
   },
 };
@@ -139,50 +87,9 @@ export default {
   width: 100%;
 }
 .typing-effect {
-  display: block;
-  margin-top: 20px;
-  font-size: 18px;
-  color: black;
-  padding: 0px 20px;
-  font-family: 'monaco';
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  max-width: 100%;
-  .is-typed {
-    display: inline;
-    margin-left: -7px;
-  }
-  @media (max-width: 1100px) {
-    font-size: 15px;
-  }
-  @media (max-width: 700px) {
-    flex-wrap: wrap;
-    justify-content: center;
-    font-size: 10px;
-  }
-
-  &-span {
-    margin-left: -1.2em;
-  }
+  width: 100%;
 }
-.main-introduction-top {
-  width: 70%;
-  margin-top: 30px;
-  color: #607d8b;
-  font-size: 50px;
-  text-align: center;
-  i {
-    color: black;
-    @media (max-width: 700px) {
-      font-size: 30px;
-    }
-  }
-  @media (max-width: 1000px) {
-    width: auto;
-  }
-}
-.main-introduction-bottom {
+.introduction {
   margin-top: 60px;
   color: gray;
   font-size: 20px;
