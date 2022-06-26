@@ -119,7 +119,7 @@ export default {
       .site-version {
         width: 40px;
         height: 14px;
-        margin-left: 10px;
+        margin: 0 20px 0 10px;
         font-size: 12px;
         color: rgb(90, 90, 90);
         text-align: center;
