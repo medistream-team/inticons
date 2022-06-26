@@ -88,18 +88,18 @@ export default {
 
 <style scoped lang="scss">
 .icon {
-  height: 80px;
+  height: 60px;
   color: black;
   text-align: center;
   i {
-    font-size: 70px;
+    font-size: 50px;
   }
   img {
     opacity: 0.5;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
   }
-  @media (max-width: 700px) {
+  @media (max-width: 1000px) {
     height: 40px;
     img {
       width: 40px;
@@ -120,7 +120,7 @@ export default {
   text-align: center;
   white-space: nowrap;
   text-overflow: ellipsis;
-  @media (max-width: 1100px) {
+  @media (max-width: 1000px) {
     font-size: 12px;
   }
   .tag-heading,

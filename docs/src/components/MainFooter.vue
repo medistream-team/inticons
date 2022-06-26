@@ -1,7 +1,7 @@
 <template>
   <div class="footer-wrapper">
     <div class="footer-top">
-      <img :src="logoSrc" height="30" alt="Inticons" />
+      <img :src="logoSrc" height="20" alt="Inticons" />
     </div>
     <div class="footer-bottom">
       Copyright © 2022. Built by INTEGRATION Corp.
@@ -13,7 +13,7 @@ export default {
   name: 'main-footer',
   data() {
     return {
-      logoSrc: require('../assets/images/inticon.svg'),
+      logoSrc: require('../assets/images/inticons.svg'),
     };
   },
 };

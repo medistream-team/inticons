@@ -1,16 +1,20 @@
 <template>
   <div class="home-wrapper">
-    <div class="width-setting">
-      <div class="main-top">
-        <typing-effect />
-        <div class="introduction">
-          <p>
-            Collaborative multi-platform icons library and toolkit<br />
-            for developers and designers
-          </p>
-          <p>built by <u id="target-scroll">INTEGRATION Corp</u>.</p>
-        </div>
+    <div class="main-top">
+      <div class="logo">
+        <img src="../assets/images/inticons.svg" width="150" alt="IntIcons" />
       </div>
+      <div class="introduction">
+        <h2>INTICONS</h2>
+        <p>
+          IntIcons is a collaborative multi-platform icons<br />
+          library and toolkit for developers and designers
+        </p>
+        <p>built by <u id="target-scroll">INTEGRATION Corp</u>.</p>
+      </div>
+    </div>
+    <typing-effect />
+    <div class="width-setting">
       <div class="home-search-wrapper">
         <input
           class="home-search-box"
@@ -61,6 +65,7 @@ export default {
   },
 };
 </script>
+
 <style scoped lang="scss">
 .home-wrapper {
   display: flex;
@@ -68,7 +73,6 @@ export default {
   position: relative;
   align-items: center;
   min-height: 700px;
-  margin-top: 100px;
 }
 .width-setting {
   display: flex;
@@ -85,22 +89,32 @@ export default {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  padding: 80px 0 50px;
+  background-color: #f8f8fc;
 }
 .typing-effect {
-  width: 100%;
+  margin: 50px 0;
+}
+.logo img {
+  width: 150px;
+  @media (max-width: 1000px) {
+    width: 100px;
+  }
 }
 .introduction {
-  margin-top: 60px;
+  margin: 30px 20px 0;
   color: gray;
   font-size: 20px;
-  width: 100%;
   line-height: 160%;
   text-align: center;
+  h2 {
+    color: #000;
+    font-weight: normal;
+  }
   p {
     margin: 10px 0;
   }
   @media (max-width: 1000px) {
-    width: 100%;
     font-size: 14px;
     br {
       display: none;
@@ -110,7 +124,6 @@ export default {
 .home-search-wrapper {
   position: relative;
   width: 100%;
-  margin-top: 70px;
   .home-icon {
     position: absolute;
     top: 15px;
