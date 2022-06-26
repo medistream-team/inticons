@@ -32,7 +32,12 @@
           placeholder="Search icons..."
           @keyup="this.goSearch"
         />
-        <i class="ii ii-x search-reset" @click="inputReset"></i>
+        <i
+          v-if="this.$store.state.handleInput.length > 0"
+          class="ii ii-x search-reset"
+          @click="inputReset"
+        >
+        </i>
       </div>
       <div class="icon-wrapper">
         <IconBoxs :glyphs="glyphs" />
