@@ -91,6 +91,9 @@ export default {
   width: 100%;
   padding: 80px 0 50px;
   background-color: #f8f8fc;
+  @media (max-width: 1000px) {
+    padding: 50px 0 30px;
+  }
 }
 .typing-effect {
   margin: 50px 0;
@@ -98,7 +101,7 @@ export default {
 .logo img {
   width: 150px;
   @media (max-width: 1000px) {
-    width: 100px;
+    width: 80px;
   }
 }
 .introduction {
@@ -138,6 +141,7 @@ export default {
     padding: 0 0 0 20px;
     border-radius: 5px;
     background-color: #f8f8fc;
+    box-sizing: border-box;
     font-size: 16px;
     &:focus {
       outline: none;
@@ -145,9 +149,6 @@ export default {
     &::placeholder {
       color: rgb(196, 196, 196);
       font-size: 15px;
-    }
-    @media (max-width: 1000px) {
-      width: 100%;
     }
   }
   .search-reset {
