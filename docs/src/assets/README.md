@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/medistream-team/inticons" target="_blank">
-  <img alt="inticons" src="https://user-images.githubusercontent.com/73154157/173287685-f48b2a71-de64-458f-80a1-573424da2a14.svg" width="150" />
+  <img alt="IntIcons" src="https://github.com/medistream-team/inticons/raw/main/docs/src/assets/images/og.png" width="540" />
   </a>
 </p>
 <p align="center">
