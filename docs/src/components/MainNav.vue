@@ -126,6 +126,9 @@ export default {
         border: 1px solid rgb(235, 235, 235);
         border-radius: 3px;
         background-color: rgb(235, 235, 235);
+        @media (max-width: 1000px) {
+          margin: 0 0 0 10px;
+        }
       }
     }
     .nav-search-wrapper {
@@ -170,10 +173,6 @@ export default {
         margin-top: 10px;
         font-size: 14px;
       }
-      @media (max-width: 450px) {
-        display: none;
-      }
-
       /* .pkg-download {
         border-style: none;
         border: 1px solid #1d77ff;
