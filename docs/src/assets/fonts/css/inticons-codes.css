@@ -30,8 +30,8 @@
 .ii-chevron-left:before { content: '\e81c'; } /* '' */
 .ii-chevron-right:before { content: '\e81d'; } /* '' */
 .ii-chevron-up:before { content: '\e81e'; } /* '' */
-.ii-dislike-fill:before { content: '\e81f'; } /* '' */
-.ii-dislike-outline:before { content: '\e820'; } /* '' */
+.ii-dislike-outline:before { content: '\e81f'; } /* '' */
+.ii-dislike:before { content: '\e820'; } /* '' */
 .ii-document-with-lines-outline:before { content: '\e821'; } /* '' */
 .ii-ellipsis-horizontal-outline:before { content: '\e822'; } /* '' */
 .ii-ellipsis-horizontal:before { content: '\e823'; } /* '' */
