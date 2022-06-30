@@ -157,11 +157,11 @@
   content: '\e81e'; }
 
 /* '' */
-.ii-dislike-fill:before {
+.ii-dislike-outline:before {
   content: '\e81f'; }
 
 /* '' */
-.ii-dislike-outline:before {
+.ii-dislike:before {
   content: '\e820'; }
 
 /* '' */
