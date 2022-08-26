@@ -191,266 +191,282 @@
   content: '\e827'; }
 
 /* '' */
-.ii-download-document-outline:before {
+.ii-door-out:before {
   content: '\e828'; }
 
 /* '' */
-.ii-ellipsis-horizontal-outline:before {
+.ii-download-document-outline:before {
   content: '\e829'; }
 
 /* '' */
-.ii-ellipsis-horizontal:before {
+.ii-ellipsis-horizontal-outline:before {
   content: '\e82a'; }
 
 /* '' */
-.ii-ellipsis-vertical-fill:before {
+.ii-ellipsis-horizontal:before {
   content: '\e82b'; }
 
 /* '' */
-.ii-export:before {
+.ii-ellipsis-vertical-fill:before {
   content: '\e82c'; }
 
 /* '' */
-.ii-eye:before {
+.ii-export:before {
   content: '\e82d'; }
 
 /* '' */
-.ii-flag-outline:before {
+.ii-eye:before {
   content: '\e82e'; }
 
 /* '' */
-.ii-flag:before {
+.ii-flag-outline:before {
   content: '\e82f'; }
 
 /* '' */
-.ii-gift-outline:before {
+.ii-flag:before {
   content: '\e830'; }
 
 /* '' */
-.ii-grid-sharp-outline:before {
+.ii-gift-outline:before {
   content: '\e831'; }
 
 /* '' */
-.ii-grid-sharp:before {
+.ii-grid-sharp-outline:before {
   content: '\e832'; }
 
 /* '' */
-.ii-hashtag:before {
+.ii-grid-sharp:before {
   content: '\e833'; }
 
 /* '' */
-.ii-headset:before {
+.ii-hashtag:before {
   content: '\e834'; }
 
 /* '' */
-.ii-heart-outline:before {
+.ii-headset:before {
   content: '\e835'; }
 
 /* '' */
-.ii-heart:before {
+.ii-heart-outline:before {
   content: '\e836'; }
 
 /* '' */
-.ii-home-outline:before {
+.ii-heart:before {
   content: '\e837'; }
 
 /* '' */
-.ii-home:before {
+.ii-home-outline:before {
   content: '\e838'; }
 
 /* '' */
-.ii-import:before {
+.ii-home:before {
   content: '\e839'; }
 
 /* '' */
-.ii-info-circle-outline:before {
+.ii-import:before {
   content: '\e83a'; }
 
 /* '' */
-.ii-like-outline:before {
+.ii-info-circle-outline:before {
   content: '\e83b'; }
 
 /* '' */
-.ii-like:before {
+.ii-like-outline:before {
   content: '\e83c'; }
 
 /* '' */
-.ii-link:before {
+.ii-like:before {
   content: '\e83d'; }
 
 /* '' */
-.ii-list-card:before {
+.ii-link:before {
   content: '\e83e'; }
 
 /* '' */
-.ii-list-line:before {
+.ii-list-card:before {
   content: '\e83f'; }
 
 /* '' */
-.ii-location-outline:before {
+.ii-list-line:before {
   content: '\e840'; }
 
 /* '' */
-.ii-lock-outline:before {
+.ii-location-outline:before {
   content: '\e841'; }
 
 /* '' */
-.ii-lock:before {
+.ii-lock-outline:before {
   content: '\e842'; }
 
 /* '' */
-.ii-magic-wand-outline:before {
+.ii-lock:before {
   content: '\e843'; }
 
 /* '' */
-.ii-map-search-outline:before {
+.ii-magic-wand-outline:before {
   content: '\e844'; }
 
 /* '' */
-.ii-medal-outline:before {
+.ii-map-search-outline:before {
   content: '\e845'; }
 
 /* '' */
-.ii-menu:before {
+.ii-medal-outline:before {
   content: '\e846'; }
 
 /* '' */
-.ii-message-dots-outline:before {
+.ii-menu:before {
   content: '\e847'; }
 
 /* '' */
-.ii-message-line-outline:before {
+.ii-message-dots-outline:before {
   content: '\e848'; }
 
 /* '' */
-.ii-message-question-outline:before {
+.ii-message-line-outline:before {
   content: '\e849'; }
 
 /* '' */
-.ii-minus:before {
+.ii-message-question-outline:before {
   content: '\e84a'; }
 
 /* '' */
-.ii-moon-over-sun:before {
+.ii-minus:before {
   content: '\e84b'; }
 
 /* '' */
-.ii-moon:before {
+.ii-moon-over-sun:before {
   content: '\e84c'; }
 
 /* '' */
-.ii-navigate-outline:before {
+.ii-moon:before {
   content: '\e84d'; }
 
 /* '' */
-.ii-pen-outline:before {
+.ii-navigate-outline:before {
   content: '\e84e'; }
 
 /* '' */
-.ii-phone-call-outline:before {
+.ii-paragraph:before {
   content: '\e84f'; }
 
 /* '' */
-.ii-picture-frame-outline:before {
+.ii-pen-outline:before {
   content: '\e850'; }
 
 /* '' */
-.ii-play-circle:before {
+.ii-phone-call-outline:before {
   content: '\e851'; }
 
 /* '' */
-.ii-play:before {
+.ii-picture-frame-outline:before {
   content: '\e852'; }
 
 /* '' */
-.ii-plus-circle:before {
+.ii-picture-square-outline:before {
   content: '\e853'; }
 
 /* '' */
-.ii-plus:before {
+.ii-play-circle:before {
   content: '\e854'; }
 
 /* '' */
-.ii-question-circle-outline:before {
+.ii-play:before {
   content: '\e855'; }
 
 /* '' */
-.ii-question-circle:before {
+.ii-plus-circle:before {
   content: '\e856'; }
 
 /* '' */
-.ii-refresh:before {
+.ii-plus:before {
   content: '\e857'; }
 
 /* '' */
-.ii-remove:before {
+.ii-question-circle-outline:before {
   content: '\e858'; }
 
 /* '' */
-.ii-search:before {
+.ii-question-circle:before {
   content: '\e859'; }
 
 /* '' */
-.ii-settings-outline:before {
+.ii-refresh:before {
   content: '\e85a'; }
 
 /* '' */
-.ii-star-outline:before {
+.ii-remove-circle:before {
   content: '\e85b'; }
 
 /* '' */
-.ii-star:before {
+.ii-remove:before {
   content: '\e85c'; }
 
 /* '' */
-.ii-sun:before {
+.ii-search:before {
   content: '\e85d'; }
 
 /* '' */
-.ii-trash-outline:before {
+.ii-settings-outline:before {
   content: '\e85e'; }
 
 /* '' */
-.ii-trophy-outline:before {
+.ii-star-outline:before {
   content: '\e85f'; }
 
 /* '' */
-.ii-truck-outline:before {
+.ii-star:before {
   content: '\e860'; }
 
 /* '' */
-.ii-truck-timer-outline:before {
+.ii-sun:before {
   content: '\e861'; }
 
 /* '' */
-.ii-user-outline:before {
+.ii-trash-outline:before {
   content: '\e862'; }
 
 /* '' */
-.ii-user:before {
+.ii-trophy-outline:before {
   content: '\e863'; }
 
 /* '' */
-.ii-wallet-outline:before {
+.ii-truck-outline:before {
   content: '\e864'; }
 
 /* '' */
-.ii-warning-circle-outline:before {
+.ii-truck-timer-outline:before {
   content: '\e865'; }
 
 /* '' */
-.ii-warning-circle:before {
+.ii-user-outline:before {
   content: '\e866'; }
 
 /* '' */
-.ii-warning-triangle-outline:before {
+.ii-user:before {
   content: '\e867'; }
 
 /* '' */
-.ii-warning-triangle:before {
+.ii-wallet-outline:before {
   content: '\e868'; }
 
 /* '' */
+.ii-warning-circle-outline:before {
+  content: '\e869'; }
+
+/* '' */
+.ii-warning-circle:before {
+  content: '\e86a'; }
+
+/* '' */
+.ii-warning-triangle-outline:before {
+  content: '\e86b'; }
+
+/* '' */
+.ii-warning-triangle:before {
+  content: '\e86c'; }
+
+/* '' */
 .ii-spin::before {
   animation: spin 2s infinite linear; }
 
