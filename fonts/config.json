@@ -569,8 +569,22 @@
     },
     {
       "uid": "41",
-      "css": "download-document-outline",
+      "css": "door-out",
       "code": 59432,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M674 83c19 0 34 16 34 35v208c0 20-15 35-34 35-20 0-35-15-35-35v-173h-284l120 36c15 4 25 18 25 33v556h139v-174c0-19 16-35 35-35 19 0 34 16 34 35v209c0 19-15 34-34 34h-174v35c0 10-5 20-13 27-6 5-14 8-22 8-2 0-4-1-6-1l-348-69c-16-4-28-18-28-34v-695c0-1 1-1 1-2 0-1 0-2 0-3 0-3 1-5 2-8 1-1 1-2 1-3 3-4 6-8 10-11l0-1c1 0 2 0 3-1 3-2 6-3 10-4 1-1 3-1 5-1 1 0 2-1 3-1h556z m79 254c14-14 36-14 49 0l105 104c3 3 5 7 7 11 4 8 4 18 0 27-2 4-4 8-7 11l-105 104c-6 7-15 10-24 10-9 0-18-3-25-10-13-14-13-36 0-49l45-45h-194c-19 0-35-16-35-35 0-19 16-34 35-34h194l-45-45c-13-14-13-36 0-49h0z",
+        "width": 1000
+      },
+      "search": [
+        "door-out"
+      ]
+    },
+    {
+      "uid": "42",
+      "css": "download-document-outline",
+      "code": 59433,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -582,9 +596,9 @@
       ]
     },
     {
-      "uid": "42",
+      "uid": "43",
       "css": "ellipsis-horizontal-outline",
-      "code": 59433,
+      "code": 59434,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -596,9 +610,9 @@
       ]
     },
     {
-      "uid": "43",
+      "uid": "44",
       "css": "ellipsis-horizontal",
-      "code": 59434,
+      "code": 59435,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -610,9 +624,9 @@
       ]
     },
     {
-      "uid": "44",
+      "uid": "45",
       "css": "ellipsis-vertical-fill",
-      "code": 59435,
+      "code": 59436,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -624,9 +638,9 @@
       ]
     },
     {
-      "uid": "45",
+      "uid": "46",
       "css": "export",
-      "code": 59436,
+      "code": 59437,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -638,9 +652,9 @@
       ]
     },
     {
-      "uid": "46",
+      "uid": "47",
       "css": "eye",
-      "code": 59437,
+      "code": 59438,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -652,9 +666,9 @@
       ]
     },
     {
-      "uid": "47",
+      "uid": "48",
       "css": "flag-outline",
-      "code": 59438,
+      "code": 59439,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -666,9 +680,9 @@
       ]
     },
     {
-      "uid": "48",
+      "uid": "49",
       "css": "flag",
-      "code": 59439,
+      "code": 59440,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -680,9 +694,9 @@
       ]
     },
     {
-      "uid": "49",
+      "uid": "50",
       "css": "gift-outline",
-      "code": 59440,
+      "code": 59441,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -694,9 +708,9 @@
       ]
     },
     {
-      "uid": "50",
+      "uid": "51",
       "css": "grid-sharp-outline",
-      "code": 59441,
+      "code": 59442,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -708,9 +722,9 @@
       ]
     },
     {
-      "uid": "51",
+      "uid": "52",
       "css": "grid-sharp",
-      "code": 59442,
+      "code": 59443,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -722,9 +736,9 @@
       ]
     },
     {
-      "uid": "52",
+      "uid": "53",
       "css": "hashtag",
-      "code": 59443,
+      "code": 59444,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -736,9 +750,9 @@
       ]
     },
     {
-      "uid": "53",
+      "uid": "54",
       "css": "headset",
-      "code": 59444,
+      "code": 59445,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -750,9 +764,9 @@
       ]
     },
     {
-      "uid": "54",
+      "uid": "55",
       "css": "heart-outline",
-      "code": 59445,
+      "code": 59446,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -764,9 +778,9 @@
       ]
     },
     {
-      "uid": "55",
+      "uid": "56",
       "css": "heart",
-      "code": 59446,
+      "code": 59447,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -778,9 +792,9 @@
       ]
     },
     {
-      "uid": "56",
+      "uid": "57",
       "css": "home-outline",
-      "code": 59447,
+      "code": 59448,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -792,9 +806,9 @@
       ]
     },
     {
-      "uid": "57",
+      "uid": "58",
       "css": "home",
-      "code": 59448,
+      "code": 59449,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -806,9 +820,9 @@
       ]
     },
     {
-      "uid": "58",
+      "uid": "59",
       "css": "import",
-      "code": 59449,
+      "code": 59450,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -820,9 +834,9 @@
       ]
     },
     {
-      "uid": "59",
+      "uid": "60",
       "css": "info-circle-outline",
-      "code": 59450,
+      "code": 59451,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -834,9 +848,9 @@
       ]
     },
     {
-      "uid": "60",
+      "uid": "61",
       "css": "like-outline",
-      "code": 59451,
+      "code": 59452,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -848,9 +862,9 @@
       ]
     },
     {
-      "uid": "61",
+      "uid": "62",
       "css": "like",
-      "code": 59452,
+      "code": 59453,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -862,9 +876,9 @@
       ]
     },
     {
-      "uid": "62",
+      "uid": "63",
       "css": "link",
-      "code": 59453,
+      "code": 59454,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -876,9 +890,9 @@
       ]
     },
     {
-      "uid": "63",
+      "uid": "64",
       "css": "list-card",
-      "code": 59454,
+      "code": 59455,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -890,9 +904,9 @@
       ]
     },
     {
-      "uid": "64",
+      "uid": "65",
       "css": "list-line",
-      "code": 59455,
+      "code": 59456,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -904,9 +918,9 @@
       ]
     },
     {
-      "uid": "65",
+      "uid": "66",
       "css": "location-outline",
-      "code": 59456,
+      "code": 59457,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -918,9 +932,9 @@
       ]
     },
     {
-      "uid": "66",
+      "uid": "67",
       "css": "lock-outline",
-      "code": 59457,
+      "code": 59458,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -932,9 +946,9 @@
       ]
     },
     {
-      "uid": "67",
+      "uid": "68",
       "css": "lock",
-      "code": 59458,
+      "code": 59459,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -946,9 +960,9 @@
       ]
     },
     {
-      "uid": "68",
+      "uid": "69",
       "css": "magic-wand-outline",
-      "code": 59459,
+      "code": 59460,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -960,9 +974,9 @@
       ]
     },
     {
-      "uid": "69",
+      "uid": "70",
       "css": "map-search-outline",
-      "code": 59460,
+      "code": 59461,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -974,9 +988,9 @@
       ]
     },
     {
-      "uid": "70",
+      "uid": "71",
       "css": "medal-outline",
-      "code": 59461,
+      "code": 59462,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -988,9 +1002,9 @@
       ]
     },
     {
-      "uid": "71",
+      "uid": "72",
       "css": "menu",
-      "code": 59462,
+      "code": 59463,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -1002,9 +1016,9 @@
       ]
     },
     {
-      "uid": "72",
+      "uid": "73",
       "css": "message-dots-outline",
-      "code": 59463,
+      "code": 59464,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -1016,9 +1030,9 @@
       ]
     },
     {
-      "uid": "73",
+      "uid": "74",
       "css": "message-line-outline",
-      "code": 59464,
+      "code": 59465,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -1030,9 +1044,9 @@
       ]
     },
     {
-      "uid": "74",
+      "uid": "75",
       "css": "message-question-outline",
-      "code": 59465,
+      "code": 59466,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -1044,9 +1058,9 @@
       ]
     },
     {
-      "uid": "75",
+      "uid": "76",
       "css": "minus",
-      "code": 59466,
+      "code": 59467,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -1058,9 +1072,9 @@
       ]
     },
     {
-      "uid": "76",
+      "uid": "77",
       "css": "moon-over-sun",
-      "code": 59467,
+      "code": 59468,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -1072,9 +1086,9 @@
       ]
     },
     {
-      "uid": "77",
+      "uid": "78",
       "css": "moon",
-      "code": 59468,
+      "code": 59469,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -1086,9 +1100,9 @@
       ]
     },
     {
-      "uid": "78",
+      "uid": "79",
       "css": "navigate-outline",
-      "code": 59469,
+      "code": 59470,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -1100,9 +1114,23 @@
       ]
     },
     {
-      "uid": "79",
+      "uid": "80",
+      "css": "paragraph",
+      "code": 59471,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M833 208h-666c-23 0-42 19-42 42 0 23 19 42 42 42h666c23 0 42-19 42-42 0-23-19-42-42-42z m0 250h-666c-23 0-42 19-42 42 0 23 19 42 42 42h666c23 0 42-19 42-42 0-23-19-42-42-42z m-250 250h-416c-23 0-42 19-42 42 0 23 19 42 42 42h416c23 0 42-19 42-42 0-23-19-42-42-42z",
+        "width": 1000
+      },
+      "search": [
+        "paragraph"
+      ]
+    },
+    {
+      "uid": "81",
       "css": "pen-outline",
-      "code": 59470,
+      "code": 59472,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -1114,9 +1142,9 @@
       ]
     },
     {
-      "uid": "80",
+      "uid": "82",
       "css": "phone-call-outline",
-      "code": 59471,
+      "code": 59473,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -1128,9 +1156,9 @@
       ]
     },
     {
-      "uid": "81",
+      "uid": "83",
       "css": "picture-frame-outline",
-      "code": 59472,
+      "code": 59474,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -1142,9 +1170,23 @@
       ]
     },
     {
-      "uid": "82",
+      "uid": "84",
+      "css": "picture-square-outline",
+      "code": 59475,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M458 354c0-57-46-104-104-104-57 0-104 47-104 104 0 58 47 104 104 104 58 0 104-46 104-104z m-62 0c0 23-19 42-42 42-23 0-41-19-41-42 0-23 18-41 41-41 23 0 42 18 42 41z m-188-271c-69 0-125 56-125 125v584c0 69 56 125 125 125h584c69 0 125-56 125-125v-584c0-69-56-125-125-125h-584z m584 63c34 0 62 28 62 62v435l-23-20c-81-70-121-104-143-125-17-17-38-29-63-29-25 0-46 12-63 29l-374 353c-24-8-42-32-42-59v-584c0-34 28-62 62-62h584z m0 708h-516l329-311 0 0c10-10 17-12 20-12 3 0 10 2 20 12 23 22 65 58 146 128l0 0c19 16 40 34 63 54v67c0 34-28 62-62 62z",
+        "width": 1000
+      },
+      "search": [
+        "picture-square-outline"
+      ]
+    },
+    {
+      "uid": "85",
       "css": "play-circle",
-      "code": 59473,
+      "code": 59476,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -1156,9 +1198,9 @@
       ]
     },
     {
-      "uid": "83",
+      "uid": "86",
       "css": "play",
-      "code": 59474,
+      "code": 59477,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -1170,9 +1212,9 @@
       ]
     },
     {
-      "uid": "84",
+      "uid": "87",
       "css": "plus-circle",
-      "code": 59475,
+      "code": 59478,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -1184,9 +1226,9 @@
       ]
     },
     {
-      "uid": "85",
+      "uid": "88",
       "css": "plus",
-      "code": 59476,
+      "code": 59479,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -1198,9 +1240,9 @@
       ]
     },
     {
-      "uid": "86",
+      "uid": "89",
       "css": "question-circle-outline",
-      "code": 59477,
+      "code": 59480,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -1212,9 +1254,9 @@
       ]
     },
     {
-      "uid": "87",
+      "uid": "90",
       "css": "question-circle",
-      "code": 59478,
+      "code": 59481,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -1226,9 +1268,9 @@
       ]
     },
     {
-      "uid": "88",
+      "uid": "91",
       "css": "refresh",
-      "code": 59479,
+      "code": 59482,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -1240,9 +1282,23 @@
       ]
     },
     {
-      "uid": "89",
+      "uid": "92",
+      "css": "remove-circle",
+      "code": 59483,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M500 1000c276 0 500-224 500-500 0-276-224-500-500-500-276 0-500 224-500 500 0 276 224 500 500 500z m-236-726c21-21 56-21 77 0l159 160 159-160c21-21 56-21 77 0 21 22 21 56 0 77l-159 159 159 159c21 21 21 56 0 77-21 21-56 21-77 0l-159-159-159 159c-21 21-56 21-77 0-21-21-21-56 0-77l159-159-159-159c-21-21-21-55 0-77z",
+        "width": 1000
+      },
+      "search": [
+        "remove-circle"
+      ]
+    },
+    {
+      "uid": "93",
       "css": "remove",
-      "code": 59480,
+      "code": 59484,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -1254,9 +1310,9 @@
       ]
     },
     {
-      "uid": "90",
+      "uid": "94",
       "css": "search",
-      "code": 59481,
+      "code": 59485,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -1268,9 +1324,9 @@
       ]
     },
     {
-      "uid": "91",
+      "uid": "95",
       "css": "settings-outline",
-      "code": 59482,
+      "code": 59486,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -1282,9 +1338,9 @@
       ]
     },
     {
-      "uid": "92",
+      "uid": "96",
       "css": "star-outline",
-      "code": 59483,
+      "code": 59487,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -1296,9 +1352,9 @@
       ]
     },
     {
-      "uid": "93",
+      "uid": "97",
       "css": "star",
-      "code": 59484,
+      "code": 59488,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -1310,9 +1366,9 @@
       ]
     },
     {
-      "uid": "94",
+      "uid": "98",
       "css": "sun",
-      "code": 59485,
+      "code": 59489,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -1324,9 +1380,9 @@
       ]
     },
     {
-      "uid": "95",
+      "uid": "99",
       "css": "trash-outline",
-      "code": 59486,
+      "code": 59490,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -1338,9 +1394,9 @@
       ]
     },
     {
-      "uid": "96",
+      "uid": "100",
       "css": "trophy-outline",
-      "code": 59487,
+      "code": 59491,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -1352,9 +1408,9 @@
       ]
     },
     {
-      "uid": "97",
+      "uid": "101",
       "css": "truck-outline",
-      "code": 59488,
+      "code": 59492,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -1366,9 +1422,9 @@
       ]
     },
     {
-      "uid": "98",
+      "uid": "102",
       "css": "truck-timer-outline",
-      "code": 59489,
+      "code": 59493,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -1380,9 +1436,9 @@
       ]
     },
     {
-      "uid": "99",
+      "uid": "103",
       "css": "user-outline",
-      "code": 59490,
+      "code": 59494,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -1394,9 +1450,9 @@
       ]
     },
     {
-      "uid": "100",
+      "uid": "104",
       "css": "user",
-      "code": 59491,
+      "code": 59495,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -1408,9 +1464,9 @@
       ]
     },
     {
-      "uid": "101",
+      "uid": "105",
       "css": "wallet-outline",
-      "code": 59492,
+      "code": 59496,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -1422,9 +1478,9 @@
       ]
     },
     {
-      "uid": "102",
+      "uid": "106",
       "css": "warning-circle-outline",
-      "code": 59493,
+      "code": 59497,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -1436,9 +1492,9 @@
       ]
     },
     {
-      "uid": "103",
+      "uid": "107",
       "css": "warning-circle",
-      "code": 59494,
+      "code": 59498,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -1450,9 +1506,9 @@
       ]
     },
     {
-      "uid": "104",
+      "uid": "108",
       "css": "warning-triangle-outline",
-      "code": 59495,
+      "code": 59499,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -1464,9 +1520,9 @@
       ]
     },
     {
-      "uid": "105",
+      "uid": "109",
       "css": "warning-triangle",
-      "code": 59496,
+      "code": 59500,
       "src": "custom_icons",
       "selected": true,
       "svg": {
