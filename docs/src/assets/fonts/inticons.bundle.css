@@ -407,118 +407,114 @@
   content: '\e85d'; }
 
 /* '' */
-.ii-pin-outline:before {
+.ii-play-circle:before {
   content: '\e85e'; }
 
 /* '' */
-.ii-play-circle:before {
+.ii-play:before {
   content: '\e85f'; }
 
 /* '' */
-.ii-play:before {
+.ii-plus-circle:before {
   content: '\e860'; }
 
 /* '' */
-.ii-plus-circle:before {
+.ii-plus:before {
   content: '\e861'; }
 
 /* '' */
-.ii-plus:before {
+.ii-question-circle-outline:before {
   content: '\e862'; }
 
 /* '' */
-.ii-question-circle-outline:before {
+.ii-question-circle:before {
   content: '\e863'; }
 
 /* '' */
-.ii-question-circle:before {
+.ii-refresh:before {
   content: '\e864'; }
 
 /* '' */
-.ii-refresh:before {
+.ii-remove-circle:before {
   content: '\e865'; }
 
 /* '' */
-.ii-remove-circle:before {
+.ii-remove:before {
   content: '\e866'; }
 
 /* '' */
-.ii-remove:before {
+.ii-search:before {
   content: '\e867'; }
 
 /* '' */
-.ii-search:before {
+.ii-settings-outline:before {
   content: '\e868'; }
 
 /* '' */
-.ii-settings-outline:before {
+.ii-slider-outline:before {
   content: '\e869'; }
 
 /* '' */
-.ii-slider-outline:before {
+.ii-square-outline:before {
   content: '\e86a'; }
 
 /* '' */
-.ii-square-outline:before {
+.ii-star-outline:before {
   content: '\e86b'; }
 
 /* '' */
-.ii-star-outline:before {
+.ii-star:before {
   content: '\e86c'; }
 
 /* '' */
-.ii-star:before {
+.ii-sun:before {
   content: '\e86d'; }
 
 /* '' */
-.ii-sun:before {
+.ii-trash-outline:before {
   content: '\e86e'; }
 
 /* '' */
-.ii-trash-outline:before {
+.ii-trophy-outline:before {
   content: '\e86f'; }
 
 /* '' */
-.ii-trophy-outline:before {
+.ii-truck-outline:before {
   content: '\e870'; }
 
 /* '' */
-.ii-truck-outline:before {
+.ii-truck-timer-outline:before {
   content: '\e871'; }
 
 /* '' */
-.ii-truck-timer-outline:before {
+.ii-user-outline:before {
   content: '\e872'; }
 
 /* '' */
-.ii-user-outline:before {
+.ii-user:before {
   content: '\e873'; }
 
 /* '' */
-.ii-user:before {
+.ii-wallet-outline:before {
   content: '\e874'; }
 
 /* '' */
-.ii-wallet-outline:before {
+.ii-warning-circle-outline:before {
   content: '\e875'; }
 
 /* '' */
-.ii-warning-circle-outline:before {
+.ii-warning-circle:before {
   content: '\e876'; }
 
 /* '' */
-.ii-warning-circle:before {
+.ii-warning-triangle-outline:before {
   content: '\e877'; }
 
 /* '' */
-.ii-warning-triangle-outline:before {
+.ii-warning-triangle:before {
   content: '\e878'; }
 
 /* '' */
-.ii-warning-triangle:before {
-  content: '\e879'; }
-
-/* '' */
 .ii-spin::before {
   animation: spin 2s infinite linear; }
 
