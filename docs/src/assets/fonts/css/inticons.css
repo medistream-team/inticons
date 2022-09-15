@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'inticons';
-  src: url('../font/inticons.eot?28361670');
-  src: url('../font/inticons.eot?28361670#iefix') format('embedded-opentype'),
-       url('../font/inticons.woff2?28361670') format('woff2'),
-       url('../font/inticons.woff?28361670') format('woff'),
-       url('../font/inticons.ttf?28361670') format('truetype'),
-       url('../font/inticons.svg?28361670#inticons') format('svg');
+  src: url('../font/inticons.eot?48491176');
+  src: url('../font/inticons.eot?48491176#iefix') format('embedded-opentype'),
+       url('../font/inticons.woff2?48491176') format('woff2'),
+       url('../font/inticons.woff?48491176') format('woff'),
+       url('../font/inticons.ttf?48491176') format('truetype'),
+       url('../font/inticons.svg?48491176#inticons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'inticons';
-    src: url('../font/inticons.svg?28361670#inticons') format('svg');
+    src: url('../font/inticons.svg?48491176#inticons') format('svg');
   }
 }
 */
@@ -148,30 +148,31 @@
 .ii-phone-call-outline:before { content: '\e85b'; } /* '' */
 .ii-picture-frame-outline:before { content: '\e85c'; } /* '' */
 .ii-picture-square-outline:before { content: '\e85d'; } /* '' */
-.ii-play-circle:before { content: '\e85e'; } /* '' */
-.ii-play:before { content: '\e85f'; } /* '' */
-.ii-plus-circle:before { content: '\e860'; } /* '' */
-.ii-plus:before { content: '\e861'; } /* '' */
-.ii-question-circle-outline:before { content: '\e862'; } /* '' */
-.ii-question-circle:before { content: '\e863'; } /* '' */
-.ii-refresh:before { content: '\e864'; } /* '' */
-.ii-remove-circle:before { content: '\e865'; } /* '' */
-.ii-remove:before { content: '\e866'; } /* '' */
-.ii-search:before { content: '\e867'; } /* '' */
-.ii-settings-outline:before { content: '\e868'; } /* '' */
-.ii-slider-outline:before { content: '\e869'; } /* '' */
-.ii-square-outline:before { content: '\e86a'; } /* '' */
-.ii-star-outline:before { content: '\e86b'; } /* '' */
-.ii-star:before { content: '\e86c'; } /* '' */
-.ii-sun:before { content: '\e86d'; } /* '' */
-.ii-trash-outline:before { content: '\e86e'; } /* '' */
-.ii-trophy-outline:before { content: '\e86f'; } /* '' */
-.ii-truck-outline:before { content: '\e870'; } /* '' */
-.ii-truck-timer-outline:before { content: '\e871'; } /* '' */
-.ii-user-outline:before { content: '\e872'; } /* '' */
-.ii-user:before { content: '\e873'; } /* '' */
-.ii-wallet-outline:before { content: '\e874'; } /* '' */
-.ii-warning-circle-outline:before { content: '\e875'; } /* '' */
-.ii-warning-circle:before { content: '\e876'; } /* '' */
-.ii-warning-triangle-outline:before { content: '\e877'; } /* '' */
-.ii-warning-triangle:before { content: '\e878'; } /* '' */
+.ii-pin-outline:before { content: '\e85e'; } /* '' */
+.ii-play-circle:before { content: '\e85f'; } /* '' */
+.ii-play:before { content: '\e860'; } /* '' */
+.ii-plus-circle:before { content: '\e861'; } /* '' */
+.ii-plus:before { content: '\e862'; } /* '' */
+.ii-question-circle-outline:before { content: '\e863'; } /* '' */
+.ii-question-circle:before { content: '\e864'; } /* '' */
+.ii-refresh:before { content: '\e865'; } /* '' */
+.ii-remove-circle:before { content: '\e866'; } /* '' */
+.ii-remove:before { content: '\e867'; } /* '' */
+.ii-search:before { content: '\e868'; } /* '' */
+.ii-settings-outline:before { content: '\e869'; } /* '' */
+.ii-slider-outline:before { content: '\e86a'; } /* '' */
+.ii-square-outline:before { content: '\e86b'; } /* '' */
+.ii-star-outline:before { content: '\e86c'; } /* '' */
+.ii-star:before { content: '\e86d'; } /* '' */
+.ii-sun:before { content: '\e86e'; } /* '' */
+.ii-trash-outline:before { content: '\e86f'; } /* '' */
+.ii-trophy-outline:before { content: '\e870'; } /* '' */
+.ii-truck-outline:before { content: '\e871'; } /* '' */
+.ii-truck-timer-outline:before { content: '\e872'; } /* '' */
+.ii-user-outline:before { content: '\e873'; } /* '' */
+.ii-user:before { content: '\e874'; } /* '' */
+.ii-wallet-outline:before { content: '\e875'; } /* '' */
+.ii-warning-circle-outline:before { content: '\e876'; } /* '' */
+.ii-warning-circle:before { content: '\e877'; } /* '' */
+.ii-warning-triangle-outline:before { content: '\e878'; } /* '' */
+.ii-warning-triangle:before { content: '\e879'; } /* '' */
