@@ -1,8 +1,8 @@
 
 .ii-alarm-light-outline:before { content: '\e800'; } /* '' */
 .ii-arrow-down:before { content: '\e801'; } /* '' */
-.ii-arrow-in-box-left-outline:before { content: '\e802'; } /* '' */
-.ii-arrow-in-box-right:before { content: '\e803'; } /* '' */
+.ii-arrow-in-box-right:before { content: '\e802'; } /* '' */
+.ii-arrow-left-in-box-outline:before { content: '\e803'; } /* '' */
 .ii-arrow-left:before { content: '\e804'; } /* '' */
 .ii-arrow-right:before { content: '\e805'; } /* '' */
 .ii-arrow-top-right-bottom-left:before { content: '\e806'; } /* '' */
@@ -21,7 +21,7 @@
 .ii-bookmark-outline:before { content: '\e813'; } /* '' */
 .ii-bookmark:before { content: '\e814'; } /* '' */
 .ii-building-outline:before { content: '\e815'; } /* '' */
-.ii-calendar-check:before { content: '\e816'; } /* '' */
+.ii-calendar-check-outline:before { content: '\e816'; } /* '' */
 .ii-calendar-event-outline:before { content: '\e817'; } /* '' */
 .ii-camera-outline:before { content: '\e818'; } /* '' */
 .ii-camera-vintage-outline:before { content: '\e819'; } /* '' */
@@ -111,7 +111,7 @@
 .ii-search:before { content: '\e86d'; } /* '' */
 .ii-send-to:before { content: '\e86e'; } /* '' */
 .ii-settings-outline:before { content: '\e86f'; } /* '' */
-.ii-slider-outline:before { content: '\e870'; } /* '' */
+.ii-sliders:before { content: '\e870'; } /* '' */
 .ii-square-outline:before { content: '\e871'; } /* '' */
 .ii-star-outline:before { content: '\e872'; } /* '' */
 .ii-star:before { content: '\e873'; } /* '' */
@@ -122,9 +122,9 @@
 .ii-truck-outline:before { content: '\e878'; } /* '' */
 .ii-truck-timer-outline:before { content: '\e879'; } /* '' */
 .ii-user-outline:before { content: '\e87a'; } /* '' */
-.ii-user-pass:before { content: '\e87b'; } /* '' */
+.ii-user-pass-outline:before { content: '\e87b'; } /* '' */
 .ii-user:before { content: '\e87c'; } /* '' */
-.ii-users:before { content: '\e87d'; } /* '' */
+.ii-users-outline:before { content: '\e87d'; } /* '' */
 .ii-wallet-outline:before { content: '\e87e'; } /* '' */
 .ii-warning-circle-outline:before { content: '\e87f'; } /* '' */
 .ii-warning-circle:before { content: '\e880'; } /* '' */
