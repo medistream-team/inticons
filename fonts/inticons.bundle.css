@@ -39,11 +39,11 @@
   content: '\e801'; }
 
 /* '' */
-.ii-arrow-in-box-left-outline:before {
+.ii-arrow-in-box-right:before {
   content: '\e802'; }
 
 /* '' */
-.ii-arrow-in-box-right:before {
+.ii-arrow-left-in-box-outline:before {
   content: '\e803'; }
 
 /* '' */
@@ -119,7 +119,7 @@
   content: '\e815'; }
 
 /* '' */
-.ii-calendar-check:before {
+.ii-calendar-check-outline:before {
   content: '\e816'; }
 
 /* '' */
@@ -479,7 +479,7 @@
   content: '\e86f'; }
 
 /* '' */
-.ii-slider-outline:before {
+.ii-sliders:before {
   content: '\e870'; }
 
 /* '' */
@@ -523,7 +523,7 @@
   content: '\e87a'; }
 
 /* '' */
-.ii-user-pass:before {
+.ii-user-pass-outline:before {
   content: '\e87b'; }
 
 /* '' */
@@ -531,7 +531,7 @@
   content: '\e87c'; }
 
 /* '' */
-.ii-users:before {
+.ii-users-outline:before {
   content: '\e87d'; }
 
 /* '' */
