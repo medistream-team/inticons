@@ -39,15 +39,15 @@
   content: '\e801'; }
 
 /* '' */
-.ii-arrow-in-box-right:before {
+.ii-arrow-left-in-box-outline:before {
   content: '\e802'; }
 
 /* '' */
-.ii-arrow-left-in-box-outline:before {
+.ii-arrow-left:before {
   content: '\e803'; }
 
 /* '' */
-.ii-arrow-left:before {
+.ii-arrow-right-from-bracket:before {
   content: '\e804'; }
 
 /* '' */
