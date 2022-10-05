@@ -37,22 +37,8 @@
     },
     {
       "uid": "3",
-      "css": "arrow-in-box-left-outline",
-      "code": 59394,
-      "src": "custom_icons",
-      "selected": true,
-      "svg": {
-        "path": "M875 801c0 41-33 74-74 74l-602 0c-41 0-74-33-74-74l0-602c0-41 33-74 74-74l602 0c41 0 74 33 74 74l0 602z m-74 10c6 0 10-4 10-10l0-269-349 0 137 136-45 45-213-213 213-213 45 45-137 136 349 0 0-269c0-6-4-10-10-10l-602 0c-6 0-10 4-10 10l0 602c0 6 4 10 10 10l602 0z",
-        "width": 1000
-      },
-      "search": [
-        "arrow-in-box-left-outline"
-      ]
-    },
-    {
-      "uid": "4",
       "css": "arrow-in-box-right",
-      "code": 59395,
+      "code": 59394,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -61,6 +47,20 @@
       },
       "search": [
         "arrow-in-box-right"
+      ]
+    },
+    {
+      "uid": "4",
+      "css": "arrow-left-in-box-outline",
+      "code": 59395,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M875 801c0 41-33 74-74 74l-602 0c-41 0-74-33-74-74l0-602c0-41 33-74 74-74l602 0c41 0 74 33 74 74l0 602z m-74 10c6 0 10-4 10-10l0-269-349 0 137 136-45 45-213-213 213-213 45 45-137 136 349 0 0-269c0-6-4-10-10-10l-602 0c-6 0-10 4-10 10l0 602c0 6 4 10 10 10l602 0z",
+        "width": 1000
+      },
+      "search": [
+        "arrow-left-in-box-outline"
       ]
     },
     {
@@ -317,7 +317,7 @@
     },
     {
       "uid": "23",
-      "css": "calendar-check",
+      "css": "calendar-check-outline",
       "code": 59414,
       "src": "custom_icons",
       "selected": true,
@@ -326,7 +326,7 @@
         "width": 1000
       },
       "search": [
-        "calendar-check"
+        "calendar-check-outline"
       ]
     },
     {
@@ -1577,7 +1577,7 @@
     },
     {
       "uid": "113",
-      "css": "slider-outline",
+      "css": "sliders",
       "code": 59504,
       "src": "custom_icons",
       "selected": true,
@@ -1586,7 +1586,7 @@
         "width": 1000
       },
       "search": [
-        "slider-outline"
+        "sliders"
       ]
     },
     {
@@ -1731,7 +1731,7 @@
     },
     {
       "uid": "124",
-      "css": "user-pass",
+      "css": "user-pass-outline",
       "code": 59515,
       "src": "custom_icons",
       "selected": true,
@@ -1740,7 +1740,7 @@
         "width": 1000
       },
       "search": [
-        "user-pass"
+        "user-pass-outline"
       ]
     },
     {
@@ -1759,7 +1759,7 @@
     },
     {
       "uid": "126",
-      "css": "users",
+      "css": "users-outline",
       "code": 59517,
       "src": "custom_icons",
       "selected": true,
@@ -1768,7 +1768,7 @@
         "width": 1000
       },
       "search": [
-        "users"
+        "users-outline"
       ]
     },
     {
