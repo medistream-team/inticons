@@ -1,9 +1,9 @@
 
 .ii-alarm-light-outline:before { content: '\e800'; } /* '' */
 .ii-arrow-down:before { content: '\e801'; } /* '' */
-.ii-arrow-in-box-right:before { content: '\e802'; } /* '' */
-.ii-arrow-left-in-box-outline:before { content: '\e803'; } /* '' */
-.ii-arrow-left:before { content: '\e804'; } /* '' */
+.ii-arrow-left-in-box-outline:before { content: '\e802'; } /* '' */
+.ii-arrow-left:before { content: '\e803'; } /* '' */
+.ii-arrow-right-from-bracket:before { content: '\e804'; } /* '' */
 .ii-arrow-right:before { content: '\e805'; } /* '' */
 .ii-arrow-top-right-bottom-left:before { content: '\e806'; } /* '' */
 .ii-arrow-up:before { content: '\e807'; } /* '' */

@@ -37,22 +37,8 @@
     },
     {
       "uid": "3",
-      "css": "arrow-in-box-right",
-      "code": 59394,
-      "src": "custom_icons",
-      "selected": true,
-      "svg": {
-        "path": "M135 167c0-41 33-73 73-73h542v62h-542c-5 0-10 5-10 11v666c0 6 5 11 10 11h542v62h-542c-40 0-73-32-73-73v-666z m491 103l231 230-231 230-44-44 155-155h-424v-62h424l-155-155 44-44z",
-        "width": 1000
-      },
-      "search": [
-        "arrow-in-box-right"
-      ]
-    },
-    {
-      "uid": "4",
       "css": "arrow-left-in-box-outline",
-      "code": 59395,
+      "code": 59394,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -64,9 +50,9 @@
       ]
     },
     {
-      "uid": "5",
+      "uid": "4",
       "css": "arrow-left",
-      "code": 59396,
+      "code": 59395,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -75,6 +61,20 @@
       },
       "search": [
         "arrow-left"
+      ]
+    },
+    {
+      "uid": "5",
+      "css": "arrow-right-from-bracket",
+      "code": 59396,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M135 167c0-41 33-73 73-73h542v62h-542c-5 0-10 5-10 11v666c0 6 5 11 10 11h542v62h-542c-40 0-73-32-73-73v-666z m491 103l231 230-231 230-44-44 155-155h-424v-62h424l-155-155 44-44z",
+        "width": 1000
+      },
+      "search": [
+        "arrow-right-from-bracket"
       ]
     },
     {
