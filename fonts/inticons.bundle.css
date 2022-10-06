@@ -243,51 +243,51 @@
   content: '\e834'; }
 
 /* '' */
-.ii-ellipsis-horizontal-outline:before {
+.ii-drag-lines:before {
   content: '\e835'; }
 
 /* '' */
-.ii-ellipsis-horizontal:before {
+.ii-ellipsis-horizontal-outline:before {
   content: '\e836'; }
 
 /* '' */
-.ii-ellipsis-vertical-fill:before {
+.ii-ellipsis-horizontal:before {
   content: '\e837'; }
 
 /* '' */
-.ii-expansion:before {
+.ii-ellipsis-vertical-fill:before {
   content: '\e838'; }
 
 /* '' */
-.ii-export:before {
+.ii-expansion:before {
   content: '\e839'; }
 
 /* '' */
-.ii-eye:before {
+.ii-export:before {
   content: '\e83a'; }
 
 /* '' */
-.ii-flag-outline:before {
+.ii-eye:before {
   content: '\e83b'; }
 
 /* '' */
-.ii-flag:before {
+.ii-flag-outline:before {
   content: '\e83c'; }
 
 /* '' */
-.ii-gift-outline:before {
+.ii-flag:before {
   content: '\e83d'; }
 
 /* '' */
-.ii-grid-sharp-outline:before {
+.ii-gift-outline:before {
   content: '\e83e'; }
 
 /* '' */
-.ii-grid-sharp:before {
+.ii-grid-sharp-outline:before {
   content: '\e83f'; }
 
 /* '' */
-.ii-grip-lines:before {
+.ii-grid-sharp:before {
   content: '\e840'; }
 
 /* '' */
