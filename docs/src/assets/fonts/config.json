@@ -751,8 +751,22 @@
     },
     {
       "uid": "54",
-      "css": "ellipsis-horizontal-outline",
+      "css": "drag-lines",
       "code": 59445,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M831 469h-656v-63h656v63z m0 125h-656v-63h656v63z",
+        "width": 1000
+      },
+      "search": [
+        "drag-lines"
+      ]
+    },
+    {
+      "uid": "55",
+      "css": "ellipsis-horizontal-outline",
+      "code": 59446,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -764,9 +778,9 @@
       ]
     },
     {
-      "uid": "55",
+      "uid": "56",
       "css": "ellipsis-horizontal",
-      "code": 59446,
+      "code": 59447,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -778,9 +792,9 @@
       ]
     },
     {
-      "uid": "56",
+      "uid": "57",
       "css": "ellipsis-vertical-fill",
-      "code": 59447,
+      "code": 59448,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -792,9 +806,9 @@
       ]
     },
     {
-      "uid": "57",
+      "uid": "58",
       "css": "expansion",
-      "code": 59448,
+      "code": 59449,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -806,9 +820,9 @@
       ]
     },
     {
-      "uid": "58",
+      "uid": "59",
       "css": "export",
-      "code": 59449,
+      "code": 59450,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -820,9 +834,9 @@
       ]
     },
     {
-      "uid": "59",
+      "uid": "60",
       "css": "eye",
-      "code": 59450,
+      "code": 59451,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -834,9 +848,9 @@
       ]
     },
     {
-      "uid": "60",
+      "uid": "61",
       "css": "flag-outline",
-      "code": 59451,
+      "code": 59452,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -848,9 +862,9 @@
       ]
     },
     {
-      "uid": "61",
+      "uid": "62",
       "css": "flag",
-      "code": 59452,
+      "code": 59453,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -862,9 +876,9 @@
       ]
     },
     {
-      "uid": "62",
+      "uid": "63",
       "css": "gift-outline",
-      "code": 59453,
+      "code": 59454,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -876,9 +890,9 @@
       ]
     },
     {
-      "uid": "63",
+      "uid": "64",
       "css": "grid-sharp-outline",
-      "code": 59454,
+      "code": 59455,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -890,9 +904,9 @@
       ]
     },
     {
-      "uid": "64",
+      "uid": "65",
       "css": "grid-sharp",
-      "code": 59455,
+      "code": 59456,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -901,20 +915,6 @@
       },
       "search": [
         "grid-sharp"
-      ]
-    },
-    {
-      "uid": "65",
-      "css": "grip-lines",
-      "code": 59456,
-      "src": "custom_icons",
-      "selected": true,
-      "svg": {
-        "path": "M831 469h-656v-63h656v63z m0 125h-656v-63h656v63z",
-        "width": 1000
-      },
-      "search": [
-        "grip-lines"
       ]
     },
     {
