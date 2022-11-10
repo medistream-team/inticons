@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'inticons';
-  src: url('../font/inticons.eot?26875288');
-  src: url('../font/inticons.eot?26875288#iefix') format('embedded-opentype'),
-       url('../font/inticons.woff2?26875288') format('woff2'),
-       url('../font/inticons.woff?26875288') format('woff'),
-       url('../font/inticons.ttf?26875288') format('truetype'),
-       url('../font/inticons.svg?26875288#inticons') format('svg');
+  src: url('../font/inticons.eot?63212329');
+  src: url('../font/inticons.eot?63212329#iefix') format('embedded-opentype'),
+       url('../font/inticons.woff2?63212329') format('woff2'),
+       url('../font/inticons.woff?63212329') format('woff'),
+       url('../font/inticons.ttf?63212329') format('truetype'),
+       url('../font/inticons.svg?63212329#inticons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'inticons';
-    src: url('../font/inticons.svg?26875288#inticons') format('svg');
+    src: url('../font/inticons.svg?63212329#inticons') format('svg');
   }
 }
 */
@@ -158,31 +158,32 @@
 .ii-play:before { content: '\e865'; } /* '' */
 .ii-plus-circle:before { content: '\e866'; } /* '' */
 .ii-plus:before { content: '\e867'; } /* '' */
-.ii-question-circle-outline:before { content: '\e868'; } /* '' */
-.ii-question-circle:before { content: '\e869'; } /* '' */
-.ii-refresh:before { content: '\e86a'; } /* '' */
-.ii-remove-circle:before { content: '\e86b'; } /* '' */
-.ii-remove:before { content: '\e86c'; } /* '' */
-.ii-search-chart:before { content: '\e86d'; } /* '' */
-.ii-search:before { content: '\e86e'; } /* '' */
-.ii-send-to:before { content: '\e86f'; } /* '' */
-.ii-settings-outline:before { content: '\e870'; } /* '' */
-.ii-sliders:before { content: '\e871'; } /* '' */
-.ii-square-outline:before { content: '\e872'; } /* '' */
-.ii-star-outline:before { content: '\e873'; } /* '' */
-.ii-star:before { content: '\e874'; } /* '' */
-.ii-sun:before { content: '\e875'; } /* '' */
-.ii-table-chart:before { content: '\e876'; } /* '' */
-.ii-trash-outline:before { content: '\e877'; } /* '' */
-.ii-trophy-outline:before { content: '\e878'; } /* '' */
-.ii-truck-outline:before { content: '\e879'; } /* '' */
-.ii-truck-timer-outline:before { content: '\e87a'; } /* '' */
-.ii-user-outline:before { content: '\e87b'; } /* '' */
-.ii-user-pass-outline:before { content: '\e87c'; } /* '' */
-.ii-user:before { content: '\e87d'; } /* '' */
-.ii-users-outline:before { content: '\e87e'; } /* '' */
-.ii-wallet-outline:before { content: '\e87f'; } /* '' */
-.ii-warning-circle-outline:before { content: '\e880'; } /* '' */
-.ii-warning-circle:before { content: '\e881'; } /* '' */
-.ii-warning-triangle-outline:before { content: '\e882'; } /* '' */
-.ii-warning-triangle:before { content: '\e883'; } /* '' */
+.ii-preintern:before { content: '\e868'; } /* '' */
+.ii-question-circle-outline:before { content: '\e869'; } /* '' */
+.ii-question-circle:before { content: '\e86a'; } /* '' */
+.ii-refresh:before { content: '\e86b'; } /* '' */
+.ii-remove-circle:before { content: '\e86c'; } /* '' */
+.ii-remove:before { content: '\e86d'; } /* '' */
+.ii-search-chart:before { content: '\e86e'; } /* '' */
+.ii-search:before { content: '\e86f'; } /* '' */
+.ii-send-to:before { content: '\e870'; } /* '' */
+.ii-settings-outline:before { content: '\e871'; } /* '' */
+.ii-sliders:before { content: '\e872'; } /* '' */
+.ii-square-outline:before { content: '\e873'; } /* '' */
+.ii-star-outline:before { content: '\e874'; } /* '' */
+.ii-star:before { content: '\e875'; } /* '' */
+.ii-sun:before { content: '\e876'; } /* '' */
+.ii-table-chart:before { content: '\e877'; } /* '' */
+.ii-trash-outline:before { content: '\e878'; } /* '' */
+.ii-trophy-outline:before { content: '\e879'; } /* '' */
+.ii-truck-outline:before { content: '\e87a'; } /* '' */
+.ii-truck-timer-outline:before { content: '\e87b'; } /* '' */
+.ii-user-outline:before { content: '\e87c'; } /* '' */
+.ii-user-pass-outline:before { content: '\e87d'; } /* '' */
+.ii-user:before { content: '\e87e'; } /* '' */
+.ii-users-outline:before { content: '\e87f'; } /* '' */
+.ii-wallet-outline:before { content: '\e880'; } /* '' */
+.ii-warning-circle-outline:before { content: '\e881'; } /* '' */
+.ii-warning-circle:before { content: '\e882'; } /* '' */
+.ii-warning-triangle-outline:before { content: '\e883'; } /* '' */
+.ii-warning-triangle:before { content: '\e884'; } /* '' */
