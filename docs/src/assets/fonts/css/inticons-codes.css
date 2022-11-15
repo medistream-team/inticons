@@ -51,9 +51,9 @@
 .ii-dislike:before { content: '\e831'; } /* '' */
 .ii-document-with-lines-outline:before { content: '\e832'; } /* '' */
 .ii-door-out:before { content: '\e833'; } /* '' */
-.ii-download-document-outline:before { content: '\e834'; } /* '' */
-.ii-drag-lines:before { content: '\e835'; } /* '' */
-.ii-dubble-arrow-down:before { content: '\e836'; } /* '' */
+.ii-double-arrow-down:before { content: '\e834'; } /* '' */
+.ii-download-document-outline:before { content: '\e835'; } /* '' */
+.ii-drag-lines:before { content: '\e836'; } /* '' */
 .ii-ellipsis-horizontal-outline:before { content: '\e837'; } /* '' */
 .ii-ellipsis-horizontal:before { content: '\e838'; } /* '' */
 .ii-ellipsis-vertical-fill:before { content: '\e839'; } /* '' */
