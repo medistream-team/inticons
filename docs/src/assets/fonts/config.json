@@ -765,7 +765,7 @@
     },
     {
       "uid": "55",
-      "css": "double-arrow-down",
+      "css": "double-chevron-down",
       "code": 59446,
       "src": "custom_icons",
       "selected": true,
@@ -774,7 +774,7 @@
         "width": 1000
       },
       "search": [
-        "double-arrow-down"
+        "double-chevron-down"
       ]
     },
     {
