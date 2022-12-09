@@ -17,7 +17,8 @@
   ],
   "license": "MIT",
   "scripts": {
-    "serve": "vue-cli-service serve"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
   },
   "repository": {
     "type": "git",
@@ -52,45 +53,6 @@
     "sass": "^1.56.2",
     "sass-loader": "^13.2.0",
     "webpack-chain": "^6.5.1"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/vue3-essential",
-      "eslint:recommended",
-      "plugin:prettier/recommended"
-    ],
-    "parserOptions": {
-      "parser": "@babel/eslint-parser"
-    },
-    "rules": {
-      "vue/max-attributes-per-line": "off",
-      "vue/html-self-closing": [
-        "error",
-        {
-          "html": {
-            "void": "always",
-            "normal": "never",
-            "component": "always"
-          },
-          "svg": "always",
-          "math": "always"
-        }
-      ],
-      "prettier/prettier": [
-        "error",
-        {
-          "singleQuote": true,
-          "semi": true,
-          "tabWidth": 2,
-          "arrowParens": "avoid",
-          "endOfLine": "lf"
-        }
-      ]
-    }
   },
   "browserslist": [
     "> 1%",
