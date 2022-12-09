@@ -26,24 +26,22 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'IconModal',
-  props: ['glyph'],
-  data() {
-    return {
-      copied: false,
-    };
-  },
-  methods: {
-    codeCopy() {
-      navigator.clipboard.writeText(
-        document.querySelector('.modal-code-block').innerText
-      );
-      this.copied = true;
-      setTimeout(() => (this.copied = false), 500);
-    },
-  },
+<script setup>
+import { ref } from 'vue';
+
+/* eslint-disable no-undef */
+defineProps({
+  glyph: String,
+});
+
+const copied = ref(false);
+
+const codeCopy = () => {
+  navigator.clipboard.writeText(
+    document.querySelector('.modal-code-block').innerText
+  );
+  copied.value = true;
+  setTimeout(() => (copied.value = false), 500);
 };
 </script>
 

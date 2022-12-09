@@ -30,15 +30,16 @@
   </li>
 </template>
 
-<script>
-export default {
-  props: ['header', 'examples'],
-  computed: {
-    isHeaderSize() {
-      return this.header === 'Size';
-    },
-  },
-};
+<script setup>
+import { computed } from 'vue';
+
+/* eslint-disable no-undef */
+const props = defineProps({
+  header: String,
+  examples: Array,
+});
+
+const isHeaderSize = computed(() => props.header === 'Size');
 </script>
 
 <style scoped lang="scss">

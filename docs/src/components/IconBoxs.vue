@@ -6,81 +6,76 @@
           class="icon-list"
           v-for="glyph in filteredGlyphs"
           :key="glyph"
-          @click="this.targetModal"
+          @click="targetModal"
           :value="`${glyph.css}`"
         >
           <i v-bind:class="`ii-${glyph.css}`"></i>
         </button>
       </div>
       <div class="undefined" v-if="notSearched">
-        NO RESULT FOR "{{ this.$store.state.handleInput.toUpperCase() }}"
+        NO RESULT FOR "{{ store.state.input.toUpperCase() }}"
       </div>
     </div>
     <div class="target-modal">
-      <IconModal :glyph="this.selectIcon" />
+      <IconModal :glyph="selectIcon" />
     </div>
   </div>
 </template>
 
-<script>
+<script setup>
+import { ref, computed, onMounted } from 'vue';
+import { useStore } from 'vuex';
 import IconModal from './IconModal.vue';
 
-export default {
-  name: 'icons-boxs',
-  props: ['glyphs'],
-  components: { IconModal },
-  data: () => ({
-    selectIcon: null,
-    nextSelectIcon: null,
-  }),
-  computed: {
-    filteredGlyphs() {
-      return this.glyphs.filter(glyph =>
-        glyph.search.some(word =>
-          word
-            .toLowerCase()
-            .includes(this.$store.state.handleInput.toLowerCase())
-        )
-      );
-    },
-    notSearched() {
-      return this.filteredGlyphs.length === 0;
-    },
-  },
-  mounted() {
-    document.querySelector('.home-wrapper').addEventListener('click', e => {
-      if (
-        !(
-          e.target.className === 'icon-list' ||
-          e.target.className.includes('modal') ||
-          e.target.className.includes('ii')
-        )
-      ) {
-        document.querySelector('.icon-modal-wrapper').style.opacity = '';
-        document.querySelector('.icon-modal-wrapper').style.visibility =
-          'hidden';
-        this.nextSelectIcon = null;
-      }
-    });
-  },
-  methods: {
-    targetModal(e) {
-      this.selectIcon = e.target.value;
-      document.querySelector('.icon-modal-wrapper').style.opacity = 1;
-      document.querySelector('.icon-modal-wrapper').style.visibility =
-        'visible';
-      if (this.nextSelectIcon !== e.target.value) {
-        this.nextSelectIcon = this.selectIcon;
-      } else {
-        document.querySelector('.icon-modal-wrapper').style.opacity = '';
-        document.querySelector('.icon-modal-wrapper').style.visibility =
-          'hidden';
-        this.nextSelectIcon = null;
-        e.target.blur();
-      }
-    },
-  },
+/* eslint-disable no-undef */
+const props = defineProps({
+  glyphs: Array,
+});
+
+const selectIcon = ref(null);
+const nextSelectIcon = ref(null);
+
+const store = useStore();
+
+const filteredGlyphs = computed(() =>
+  props.glyphs.filter(glyph =>
+    glyph.search.some(word =>
+      word.toLowerCase().includes(store.state.input.toLowerCase())
+    )
+  )
+);
+
+const notSearched = computed(() => filteredGlyphs.value.length === 0);
+
+const targetModal = e => {
+  selectIcon.value = e.target.value;
+  document.querySelector('.icon-modal-wrapper').style.opacity = 1;
+  document.querySelector('.icon-modal-wrapper').style.visibility = 'visible';
+  if (nextSelectIcon.value !== e.target.value) {
+    nextSelectIcon.value = selectIcon.value;
+  } else {
+    document.querySelector('.icon-modal-wrapper').style.opacity = '';
+    document.querySelector('.icon-modal-wrapper').style.visibility = 'hidden';
+    nextSelectIcon.value = null;
+    e.target.blur();
+  }
 };
+
+onMounted(() => {
+  document.querySelector('.home-wrapper').addEventListener('click', e => {
+    if (
+      !(
+        e.target.className === 'icon-list' ||
+        e.target.className.includes('modal') ||
+        e.target.className.includes('ii')
+      )
+    ) {
+      document.querySelector('.icon-modal-wrapper').style.opacity = '';
+      document.querySelector('.icon-modal-wrapper').style.visibility = 'hidden';
+      nextSelectIcon.value = null;
+    }
+  });
+});
 </script>
 
 <style scoped lang="scss">
