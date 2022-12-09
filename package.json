@@ -18,6 +18,7 @@
   "license": "MIT",
   "main": "fonts/inticons.bundle.min.css",
   "scripts": {
+    "dependency": "npm install && cd ./docs && npm install && cd ..",
     "fontello": "node ./build/fontello && rm -rf .fontello-session && fontello-cli install --config ./fonts/config.json --css ./fonts/css --font ./fonts/font",
     "build-font": "node ./build/build-font",
     "build-docs": "node ./build/build-docs && cd ./docs && npm run build && cd ..",
