@@ -30,11 +30,7 @@
       <p>The helper CSS classes are listed below.</p>
 
       <ul class="extras-list">
-        <ExtraItem
-          v-for="extra in $options.extras"
-          :key="extra.header"
-          v-bind="extra"
-        />
+        <ExtraItem v-for="extra in extras" :key="extra.header" v-bind="extra" />
       </ul>
     </section>
 
@@ -42,77 +38,67 @@
   </div>
 </template>
 
-<script>
+<script setup>
+import { ref, computed } from 'vue';
 import config from '../assets/config.json';
 import ExtraItem from '../components/ExtraItem.vue';
 
-export default {
-  extras: [
-    {
-      header: 'Size',
-      examples: ['ii-2x', 'ii-3x', 'ii-4x'],
-    },
-    {
-      header: 'Rotate',
-      examples: [
-        'ii-rotate-45',
-        'ii-rotate-90',
-        'ii-rotate-135',
-        'ii-rotate-180',
-        'ii-rotate-225',
-        'ii-rotate-270',
-        'ii-rotate-315',
-      ],
-    },
-    {
-      header: 'Flip',
-      examples: ['ii-flip-h', 'ii-flip-v'],
-    },
-    {
-      header: 'Spin',
-      examples: ['ii-spin'],
-    },
-  ],
-  data() {
-    return {
-      icons: config.glyphs,
-      usageIcon: config.glyphs[0].css,
-      isIconClicked: false,
-    };
+const extras = [
+  {
+    header: 'Size',
+    examples: ['ii-2x', 'ii-3x', 'ii-4x'],
   },
-  methods: {
-    copy(e) {
-      if (!this.isClickable) {
-        return;
-      }
+  {
+    header: 'Rotate',
+    examples: [
+      'ii-rotate-45',
+      'ii-rotate-90',
+      'ii-rotate-135',
+      'ii-rotate-180',
+      'ii-rotate-225',
+      'ii-rotate-270',
+      'ii-rotate-315',
+    ],
+  },
+  {
+    header: 'Flip',
+    examples: ['ii-flip-h', 'ii-flip-v'],
+  },
+  {
+    header: 'Spin',
+    examples: ['ii-spin'],
+  },
+];
 
-      const isHex = e.target.classList.contains('icons-item-hex');
-      const isName = e.target.classList.contains('icons-item-name');
+const icons = ref(config.glyphs);
+const usageIcon = ref(config.glyphs[0].css);
+const isIconClicked = ref(false);
 
-      if (isHex || isName) {
-        this.isIconClicked = true;
-        navigator.clipboard.writeText(e.target.innerHTML);
-        this.changeUsageIcon(e, isName);
+const isClickable = computed(() => !isIconClicked.value);
 
-        setTimeout(() => {
-          this.isIconClicked = false;
-        }, 500);
-      }
-    },
-    changeUsageIcon(e, isName) {
-      if (isName) {
-        this.usageIcon = e.target.innerHTML.substring(3);
-      }
-    },
-  },
-  computed: {
-    isClickable() {
-      return !this.isIconClicked;
-    },
-  },
-  components: {
-    ExtraItem,
-  },
+const changeUsageIcon = (e, isName) => {
+  if (isName) {
+    usageIcon.value = e.target.innerHTML.substring(3);
+  }
+};
+
+const copy = e => {
+  if (!isClickable.value) {
+    return;
+  }
+
+  const isHex = e.target.classList.contains('icons-item-hex');
+  const isName = e.target.classList.contains('icons-item-name');
+
+  if (isHex || isName) {
+    isIconClicked.value = true;
+    navigator.clipboard.writeText(e.target.innerHTML);
+    changeUsageIcon(e, isName);
+
+    setTimeout(() => {
+      isIconClicked.value = false;
+    }, 500);
+  }
 };
 </script>
 
