@@ -3,7 +3,7 @@ const { defineConfig } = require('@vue/cli-service');
 module.exports = defineConfig({
   transpileDependencies: true,
   configureWebpack: {
-    entry: './docs/src/main.js',
+    entry: './src/main.js',
   },
   chainWebpack: config => {
     config.module
@@ -18,7 +18,7 @@ module.exports = defineConfig({
       });
 
     config.plugin('html').tap(args => {
-      args[0].template = 'docs/index.html';
+      args[0].template = '/index.html';
       return args;
     });
 

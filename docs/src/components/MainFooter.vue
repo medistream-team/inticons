@@ -8,16 +8,11 @@
     </div>
   </div>
 </template>
-<script>
-export default {
-  name: 'main-footer',
-  data() {
-    return {
-      logoSrc: require('../assets/images/inticons.svg'),
-    };
-  },
-};
+
+<script setup>
+const logoSrc = require('../assets/images/inticons.svg');
 </script>
+
 <style scoped lang="scss">
 .footer-wrapper {
   width: 100%;

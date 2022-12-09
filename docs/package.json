@@ -1,0 +1,101 @@
+{
+  "name": "inticons-docs",
+  "version": "0.4.38",
+  "description": "Icons library and toolkit built by INTEGRATION Corp.",
+  "keywords": [
+    "font",
+    "icon",
+    "webfont"
+  ],
+  "homepage": "https://inticons.com",
+  "author": "INTEGRATION Corp.",
+  "contributors": [
+    "Hyeonsu Kim (https://github.com/garudanish)",
+    "Hyungwon Jang (https://github.com/HyungwonJang0327)",
+    "Hansol Kim (https://github.com/gliburch)",
+    "Bohyeon Seo (https://github.com/ktseo41)"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/medistream-team/inticons"
+  },
+  "dependencies": {
+    "vue": "^3.2.45",
+    "vue-loader": "^17.0.1",
+    "vue-router": "^4.1.6",
+    "vue-writer": "github:quelchx/vue-writer",
+    "vuex": "^4.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/eslint-parser": "^7.19.1",
+    "@vue/cli-plugin-babel": "^5.0.8",
+    "@vue/cli-plugin-eslint": "^5.0.8",
+    "@vue/cli-plugin-router": "^5.0.8",
+    "@vue/cli-plugin-vuex": "^5.0.8",
+    "@vue/cli-service": "^5.0.8",
+    "eslint": "^8.29.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.8.0",
+    "github-markdown-css": "^5.1.0",
+    "marked": "^4.2.4",
+    "node-sass": "^8.0.0",
+    "pretendard": "^1.3.6",
+    "prettier": "^2.8.1",
+    "prismjs": "^1.29.0",
+    "raw-loader": "^4.0.2",
+    "sass": "^1.56.2",
+    "sass-loader": "^13.2.0",
+    "webpack-chain": "^6.5.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended",
+      "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {
+      "vue/max-attributes-per-line": "off",
+      "vue/html-self-closing": [
+        "error",
+        {
+          "html": {
+            "void": "always",
+            "normal": "never",
+            "component": "always"
+          },
+          "svg": "always",
+          "math": "always"
+        }
+      ],
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true,
+          "semi": true,
+          "tabWidth": 2,
+          "arrowParens": "avoid",
+          "endOfLine": "lf"
+        }
+      ]
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ]
+}

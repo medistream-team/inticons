@@ -5,42 +5,38 @@
         <router-link :to="{ name: 'Home' }">
           <img :src="logoSrc" height="20" alt="IntIcons" />
         </router-link>
-        <div class="site-version">{{ siteVersion.version }}</div>
+        <div class="site-version">{{ version }}</div>
       </div>
       <div class="nav-search-wrapper">
-        <i
-          class="ii ii-search-outline nav-icon"
-          :class="{ notvisible: notvisible }"
-        >
-        </i>
+        <i class="ii ii-search-outline nav-icon" :class="{ notvisible }"> </i>
         <input
           class="nav-search-box"
-          :class="{ notvisible: notvisible }"
-          v-model="this.$store.state.handleInput"
+          :class="{ notvisible }"
+          v-model="input"
           type="text"
           placeholder="Search icons..."
-          @keyup="this.goSearch"
+          @keyup="goSearch"
         />
       </div>
       <div class="nav-right">
         <router-link
           :to="{ name: 'Home' }"
           class="nav-docs"
-          :class="{ active: $route.name === 'Home' }"
+          :class="{ active: route.path === '/' }"
         >
           Icons
         </router-link>
         <router-link
           :to="{ name: 'Usage' }"
           class="nav-docs"
-          :class="{ active: $route.name === 'Usage' }"
+          :class="{ active: route.path === 'usage' }"
         >
           Usage
         </router-link>
         <router-link
           :to="{ name: 'CheatSheet' }"
           class="nav-docs"
-          :class="{ active: $route.name === 'CheatSheet' }"
+          :class="{ active: route.path === 'cheatsheet' }"
         >
           Cheatsheet
         </router-link>
@@ -57,36 +53,43 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'main-nav',
-  data() {
-    return {
-      notvisible: true,
-      siteVersion: require('../../../package.json'),
-      logoSrc: require('../assets/images/inticons.svg'),
-    };
-  },
-  created() {
-    window.addEventListener('scroll', this.handleScroll);
-  },
-  methods: {
-    handleScroll() {
-      this.scrollY = window.scrollY;
-      if (!this.notvisible) {
-        this.notvisible = window.scrollY < this.$store.state.searchTargetScroll;
-      } else if (window.scrollY > this.$store.state.searchTargetScroll) {
-        this.notvisible = !this.notvisible;
-      } else if (window.scrollY === 0) {
-        this.notvisible = true;
-      }
-    },
-    goSearch() {
-      document.getElementById('target-scroll').scrollIntoView(true);
-      document.getElementById('target-focus').focus();
-    },
-  },
+<script setup>
+import { ref, onMounted, computed } from 'vue';
+import { useRoute } from 'vue-router';
+import { useStore } from 'vuex';
+
+const { version } = require('../../../package.json');
+const logoSrc = require('../assets/images/inticons.svg');
+
+const notvisible = ref(true);
+const scrollY = ref(0);
+const searchTargetScroll = 550;
+
+const route = useRoute();
+const store = useStore();
+
+const input = computed(() => store.state.input);
+
+const handleScroll = () => {
+  scrollY.value = window.scrollY;
+
+  if (!notvisible.value) {
+    notvisible.value = window.scrollY < searchTargetScroll;
+  } else if (window.scrollY > searchTargetScroll) {
+    notvisible.value = !notvisible.value;
+  } else if (window.scrollY === 0) {
+    notvisible.value = true;
+  }
 };
+
+const goSearch = () => {
+  document.getElementById('target-scroll')?.scrollIntoView(true);
+  document.getElementById('target-focus')?.focus();
+};
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+});
 </script>
 
 <style scoped lang="scss">

@@ -18,18 +18,13 @@
       <div class="home-search-wrapper">
         <input
           class="home-search-box"
-          v-model="this.$store.state.handleInput"
+          v-model="store.state.input"
           type="text"
           id="target-focus"
           placeholder="Search icons..."
-          @keyup="this.goSearch"
+          @keyup="goSearch"
         />
-        <i
-          v-if="this.$store.state.handleInput.length > 0"
-          class="ii ii-x search-reset"
-          @click="inputReset"
-        >
-        </i>
+        <i v-if="0" class="ii ii-x search-reset" @click="inputReset"> </i>
       </div>
       <div class="icon-wrapper">
         <IconBoxs :glyphs="glyphs" />
@@ -38,31 +33,21 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import TypingEffect from '../components/TypingEffect.vue';
 import IconBoxs from '../components/IconBoxs.vue';
-import glyphs from '../assets/config.json';
+import { glyphs } from '../assets/config.json';
+import { useStore } from 'vuex';
 
-export default {
-  name: 'HomePage',
-  data() {
-    return {
-      glyphs: glyphs.glyphs,
-    };
-  },
-  components: {
-    TypingEffect,
-    IconBoxs,
-  },
-  methods: {
-    goSearch() {
-      document.getElementById('target-scroll').scrollIntoView(true);
-      document.getElementById('target-focus').focus();
-    },
-    inputReset() {
-      return (this.$store.state.handleInput = '');
-    },
-  },
+const store = useStore();
+
+const goSearch = () => {
+  document.getElementById('target-scroll').scrollIntoView(true);
+  document.getElementById('target-focus').focus();
+};
+
+const inputReset = () => {
+  return (store.state.input = '');
 };
 </script>
 
