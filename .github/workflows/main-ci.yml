@@ -29,7 +29,7 @@ jobs: # jobs
           aws s3 cp \
             --recursive \
             --region ap-northeast-2 \
-            dist s3://prd.inticons.com
+            docs/dist s3://prd.inticons.com
 
       - name: CF Invalidation Production # 운영 배포
         if: github.ref == 'refs/heads/main'
