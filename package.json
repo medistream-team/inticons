@@ -33,19 +33,18 @@
     "type": "git",
     "url": "https://github.com/medistream-team/inticons"
   },
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^8.29.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "fontello-cli": "^0.6.2",
     "fs-extra": "^11.1.0",
     "prettier": "^2.8.1",
     "sass": "^1.56.2",
     "svgo": "^3.0.2",
     "svgpath": "^2.6.0"
-  },
-  "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-prettier": "^4.0.0"
   }
 }
