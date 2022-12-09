@@ -18,7 +18,6 @@
   "license": "MIT",
   "main": "fonts/inticons.bundle.min.css",
   "scripts": {
-    "lint": "eslint .",
     "fontello": "node ./build/fontello && rm -rf .fontello-session && fontello-cli install --config ./fonts/config.json --css ./fonts/css --font ./fonts/font",
     "build-font": "node-sass ./fonts/scss/main.scss ./fonts/inticons.bundle.css && node-sass --output-style compressed ./fonts/scss/main.scss ./fonts/inticons.bundle.min.css",
     "build-docs": "node ./build/build-docs && cd ./docs && npm run build && cd ..",
@@ -46,7 +45,6 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-vue": "^8.0.3"
+    "eslint-plugin-prettier": "^4.0.0"
   }
 }
