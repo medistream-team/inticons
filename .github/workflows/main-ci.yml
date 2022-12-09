@@ -50,7 +50,7 @@ jobs: # jobs
           aws s3 cp \
             --recursive \
             --region ap-northeast-2 \
-            dist s3://stg.inticons.com
+            docs/dist s3://stg.inticons.com
 
       - name: CF Invalidation Staging # 스테이징 배포
         if: github.ref == 'refs/heads/develop'
@@ -71,7 +71,7 @@ jobs: # jobs
           aws s3 cp \
             --recursive \
             --region ap-northeast-2 \
-            dist s3://dev.inticons.com
+            docs/dist s3://dev.inticons.com
 
       - name: CF Invalidation Deploy Dev # 개발 배포
         if: github.ref == 'refs/heads/develop'
