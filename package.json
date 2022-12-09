@@ -18,12 +18,12 @@
   "license": "MIT",
   "main": "fonts/inticons.bundle.min.css",
   "scripts": {
-    "lint": "vue-cli-service lint",
+    "lint": "eslint .",
     "fontello": "node ./build/fontello && rm -rf .fontello-session && fontello-cli install --config ./fonts/config.json --css ./fonts/css --font ./fonts/font",
     "build-font": "node-sass ./fonts/scss/main.scss ./fonts/inticons.bundle.css && node-sass --output-style compressed ./fonts/scss/main.scss ./fonts/inticons.bundle.min.css",
-    "build-docs": "node ./build/build-docs && vue-cli-service build",
+    "build-docs": "node ./build/build-docs && cd ./docs && npm run build && cd ..",
     "build": "npm run fontello && npm run build-font && npm run build-docs",
-    "serve": "vue-cli-service serve docs/src/main.js",
+    "serve": "cd ./docs && npm run serve && cd ..",
     "start": "npm run serve"
   },
   "files": [
@@ -34,82 +34,19 @@
     "url": "https://github.com/medistream-team/inticons"
   },
   "dependencies": {
-    "core-js": "^3.8.3",
-    "vue": "^3.2.13",
-    "vue-loader": "^17.0.0",
-    "vue-router": "^4.0.3",
-    "vue-writer": "github:quelchx/vue-writer",
-    "vuex": "^4.0.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.12.16",
-    "@babel/eslint-parser": "^7.12.16",
-    "@vue/cli-plugin-babel": "~5.0.0",
-    "@vue/cli-plugin-eslint": "~5.0.0",
-    "@vue/cli-plugin-router": "~5.0.0",
-    "@vue/cli-plugin-vuex": "~5.0.0",
-    "@vue/cli-service": "~5.0.0",
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-vue": "^8.0.3",
     "fontello-cli": "^0.6.2",
     "fs-extra": "^10.1.0",
-    "github-markdown-css": "^5.1.0",
-    "marked": "^4.0.16",
     "node-sass": "^7.0.1",
-    "pretendard": "^1.2.2",
     "prettier": "^2.6.2",
-    "prismjs": "^1.28.0",
-    "raw-loader": "^4.0.2",
-    "sass": "^1.52.1",
-    "sass-loader": "^13.0.0",
     "svgo": "^2.8.0",
-    "svgpath": "^2.5.0",
-    "webpack-chain": "^6.5.1"
+    "svgpath": "^2.5.0"
   },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/vue3-essential",
-      "eslint:recommended",
-      "plugin:prettier/recommended"
-    ],
-    "parserOptions": {
-      "parser": "@babel/eslint-parser"
-    },
-    "rules": {
-      "vue/max-attributes-per-line": "off",
-      "vue/html-self-closing": [
-        "error",
-        {
-          "html": {
-            "void": "always",
-            "normal": "never",
-            "component": "always"
-          },
-          "svg": "always",
-          "math": "always"
-        }
-      ],
-      "prettier/prettier": [
-        "error",
-        {
-          "singleQuote": true,
-          "semi": true,
-          "tabWidth": 2,
-          "arrowParens": "avoid",
-          "endOfLine": "lf"
-        }
-      ]
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 10"
-  ]
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.0.3"
+  }
 }
