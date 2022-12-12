@@ -5,7 +5,7 @@
       <li class="extras-example-item" :class="{ isSize: isHeaderSize }">
         <div class="item-icon">
           <i
-            :class="`ii ii-alert-check-outline ${!isHeaderSize && 'ii-2x'}`"
+            :class="`ii ii-bell-check-outline ${!isHeaderSize && 'ii-2x'}`"
           ></i>
         </div>
       </li>
@@ -17,7 +17,7 @@
       >
         <div class="item-icon">
           <i
-            :class="`ii ii-alert-check-outline ${example} ${
+            :class="`ii ii-bell-check-outline ${example} ${
               !isHeaderSize && 'ii-2x'
             }`"
           ></i>

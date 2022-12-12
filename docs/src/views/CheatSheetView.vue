@@ -18,9 +18,11 @@
       </blockquote>
       <ul @click="copy" class="icons-list">
         <li class="icons-item" v-for="icon in icons" :key="icon.uid">
-          <i class="ii" :class="`ii-${icon.css}`"></i>
+          <i class="ii" :class="`ii-${icon.css.split('.').join(' ')}`"></i>
           <code class="icons-item-hex">{{ icon.code.toString(16) }}</code>
-          <span class="icons-item-name">ii-{{ icon.css }}</span>
+          <span class="icons-item-name"
+            >ii-{{ icon.css.split('.').join(' ') }}</span
+          >
         </li>
       </ul>
     </section>
