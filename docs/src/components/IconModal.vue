@@ -2,7 +2,7 @@
   <div class="icon-modal-wrapper">
     <div class="modal-left">
       <p class="modal-icon-name">{{ glyph }}</p>
-      <i v-bind:class="`ii-${glyph}`"></i>
+      <i v-bind:class="`ii-${glyph?.split('.').join(' ')}`"></i>
     </div>
     <div class="modal-right">
       <div class="modal-right-left">
@@ -12,7 +12,7 @@
         </div>
         <div class="modal-code-wrapper">
           <div class="modal-code-block" @click="codeCopy">
-            &lt;i class="ii ii-{{ glyph }}"&gt;&lt;/i&gt;
+            &lt;i class="ii ii-{{ glyph?.split('.').join(' ') }}"&gt;&lt;/i&gt;
           </div>
           <transition>
             <div class="modal-copied" v-show="copied">copied</div>

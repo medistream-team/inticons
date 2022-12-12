@@ -9,7 +9,7 @@
           @click="targetModal"
           :value="`${glyph.css}`"
         >
-          <i v-bind:class="`ii-${glyph.css}`"></i>
+          <i v-bind:class="`ii-${glyph.css.split('.').join(' ')}`"></i>
         </button>
       </div>
       <div class="undefined" v-if="notSearched">
@@ -83,11 +83,9 @@ onMounted(() => {
   position: relative;
   width: 100%;
   min-height: 200px;
-  margin-top: 50px;
   font-size: 20px;
   margin-bottom: 150px;
   @media (max-width: 1000px) {
-    margin-top: 80px;
     margin-bottom: 100px;
   }
   .icon-wrap {
