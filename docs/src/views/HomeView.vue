@@ -18,16 +18,51 @@
       <div class="home-search-wrapper">
         <input
           class="home-search-box"
-          v-model="store.state.input"
+          @change="setInput"
+          @input="setInput"
+          :value="input"
           type="text"
           id="target-focus"
           placeholder="Search icons..."
           @keyup="goSearch"
         />
-        <i v-if="0" class="ii ii-x search-reset" @click="inputReset"> </i>
+        <i
+          v-if="input.length > 0"
+          class="ii ii-remove search-reset"
+          @click="store.commit('resetInput')"
+        >
+        </i>
       </div>
+
+      <div class="buttons-wrapper">
+        <button
+          type="button"
+          value="ALL"
+          :class="{ selected: selected === 'ALL' }"
+          @click="selected = 'ALL'"
+        >
+          ALL
+        </button>
+        <button
+          type="button"
+          value="NORMAL"
+          :class="{ selected: selected === 'NORMAL' }"
+          @click="selected = 'NORMAL'"
+        >
+          NORMAL
+        </button>
+        <button
+          type="button"
+          value="S600"
+          :class="{ selected: selected === 'S600' }"
+          @click="selected = 'S600'"
+        >
+          S600
+        </button>
+      </div>
+
       <div class="icon-wrapper">
-        <IconBoxs :glyphs="glyphs" />
+        <IconBoxs :glyphs="selectedGlyphs" />
       </div>
     </div>
   </div>
@@ -38,17 +73,33 @@ import TypingEffect from '../components/TypingEffect.vue';
 import IconBoxs from '../components/IconBoxs.vue';
 import { glyphs } from '../assets/config.json';
 import { useStore } from 'vuex';
+import { ref, computed } from 'vue';
 
 const store = useStore();
+
+const input = computed(() => store.state.input);
+
+const setInput = e => {
+  const { value } = e.target;
+  return store.commit('setInput', value);
+};
 
 const goSearch = () => {
   document.getElementById('target-scroll').scrollIntoView(true);
   document.getElementById('target-focus').focus();
 };
 
-const inputReset = () => {
-  return (store.state.input = '');
-};
+const selected = ref('ALL');
+
+const selectedGlyphs = computed(() => {
+  if (selected.value === 'ALL') {
+    return glyphs;
+  } else if (selected.value === 'NORMAL') {
+    return glyphs.filter(glyph => glyph.css.split('.').length === 1);
+  } else {
+    return glyphs.filter(glyph => glyph.css.split('.').length > 1);
+  }
+});
 </script>
 
 <style scoped lang="scss">
@@ -112,6 +163,7 @@ const inputReset = () => {
 .home-search-wrapper {
   position: relative;
   width: 100%;
+  margin-bottom: 20px;
   .home-icon {
     position: absolute;
     top: 15px;
@@ -138,13 +190,38 @@ const inputReset = () => {
   }
   .search-reset {
     position: absolute;
-    top: 15px;
+    top: 50%;
     right: 10px;
     font-size: 30px;
     color: rgb(196, 196, 196);
     cursor: pointer;
+    transform: translateY(-50%);
   }
 }
+
+.buttons-wrapper {
+  padding: 10px 0;
+
+  button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f8f8fc;
+    font-size: 16px;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+
+    &.selected {
+      background-color: grey;
+      color: white;
+    }
+  }
+}
+
 .icon-wrapper {
   width: 100%;
 }

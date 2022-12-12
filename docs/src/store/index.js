@@ -5,7 +5,14 @@ export default createStore({
     input: '',
   },
   getters: {},
-  mutations: {},
+  mutations: {
+    setInput(state, value) {
+      state.input = value;
+    },
+    resetInput(state) {
+      state.input = '';
+    },
+  },
   actions: {},
   modules: {},
 });
