@@ -12,7 +12,9 @@
         <input
           class="nav-search-box"
           :class="{ notvisible }"
-          v-model="input"
+          @input="setInput"
+          @change="setInput"
+          :value="input"
           type="text"
           placeholder="Search icons..."
           @keyup="goSearch"
@@ -69,6 +71,11 @@ const route = useRoute();
 const store = useStore();
 
 const input = computed(() => store.state.input);
+
+const setInput = e => {
+  const { value } = e.target;
+  store.commit('setInput', value);
+};
 
 const handleScroll = () => {
   scrollY.value = window.scrollY;

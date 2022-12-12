@@ -47,7 +47,7 @@ export default {
 
         const cssGlyphs = glyphs.glyphs.map(
           glyph =>
-            `${glyph.css} ${
+            `${glyph.css.split('.').join(' ')} ${
               Math.floor(Math.random() * 2)
                 ? `${cssAniArr[Math.floor(Math.random() * cssAniArr.length)]}`
                 : ''
