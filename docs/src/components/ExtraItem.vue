@@ -5,7 +5,9 @@
       <li class="extras-example-item" :class="{ isSize: isHeaderSize }">
         <div class="item-icon">
           <i
-            :class="`ii ii-bell-check-outline ${!isHeaderSize && 'ii-2x'}`"
+            :class="`ii ${
+              header === 'Weight' ? 'ii-bell-outline' : 'ii-bell-check-outline'
+            } ${!isHeaderSize && 'ii-2x'}`"
           ></i>
         </div>
       </li>
@@ -17,9 +19,9 @@
       >
         <div class="item-icon">
           <i
-            :class="`ii ii-bell-check-outline ${example} ${
-              !isHeaderSize && 'ii-2x'
-            }`"
+            :class="`ii ${
+              header === 'Weight' ? 'ii-bell-outline' : 'ii-bell-check-outline'
+            } ${example} ${!isHeaderSize && 'ii-2x'}`"
           ></i>
         </div>
         <div class="item-name">

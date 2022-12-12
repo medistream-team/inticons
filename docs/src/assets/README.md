@@ -93,6 +93,16 @@ Inticons contains many helper classes to quickly modify the look of the icons.
 <i class="ii ii-arrow-right ii-spin"></i>
 ```
 
+#### Weight
+
+Some icons has `ii-weight-600` class, which thicken the icon.
+
+- `ii-weight-600`: Thicken the icon.
+
+```html
+<i class="ii ii-arrow-right ii-weight-600"></i>
+```
+
 ## Contributor
 
 ### 👥 [**INTEGRATION Corp.**](https://github.com/medistream-team)
