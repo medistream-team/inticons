@@ -57,7 +57,7 @@
           :class="{ selected: selected === '600' }"
           @click="selected = '600'"
         >
-          S600
+          WEIGHT-600
         </button>
       </div>
 
