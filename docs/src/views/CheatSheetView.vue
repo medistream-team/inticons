@@ -70,6 +70,10 @@ const extras = [
     header: 'Spin',
     examples: ['ii-spin'],
   },
+  {
+    header: 'Weight',
+    examples: ['ii-weight-600'],
+  },
 ];
 
 const icons = ref(config.glyphs);
