@@ -53,9 +53,9 @@
         </button>
         <button
           type="button"
-          value="S600"
-          :class="{ selected: selected === 'S600' }"
-          @click="selected = 'S600'"
+          value="600"
+          :class="{ selected: selected === '600' }"
+          @click="selected = '600'"
         >
           S600
         </button>
