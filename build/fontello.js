@@ -3,14 +3,13 @@ const path = require('path');
 const svgpath = require('svgpath');
 const { optimize } = require('svgo');
 
-(() => {
-  const writeFilePath = './fonts/config.json';
-  const svgsPath = './icons';
-  const files = fs.readdirSync(svgsPath);
-  const glyphs = [];
-  let uid = 1;
+const WRITE_FILE_PATH = './fonts/config.json';
+const SVGS_PATH = './icons';
 
-  files.forEach(file => {
+const createGlyphs = svgsPath => {
+  const files = fs.readdirSync(svgsPath);
+
+  const glyphs = files.map((file, index) => {
     const isSvg = file.match(/\.svg/);
 
     if (!isSvg) {
@@ -35,6 +34,12 @@ const { optimize } = require('svgo');
       ],
     });
 
+    const isFillRuleEvenOdd = data.match(/fill-rule="evenodd"/);
+
+    if (isFillRuleEvenOdd) {
+      throw new Error(`fill-rule을 변경해주세요: ${fileName}.svg`);
+    }
+
     const svgPathData = data
       .match(/\bd=(['"])(.*?)\1/g)
       .map(path => path.match(/d="([\s\S]*?)"/)[1])
@@ -48,10 +53,10 @@ const { optimize } = require('svgo');
       .rel()
       .toString();
 
-    glyphs.push({
-      uid: uid.toString(),
+    return {
+      uid: (index + 1).toString(),
       css: fileName,
-      code: uid++ + 59391,
+      code: index + 1 + 59391,
       src: 'custom_icons',
       selected: true,
       svg: {
@@ -59,19 +64,21 @@ const { optimize } = require('svgo');
         width: 1000,
       },
       search: [fileName],
-    });
+    };
   });
 
-  const config = {
-    name: 'inticons',
-    css_prefix_text: 'ii-',
-    css_use_suffix: false,
-    hinting: true,
-    units_per_em: 1000,
-    ascent: 850,
-    copyright: 'INTEGRATION Corp.',
-    glyphs,
-  };
+  return glyphs;
+};
 
-  fs.writeFileSync(writeFilePath, JSON.stringify(config, null, 2));
-})();
+const config = {
+  name: 'inticons',
+  css_prefix_text: 'ii-',
+  css_use_suffix: false,
+  hinting: true,
+  units_per_em: 1000,
+  ascent: 850,
+  copyright: 'INTEGRATION Corp.',
+  glyphs: createGlyphs(SVGS_PATH),
+};
+
+fs.writeFileSync(WRITE_FILE_PATH, JSON.stringify(config, null, 2));

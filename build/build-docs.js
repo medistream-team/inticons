@@ -5,6 +5,5 @@ const fse = require('fs-extra');
 
   fse.copy('./README.md', `${assetsPath}/README.md`);
   fse.copy('./fonts/config.json', `${assetsPath}/config.json`);
-  fse.copy('./icons', `${assetsPath}/icons`);
   fse.copy('./fonts', `${assetsPath}/fonts`);
 })();
