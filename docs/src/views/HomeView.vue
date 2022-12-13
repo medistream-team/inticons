@@ -71,9 +71,11 @@
 <script setup>
 import TypingEffect from '../components/TypingEffect.vue';
 import IconBoxs from '../components/IconBoxs.vue';
-import { glyphs } from '../assets/config.json';
+import config from '../assets/config.json';
 import { useStore } from 'vuex';
 import { ref, computed } from 'vue';
+
+const { glyphs } = config;
 
 const store = useStore();
 
