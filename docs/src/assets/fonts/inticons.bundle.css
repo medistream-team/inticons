@@ -578,31 +578,31 @@
 .ii-sliders:before {
   content: "\e8b5";
 } /* '' */
-.ii-square-outline:before {
+.ii-spiral:before {
   content: "\e8b6";
 } /* '' */
-.ii-star-outline.ii-weight-600:before {
+.ii-square-outline:before {
   content: "\e8b7";
 } /* '' */
-.ii-star-outline:before {
+.ii-star-outline.ii-weight-600:before {
   content: "\e8b8";
 } /* '' */
-.ii-star:before {
+.ii-star-outline:before {
   content: "\e8b9";
 } /* '' */
-.ii-stethoscope:before {
+.ii-star:before {
   content: "\e8ba";
 } /* '' */
-.ii-sun:before {
+.ii-stethoscope:before {
   content: "\e8bb";
 } /* '' */
-.ii-table-chart:before {
+.ii-sun:before {
   content: "\e8bc";
 } /* '' */
-.ii-ticket-outline:before {
+.ii-table-chart:before {
   content: "\e8bd";
 } /* '' */
-.ii-tonado:before {
+.ii-ticket-outline:before {
   content: "\e8be";
 } /* '' */
 .ii-trash-outline:before {

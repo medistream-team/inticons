@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'inticons';
-  src: url('../font/inticons.eot?48465399');
-  src: url('../font/inticons.eot?48465399#iefix') format('embedded-opentype'),
-       url('../font/inticons.woff2?48465399') format('woff2'),
-       url('../font/inticons.woff?48465399') format('woff'),
-       url('../font/inticons.ttf?48465399') format('truetype'),
-       url('../font/inticons.svg?48465399#inticons') format('svg');
+  src: url('../font/inticons.eot?71678858');
+  src: url('../font/inticons.eot?71678858#iefix') format('embedded-opentype'),
+       url('../font/inticons.woff2?71678858') format('woff2'),
+       url('../font/inticons.woff?71678858') format('woff'),
+       url('../font/inticons.ttf?71678858') format('truetype'),
+       url('../font/inticons.svg?71678858#inticons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'inticons';
-    src: url('../font/inticons.svg?48465399#inticons') format('svg');
+    src: url('../font/inticons.svg?71678858#inticons') format('svg');
   }
 }
 */
@@ -236,15 +236,15 @@
 .ii-shield-check-outline:before { content: '\e8b3'; } /* '' */
 .ii-sliders.ii-weight-600:before { content: '\e8b4'; } /* '' */
 .ii-sliders:before { content: '\e8b5'; } /* '' */
-.ii-square-outline:before { content: '\e8b6'; } /* '' */
-.ii-star-outline.ii-weight-600:before { content: '\e8b7'; } /* '' */
-.ii-star-outline:before { content: '\e8b8'; } /* '' */
-.ii-star:before { content: '\e8b9'; } /* '' */
-.ii-stethoscope:before { content: '\e8ba'; } /* '' */
-.ii-sun:before { content: '\e8bb'; } /* '' */
-.ii-table-chart:before { content: '\e8bc'; } /* '' */
-.ii-ticket-outline:before { content: '\e8bd'; } /* '' */
-.ii-tonado:before { content: '\e8be'; } /* '' */
+.ii-spiral:before { content: '\e8b6'; } /* '' */
+.ii-square-outline:before { content: '\e8b7'; } /* '' */
+.ii-star-outline.ii-weight-600:before { content: '\e8b8'; } /* '' */
+.ii-star-outline:before { content: '\e8b9'; } /* '' */
+.ii-star:before { content: '\e8ba'; } /* '' */
+.ii-stethoscope:before { content: '\e8bb'; } /* '' */
+.ii-sun:before { content: '\e8bc'; } /* '' */
+.ii-table-chart:before { content: '\e8bd'; } /* '' */
+.ii-ticket-outline:before { content: '\e8be'; } /* '' */
 .ii-trash-outline:before { content: '\e8bf'; } /* '' */
 .ii-trophy-outline:before { content: '\e8c0'; } /* '' */
 .ii-truck-outline:before { content: '\e8c1'; } /* '' */
