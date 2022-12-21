@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'inticons';
-  src: url('../font/inticons.eot?53453980');
-  src: url('../font/inticons.eot?53453980#iefix') format('embedded-opentype'),
-       url('../font/inticons.woff2?53453980') format('woff2'),
-       url('../font/inticons.woff?53453980') format('woff'),
-       url('../font/inticons.ttf?53453980') format('truetype'),
-       url('../font/inticons.svg?53453980#inticons') format('svg');
+  src: url('../font/inticons.eot?48465399');
+  src: url('../font/inticons.eot?48465399#iefix') format('embedded-opentype'),
+       url('../font/inticons.woff2?48465399') format('woff2'),
+       url('../font/inticons.woff?48465399') format('woff'),
+       url('../font/inticons.ttf?48465399') format('truetype'),
+       url('../font/inticons.svg?48465399#inticons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'inticons';
-    src: url('../font/inticons.svg?53453980#inticons') format('svg');
+    src: url('../font/inticons.svg?48465399#inticons') format('svg');
   }
 }
 */
@@ -244,18 +244,19 @@
 .ii-sun:before { content: '\e8bb'; } /* '' */
 .ii-table-chart:before { content: '\e8bc'; } /* '' */
 .ii-ticket-outline:before { content: '\e8bd'; } /* '' */
-.ii-trash-outline:before { content: '\e8be'; } /* '' */
-.ii-trophy-outline:before { content: '\e8bf'; } /* '' */
-.ii-truck-outline:before { content: '\e8c0'; } /* '' */
-.ii-truck-timer-outline:before { content: '\e8c1'; } /* '' */
-.ii-user-outline.ii-weight-600:before { content: '\e8c2'; } /* '' */
-.ii-user-outline:before { content: '\e8c3'; } /* '' */
-.ii-user-pass-outline:before { content: '\e8c4'; } /* '' */
-.ii-user:before { content: '\e8c5'; } /* '' */
-.ii-users-outline:before { content: '\e8c6'; } /* '' */
-.ii-wallet-outline:before { content: '\e8c7'; } /* '' */
-.ii-warning-circle-outline.ii-weight-600:before { content: '\e8c8'; } /* '' */
-.ii-warning-circle-outline:before { content: '\e8c9'; } /* '' */
-.ii-warning-circle:before { content: '\e8ca'; } /* '' */
-.ii-warning-triangle-outline:before { content: '\e8cb'; } /* '' */
-.ii-warning-triangle:before { content: '\e8cc'; } /* '' */
+.ii-tonado:before { content: '\e8be'; } /* '' */
+.ii-trash-outline:before { content: '\e8bf'; } /* '' */
+.ii-trophy-outline:before { content: '\e8c0'; } /* '' */
+.ii-truck-outline:before { content: '\e8c1'; } /* '' */
+.ii-truck-timer-outline:before { content: '\e8c2'; } /* '' */
+.ii-user-outline.ii-weight-600:before { content: '\e8c3'; } /* '' */
+.ii-user-outline:before { content: '\e8c4'; } /* '' */
+.ii-user-pass-outline:before { content: '\e8c5'; } /* '' */
+.ii-user:before { content: '\e8c6'; } /* '' */
+.ii-users-outline:before { content: '\e8c7'; } /* '' */
+.ii-wallet-outline:before { content: '\e8c8'; } /* '' */
+.ii-warning-circle-outline.ii-weight-600:before { content: '\e8c9'; } /* '' */
+.ii-warning-circle-outline:before { content: '\e8ca'; } /* '' */
+.ii-warning-circle:before { content: '\e8cb'; } /* '' */
+.ii-warning-triangle-outline:before { content: '\e8cc'; } /* '' */
+.ii-warning-triangle:before { content: '\e8cd'; } /* '' */

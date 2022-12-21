@@ -2669,8 +2669,22 @@
     },
     {
       "uid": "191",
-      "css": "trash-outline",
+      "css": "tonado",
       "code": 59582,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M513 83c-91 1-182 33-254 97-170 152-177 421-28 590 85 97 205 146 325 147 7 0 15-3 20-8 5-6 9-13 9-20 0-8-3-15-9-21-5-5-12-8-19-8-106-1-210-43-284-128-128-146-123-379 23-510 130-115 337-110 452 24 100 117 95 303-23 405-101 88-262 83-348-23-73-88-68-227 22-300 73-60 186-55 245 21 45 60 40 151-21 196-44 32-111 28-141-19-9-14-13-35-10-52 2-17 10-30 26-38 6-3 18-5 25-3 3 1 4 1 6 2v0c-7 2-12 6-16 11-4 6-6 13-5 19 1 7 4 13 8 18 9 9 24 15 37 12 14-3 21-11 26-18 10-14 15-26 11-46-7-28-30-47-53-53-22-6-45-3-65 7-32 17-51 48-56 80-5 32 2 65 19 92 49 77 153 84 221 34 89-65 96-193 32-276-79-103-228-110-325-31-115 94-121 269-29 381 107 130 303 137 428 29 142-123 149-345 28-485-68-80-162-121-259-125-6-1-12-1-18-1l0 0z",
+        "width": 1000
+      },
+      "search": [
+        "tonado"
+      ]
+    },
+    {
+      "uid": "192",
+      "css": "trash-outline",
+      "code": 59583,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -2682,9 +2696,9 @@
       ]
     },
     {
-      "uid": "192",
+      "uid": "193",
       "css": "trophy-outline",
-      "code": 59583,
+      "code": 59584,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -2696,9 +2710,9 @@
       ]
     },
     {
-      "uid": "193",
+      "uid": "194",
       "css": "truck-outline",
-      "code": 59584,
+      "code": 59585,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -2710,9 +2724,9 @@
       ]
     },
     {
-      "uid": "194",
+      "uid": "195",
       "css": "truck-timer-outline",
-      "code": 59585,
+      "code": 59586,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -2724,9 +2738,9 @@
       ]
     },
     {
-      "uid": "195",
+      "uid": "196",
       "css": "user-outline.ii-weight-600",
-      "code": 59586,
+      "code": 59587,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -2738,9 +2752,9 @@
       ]
     },
     {
-      "uid": "196",
+      "uid": "197",
       "css": "user-outline",
-      "code": 59587,
+      "code": 59588,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -2752,9 +2766,9 @@
       ]
     },
     {
-      "uid": "197",
+      "uid": "198",
       "css": "user-pass-outline",
-      "code": 59588,
+      "code": 59589,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -2766,9 +2780,9 @@
       ]
     },
     {
-      "uid": "198",
+      "uid": "199",
       "css": "user",
-      "code": 59589,
+      "code": 59590,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -2780,9 +2794,9 @@
       ]
     },
     {
-      "uid": "199",
+      "uid": "200",
       "css": "users-outline",
-      "code": 59590,
+      "code": 59591,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -2794,9 +2808,9 @@
       ]
     },
     {
-      "uid": "200",
+      "uid": "201",
       "css": "wallet-outline",
-      "code": 59591,
+      "code": 59592,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -2808,9 +2822,9 @@
       ]
     },
     {
-      "uid": "201",
+      "uid": "202",
       "css": "warning-circle-outline.ii-weight-600",
-      "code": 59592,
+      "code": 59593,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -2822,9 +2836,9 @@
       ]
     },
     {
-      "uid": "202",
+      "uid": "203",
       "css": "warning-circle-outline",
-      "code": 59593,
+      "code": 59594,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -2836,9 +2850,9 @@
       ]
     },
     {
-      "uid": "203",
+      "uid": "204",
       "css": "warning-circle",
-      "code": 59594,
+      "code": 59595,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -2850,9 +2864,9 @@
       ]
     },
     {
-      "uid": "204",
+      "uid": "205",
       "css": "warning-triangle-outline",
-      "code": 59595,
+      "code": 59596,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -2864,9 +2878,9 @@
       ]
     },
     {
-      "uid": "205",
+      "uid": "206",
       "css": "warning-triangle",
-      "code": 59596,
+      "code": 59597,
       "src": "custom_icons",
       "selected": true,
       "svg": {
