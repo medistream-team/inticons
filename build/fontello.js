@@ -18,7 +18,11 @@ const createGlyphs = svgsPath => {
 
     const filePath = path.join(svgsPath, file);
     const fileData = fs.readFileSync(filePath, 'utf8');
-    const fileName = file.replace(/\.svg/, '');
+    const [fileName, ...otherClasses] = file.replace(/\.svg/, '').split('--');
+
+    const iconName = `${fileName}${otherClasses
+      .map(className => `.ii-${className}`)
+      .join('')}`;
 
     const { data } = optimize(fileData, {
       plugins: [
@@ -55,7 +59,7 @@ const createGlyphs = svgsPath => {
 
     return {
       uid: (index + 1).toString(),
-      css: fileName,
+      css: iconName,
       code: index + 1 + 59391,
       src: 'custom_icons',
       selected: true,
@@ -63,7 +67,7 @@ const createGlyphs = svgsPath => {
         path: scaledPath,
         width: 1000,
       },
-      search: [fileName],
+      search: [iconName],
     };
   });
 
