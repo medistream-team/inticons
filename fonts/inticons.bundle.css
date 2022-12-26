@@ -41,19 +41,19 @@
 .ii-arrow-down:before {
   content: "\e802";
 } /* '' */
-.ii-arrow-left-in-box-outline:before {
+.ii-arrow-left.ii-weight-600:before {
   content: "\e803";
 } /* '' */
-.ii-arrow-left.ii-weight-600:before {
+.ii-arrow-left-in-box-outline:before {
   content: "\e804";
 } /* '' */
 .ii-arrow-left:before {
   content: "\e805";
 } /* '' */
-.ii-arrow-right-from-bracket:before {
+.ii-arrow-right.ii-weight-600:before {
   content: "\e806";
 } /* '' */
-.ii-arrow-right.ii-weight-600:before {
+.ii-arrow-right-from-bracket:before {
   content: "\e807";
 } /* '' */
 .ii-arrow-right:before {
@@ -164,34 +164,34 @@
 .ii-chart-arrow:before {
   content: "\e82b";
 } /* '' */
-.ii-check-circle-outline.ii-weight-600:before {
+.ii-check.ii-weight-600:before {
   content: "\e82c";
 } /* '' */
-.ii-check-circle-outline:before {
+.ii-check-circle.ii-weight-600:before {
   content: "\e82d";
 } /* '' */
-.ii-check-circle.ii-weight-600:before {
+.ii-check-circle-outline.ii-weight-600:before {
   content: "\e82e";
 } /* '' */
-.ii-check-circle:before {
+.ii-check-circle-outline:before {
   content: "\e82f";
 } /* '' */
-.ii-check-notepad-outline:before {
+.ii-check-circle:before {
   content: "\e830";
 } /* '' */
-.ii-check-square-outline.ii-weight-600:before {
+.ii-check-notepad-outline:before {
   content: "\e831";
 } /* '' */
-.ii-check-square-outline:before {
+.ii-check-square.ii-weight-600:before {
   content: "\e832";
 } /* '' */
-.ii-check-square.ii-weight-600:before {
+.ii-check-square-outline.ii-weight-600:before {
   content: "\e833";
 } /* '' */
-.ii-check-square:before {
+.ii-check-square-outline:before {
   content: "\e834";
 } /* '' */
-.ii-check.ii-weight-600:before {
+.ii-check-square:before {
   content: "\e835";
 } /* '' */
 .ii-check:before {
@@ -233,13 +233,13 @@
 .ii-circle-outline:before {
   content: "\e842";
 } /* '' */
-.ii-circle-plus-outline.ii-weight-600:before {
+.ii-circle-plus.ii-weight-600:before {
   content: "\e843";
 } /* '' */
-.ii-circle-plus-outline:before {
+.ii-circle-plus-outline.ii-weight-600:before {
   content: "\e844";
 } /* '' */
-.ii-circle-plus.ii-weight-600:before {
+.ii-circle-plus-outline:before {
   content: "\e845";
 } /* '' */
 .ii-circle-plus:before {
@@ -440,16 +440,16 @@
 .ii-message-question-outline:before {
   content: "\e887";
 } /* '' */
-.ii-minus-circle-outline.ii-weight-600:before {
+.ii-minus.ii-weight-600:before {
   content: "\e888";
 } /* '' */
-.ii-minus-circle-outline:before {
+.ii-minus-circle-outline.ii-weight-600:before {
   content: "\e889";
 } /* '' */
-.ii-minus-circle:before {
+.ii-minus-circle-outline:before {
   content: "\e88a";
 } /* '' */
-.ii-minus.ii-weight-600:before {
+.ii-minus-circle:before {
   content: "\e88b";
 } /* '' */
 .ii-minus:before {
@@ -524,28 +524,28 @@
 .ii-refresh:before {
   content: "\e8a3";
 } /* '' */
-.ii-remove-circle-outline.ii-weight-600:before {
+.ii-remove.ii-weight-600:before {
   content: "\e8a4";
 } /* '' */
-.ii-remove-circle-outline:before {
+.ii-remove-circle.ii-weight-600:before {
   content: "\e8a5";
 } /* '' */
-.ii-remove-circle.ii-weight-600:before {
+.ii-remove-circle-outline.ii-weight-600:before {
   content: "\e8a6";
 } /* '' */
-.ii-remove-circle:before {
+.ii-remove-circle-outline:before {
   content: "\e8a7";
 } /* '' */
-.ii-remove.ii-weight-600:before {
+.ii-remove-circle:before {
   content: "\e8a8";
 } /* '' */
 .ii-remove:before {
   content: "\e8a9";
 } /* '' */
-.ii-search-chart:before {
+.ii-search.ii-weight-600:before {
   content: "\e8aa";
 } /* '' */
-.ii-search.ii-weight-600:before {
+.ii-search-chart:before {
   content: "\e8ab";
 } /* '' */
 .ii-search:before {
