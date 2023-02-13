@@ -14,7 +14,7 @@ jobs:
       with:
         node-version: '14'
     - name: Install Dependencies
-      run: npm install
+      run: npm run dependency
 
     - name: build fonts
       run: npm run build-font
