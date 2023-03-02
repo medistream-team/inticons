@@ -19,10 +19,10 @@
   "main": "fonts/inticons.bundle.min.css",
   "scripts": {
     "dependency": "npm install && cd ./docs && npm install && cd ..",
-    "fontello": "node ./build/fontello && rm -rf .fontello-session && fontello-cli install --config ./fonts/config.json --css ./fonts/css --font ./fonts/font",
+    "fantasticon": "node ./build/fantasticon",
     "build-font": "node ./build/build-font",
     "build-docs": "node ./build/build-docs && cd ./docs && npm run build && cd ..",
-    "build": "npm run fontello && npm run build-font && npm run build-docs",
+    "build": "npm run fantasticon && npm run build-font && npm run build-docs",
     "serve": "cd ./docs && npm run serve && cd ..",
     "start": "npm run serve"
   },
@@ -33,13 +33,13 @@
     "type": "git",
     "url": "https://github.com/medistream-team/inticons"
   },
-  "dependencies": {},
   "devDependencies": {
     "eslint": "^8.29.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "fantasticon": "^2.0.0",
     "fontello-cli": "^0.6.2",
     "fs-extra": "^11.1.0",
     "prettier": "^2.8.1",
