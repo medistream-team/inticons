@@ -19,10 +19,10 @@
   "main": "fonts/inticons.bundle.min.css",
   "scripts": {
     "dependency": "npm install && cd ./docs && npm install && cd ..",
-    "fontello": "node ./build/fontello && rm -rf .fontello-session && fontello-cli install --config ./fonts/config.json --css ./fonts/css --font ./fonts/font",
+    "fantasticon": "node ./build/fantasticon",
     "build-font": "node ./build/build-font",
     "build-docs": "node ./build/build-docs && cd ./docs && npm run build && cd ..",
-    "build": "npm run fontello && npm run build-font && npm run build-docs",
+    "build": "npm run fantasticon && npm run build-font && npm run build-docs",
     "serve": "cd ./docs && npm run serve && cd ..",
     "start": "npm run serve"
   },
