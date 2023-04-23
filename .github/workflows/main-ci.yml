@@ -8,7 +8,7 @@ on: # 이벤트 트리거
 
 jobs: # jobs
   build: # GitHub-hosted runners env
-    runs-on: ubuntu-18.04 # using Ubuntu 18.04 LTS
+    runs-on: ubuntu-latest
     steps: # steps
       - name: git clone #
         uses: actions/checkout@v2 #
