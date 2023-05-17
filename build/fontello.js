@@ -9,67 +9,66 @@ const SVGS_PATH = './icons';
 const createGlyphs = svgsPath => {
   const files = fs.readdirSync(svgsPath);
 
-  const glyphs = files.map((file, index) => {
-    const isSvg = file.match(/\.svg/);
+  const glyphs = files
+    .filter(file => file.match(/\.svg/))
+    .map((file, index) => {
+      const filePath = path.join(svgsPath, file);
+      const fileData = fs.readFileSync(filePath, 'utf8');
+      const [fileName, ...otherClasses] = file.replace(/\.svg/, '').split('--');
 
-    if (!isSvg) {
-      return;
-    }
+      const iconName = `${fileName}${otherClasses
+        .map(className => `.ii-${className}`)
+        .join('')}`;
 
-    const filePath = path.join(svgsPath, file);
-    const fileData = fs.readFileSync(filePath, 'utf8');
-    const [fileName, ...otherClasses] = file.replace(/\.svg/, '').split('--');
-
-    const iconName = `${fileName}${otherClasses
-      .map(className => `.ii-${className}`)
-      .join('')}`;
-
-    const { data } = optimize(fileData, {
-      plugins: [
-        {
-          name: 'preset-default',
-          params: {
-            overrides: {
-              removeViewBox: false,
-              convertPathData: false,
+      const { data } = optimize(fileData, {
+        plugins: [
+          {
+            name: 'preset-default',
+            params: {
+              overrides: {
+                removeViewBox: false,
+                convertPathData: false,
+              },
             },
           },
+        ],
+      });
+
+      const isFillRuleEvenOdd = data.match(/fill-rule="evenodd"/);
+
+      if (isFillRuleEvenOdd) {
+        throw new Error(`fill-rule을 변경해주세요: ${fileName}.svg`);
+      }
+
+      const svgPathData = data
+        .match(/\bd=(['"])(.*?)\1/g)
+        .map(path => path.match(/d="([\s\S]*?)"/)[1])
+        .join(' ');
+
+      const svgViewBoxWidth = data
+        .match(/viewBox="([\s\S]*?)"/)[1]
+        .split(' ')[3];
+
+      const scaledPath = svgpath(svgPathData)
+        .scale(1000 / parseInt(svgViewBoxWidth))
+        .abs()
+        .round(0)
+        .rel()
+        .toString();
+
+      return {
+        uid: (index + 1).toString(),
+        css: iconName,
+        code: index + 1 + 59391,
+        src: 'custom_icons',
+        selected: true,
+        svg: {
+          path: scaledPath,
+          width: 1000,
         },
-      ],
+        search: [iconName],
+      };
     });
-
-    const isFillRuleEvenOdd = data.match(/fill-rule="evenodd"/);
-
-    if (isFillRuleEvenOdd) {
-      throw new Error(`fill-rule을 변경해주세요: ${fileName}.svg`);
-    }
-
-    const svgPathData = data
-      .match(/\bd=(['"])(.*?)\1/g)
-      .map(path => path.match(/d="([\s\S]*?)"/)[1])
-      .join(' ');
-
-    const svgViewBoxWidth = data.match(/viewBox="([\s\S]*?)"/)[1].split(' ')[3];
-    const scaledPath = svgpath(svgPathData)
-      .scale(1000 / parseInt(svgViewBoxWidth))
-      .abs()
-      .round(0)
-      .rel()
-      .toString();
-
-    return {
-      uid: (index + 1).toString(),
-      css: iconName,
-      code: index + 1 + 59391,
-      src: 'custom_icons',
-      selected: true,
-      svg: {
-        path: scaledPath,
-        width: 1000,
-      },
-      search: [iconName],
-    };
-  });
 
   return glyphs;
 };
