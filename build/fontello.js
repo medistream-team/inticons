@@ -42,7 +42,7 @@ const createGlyphs = svgsPath => {
 
       const svgPathData = data
         .match(/\bd=(['"])(.*?)\1/g)
-        .map(path => path.match(/d="([\s\S]*?)"/)[1])
+        .map(p => p.match(/d="([\s\S]*?)"/)[1])
         .join(' ');
 
       const svgViewBoxWidth = data
@@ -50,7 +50,7 @@ const createGlyphs = svgsPath => {
         .split(' ')[3];
 
       const scaledPath = svgpath(svgPathData)
-        .scale(1000 / parseInt(svgViewBoxWidth))
+        .scale(1000 / parseInt(svgViewBoxWidth, 10))
         .abs()
         .round(0)
         .rel()
