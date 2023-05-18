@@ -59,6 +59,14 @@
         >
           WEIGHT-600
         </button>
+        <button
+          type="button"
+          value="600"
+          :class="{ selected: selected === 'UNTITLED-UI' }"
+          @click="selected = 'UNTITLED-UI'"
+        >
+          UNTITLED-UI
+        </button>
       </div>
 
       <div class="icon-wrapper">
@@ -98,6 +106,8 @@ const selectedGlyphs = computed(() => {
     return glyphs;
   } else if (selected.value === 'NORMAL') {
     return glyphs.filter(glyph => glyph.css.split('.').length === 1);
+  } else if (selected.value === 'UNTITLED-UI') {
+    return glyphs.filter(glyph => glyph.css.split('untitledui').length > 1);
   } else {
     return glyphs.filter(glyph => glyph.css.split('.').length > 1);
   }

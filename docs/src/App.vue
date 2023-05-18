@@ -19,6 +19,7 @@ export default {
 
 <style>
 @import url('./assets/fonts/inticons.bundle.css');
+@import url('./assets/fonts/inticons.untitled-ui.bundle.css');
 @import url('pretendard/dist/web/static/pretendard.css');
 
 #app {
