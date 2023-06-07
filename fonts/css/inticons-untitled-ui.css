@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'inticons-untitled-ui';
-  src: url('../font/inticons-untitled-ui.eot?43146117');
-  src: url('../font/inticons-untitled-ui.eot?43146117#iefix') format('embedded-opentype'),
-       url('../font/inticons-untitled-ui.woff2?43146117') format('woff2'),
-       url('../font/inticons-untitled-ui.woff?43146117') format('woff'),
-       url('../font/inticons-untitled-ui.ttf?43146117') format('truetype'),
-       url('../font/inticons-untitled-ui.svg?43146117#inticons-untitled-ui') format('svg');
+  src: url('../font/inticons-untitled-ui.eot?45649133');
+  src: url('../font/inticons-untitled-ui.eot?45649133#iefix') format('embedded-opentype'),
+       url('../font/inticons-untitled-ui.woff2?45649133') format('woff2'),
+       url('../font/inticons-untitled-ui.woff?45649133') format('woff'),
+       url('../font/inticons-untitled-ui.ttf?45649133') format('truetype'),
+       url('../font/inticons-untitled-ui.svg?45649133#inticons-untitled-ui') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'inticons-untitled-ui';
-    src: url('../font/inticons-untitled-ui.svg?43146117#inticons-untitled-ui') format('svg');
+    src: url('../font/inticons-untitled-ui.svg?45649133#inticons-untitled-ui') format('svg');
   }
 }
 */
