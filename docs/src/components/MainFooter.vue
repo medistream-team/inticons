@@ -4,7 +4,7 @@
       <img :src="logoSrc" height="20" alt="Inticons" />
     </div>
     <div class="footer-bottom">
-      Copyright © 2022. Built by INTEGRATION Corp.
+      Copyright © 2024. Built by INTEGRATION Corp.
     </div>
   </div>
 </template>
