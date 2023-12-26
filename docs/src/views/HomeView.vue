@@ -221,7 +221,7 @@ const selectedGlyphs = computed(() => {
     border: none;
     border-radius: 5px;
     background-color: #f8f8fc;
-    font-size: 14px;
+    font-size: 16px;
     cursor: pointer;
 
     &:focus {
