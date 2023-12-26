@@ -41,7 +41,7 @@
           :class="{ selected: selected === 'ALL' }"
           @click="selected = 'ALL'"
         >
-          ALL
+          All
         </button>
         <button
           type="button"
@@ -49,7 +49,7 @@
           :class="{ selected: selected === 'NORMAL' }"
           @click="selected = 'NORMAL'"
         >
-          NORMAL
+          Inticons
         </button>
         <button
           type="button"
@@ -57,7 +57,7 @@
           :class="{ selected: selected === '600' }"
           @click="selected = '600'"
         >
-          WEIGHT-600
+          Inticons (weight 600)
         </button>
         <button
           type="button"
@@ -65,7 +65,7 @@
           :class="{ selected: selected === 'UNTITLED-UI' }"
           @click="selected = 'UNTITLED-UI'"
         >
-          UNTITLED-UI
+          Untitled UI
         </button>
       </div>
 
@@ -215,12 +215,12 @@ const selectedGlyphs = computed(() => {
   padding: 10px 0;
 
   button {
-    margin: 0 10px;
-    padding: 10px 20px;
+    margin-bottom: 10px;
+    padding: 7px 12px;
     border: none;
     border-radius: 5px;
     background-color: #f8f8fc;
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
 
     &:focus {
@@ -230,6 +230,10 @@ const selectedGlyphs = computed(() => {
     &.selected {
       background-color: grey;
       color: white;
+    }
+
+    & + button {
+      margin-left: 10px;
     }
   }
 }
