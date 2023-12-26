@@ -37,35 +37,31 @@
       <div class="buttons-wrapper">
         <button
           type="button"
-          value="ALL"
-          :class="{ selected: selected === 'ALL' }"
-          @click="selected = 'ALL'"
+          :class="{ selected: selected === '' }"
+          @click="selected = ''"
         >
-          ALL
+          All
         </button>
         <button
           type="button"
-          value="NORMAL"
-          :class="{ selected: selected === 'NORMAL' }"
-          @click="selected = 'NORMAL'"
+          :class="{ selected: selected === 'inticons' }"
+          @click="selected = 'inticons'"
         >
-          NORMAL
+          Inticons
         </button>
         <button
           type="button"
-          value="600"
-          :class="{ selected: selected === '600' }"
-          @click="selected = '600'"
+          :class="{ selected: selected === 'inticons-600' }"
+          @click="selected = 'inticons-600'"
         >
-          WEIGHT-600
+          Inticons (weight 600)
         </button>
         <button
           type="button"
-          value="600"
-          :class="{ selected: selected === 'UNTITLED-UI' }"
-          @click="selected = 'UNTITLED-UI'"
+          :class="{ selected: selected === 'untitled-ui' }"
+          @click="selected = 'untitled-ui'"
         >
-          UNTITLED-UI
+          Untitled UI
         </button>
       </div>
 
@@ -99,17 +95,22 @@ const goSearch = () => {
   document.getElementById('target-focus').focus();
 };
 
-const selected = ref('ALL');
+const selected = ref('');
 
 const selectedGlyphs = computed(() => {
-  if (selected.value === 'ALL') {
-    return glyphs;
-  } else if (selected.value === 'NORMAL') {
-    return glyphs.filter(glyph => glyph.css.split('.').length === 1);
-  } else if (selected.value === 'UNTITLED-UI') {
-    return glyphs.filter(glyph => glyph.css.split('untitledui').length > 1);
+  if (selected.value === 'untitled-ui') {
+    return glyphs.filter(glyph => glyph.css.indexOf('untitledui-') > -1);
+  } else if (selected.value === 'inticons-600') {
+    return glyphs.filter(glyph => glyph.css.indexOf('ii-weight-600') > -1);
+  } else if (selected.value === 'inticons') {
+    return glyphs.filter(glyph => {
+      return (
+        glyph.css.indexOf('untitledui-') < 0 &&
+        glyph.css.indexOf('ii-weight-600') < 0
+      );
+    });
   } else {
-    return glyphs.filter(glyph => glyph.css.split('.').length > 1);
+    return glyphs;
   }
 });
 </script>
@@ -215,8 +216,8 @@ const selectedGlyphs = computed(() => {
   padding: 10px 0;
 
   button {
-    margin: 0 10px;
-    padding: 10px 20px;
+    margin-bottom: 10px;
+    padding: 7px 12px;
     border: none;
     border-radius: 5px;
     background-color: #f8f8fc;
@@ -230,6 +231,10 @@ const selectedGlyphs = computed(() => {
     &.selected {
       background-color: grey;
       color: white;
+    }
+
+    & + button {
+      margin-left: 10px;
     }
   }
 }
