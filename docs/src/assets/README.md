@@ -38,13 +38,6 @@ npm install inticons
 </script>
 ```
 
-### CDN (Not Recommended)
-
-```html
-<link href="https://inticons.com/inticons.bundle.css" rel="stylesheet" type="text/css">
-<link href="https://inticons.com/inticons.bundle.min.css" rel="stylesheet" type="text/css">
-```
-
 ### Component
 
 Each icon can be referenced by their name prefixed with `ii-`. For example, You can get the arrow-right icon with using `ii-arrow-right`. You can use `font-size` and `color` properties to change the icon appearance.
