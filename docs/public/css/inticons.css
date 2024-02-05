@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'inticons';
-  src: url('../font/inticons.eot?20135431');
-  src: url('../font/inticons.eot?20135431#iefix') format('embedded-opentype'),
-       url('../font/inticons.woff2?20135431') format('woff2'),
-       url('../font/inticons.woff?20135431') format('woff'),
-       url('../font/inticons.ttf?20135431') format('truetype'),
-       url('../font/inticons.svg?20135431#inticons') format('svg');
+  src: url('../font/inticons.eot?86997336');
+  src: url('../font/inticons.eot?86997336#iefix') format('embedded-opentype'),
+       url('../font/inticons.woff2?86997336') format('woff2'),
+       url('../font/inticons.woff?86997336') format('woff'),
+       url('../font/inticons.ttf?86997336') format('truetype'),
+       url('../font/inticons.svg?86997336#inticons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'inticons';
-    src: url('../font/inticons.svg?20135431#inticons') format('svg');
+    src: url('../font/inticons.svg?86997336#inticons') format('svg');
   }
 }
 */
@@ -237,40 +237,41 @@
 .ii-remove-circle-outline:before { content: '\e8b4'; } /* '' */
 .ii-remove-circle:before { content: '\e8b5'; } /* '' */
 .ii-remove:before { content: '\e8b6'; } /* '' */
-.ii-search.ii-weight-600:before { content: '\e8b7'; } /* '' */
-.ii-search-chart:before { content: '\e8b8'; } /* '' */
-.ii-search:before { content: '\e8b9'; } /* '' */
-.ii-send-to:before { content: '\e8ba'; } /* '' */
-.ii-settings-outline.ii-weight-600:before { content: '\e8bb'; } /* '' */
-.ii-settings-outline:before { content: '\e8bc'; } /* '' */
-.ii-share-outline.ii-weight-600:before { content: '\e8bd'; } /* '' */
-.ii-share-outline:before { content: '\e8be'; } /* '' */
-.ii-shield-check-outline.ii-weight-600:before { content: '\e8bf'; } /* '' */
-.ii-shield-check-outline:before { content: '\e8c0'; } /* '' */
-.ii-sliders.ii-weight-600:before { content: '\e8c1'; } /* '' */
-.ii-sliders:before { content: '\e8c2'; } /* '' */
-.ii-spiral:before { content: '\e8c3'; } /* '' */
-.ii-square-outline:before { content: '\e8c4'; } /* '' */
-.ii-star-outline.ii-weight-600:before { content: '\e8c5'; } /* '' */
-.ii-star-outline:before { content: '\e8c6'; } /* '' */
-.ii-star:before { content: '\e8c7'; } /* '' */
-.ii-stethoscope:before { content: '\e8c8'; } /* '' */
-.ii-sun:before { content: '\e8c9'; } /* '' */
-.ii-table-chart:before { content: '\e8ca'; } /* '' */
-.ii-ticket-outline:before { content: '\e8cb'; } /* '' */
-.ii-trash-outline:before { content: '\e8cc'; } /* '' */
-.ii-trophy-outline:before { content: '\e8cd'; } /* '' */
-.ii-truck-outline:before { content: '\e8ce'; } /* '' */
-.ii-truck-timer-outline:before { content: '\e8cf'; } /* '' */
-.ii-user-outline.ii-weight-600:before { content: '\e8d0'; } /* '' */
-.ii-user-outline:before { content: '\e8d1'; } /* '' */
-.ii-user-pass-outline:before { content: '\e8d2'; } /* '' */
-.ii-user-screen-outline:before { content: '\e8d3'; } /* '' */
-.ii-user:before { content: '\e8d4'; } /* '' */
-.ii-users-outline:before { content: '\e8d5'; } /* '' */
-.ii-wallet-outline:before { content: '\e8d6'; } /* '' */
-.ii-warning-circle-outline.ii-weight-600:before { content: '\e8d7'; } /* '' */
-.ii-warning-circle-outline:before { content: '\e8d8'; } /* '' */
-.ii-warning-circle:before { content: '\e8d9'; } /* '' */
-.ii-warning-triangle-outline:before { content: '\e8da'; } /* '' */
-.ii-warning-triangle:before { content: '\e8db'; } /* '' */
+.ii-reply:before { content: '\e8b7'; } /* '' */
+.ii-search.ii-weight-600:before { content: '\e8b8'; } /* '' */
+.ii-search-chart:before { content: '\e8b9'; } /* '' */
+.ii-search:before { content: '\e8ba'; } /* '' */
+.ii-send-to:before { content: '\e8bb'; } /* '' */
+.ii-settings-outline.ii-weight-600:before { content: '\e8bc'; } /* '' */
+.ii-settings-outline:before { content: '\e8bd'; } /* '' */
+.ii-share-outline.ii-weight-600:before { content: '\e8be'; } /* '' */
+.ii-share-outline:before { content: '\e8bf'; } /* '' */
+.ii-shield-check-outline.ii-weight-600:before { content: '\e8c0'; } /* '' */
+.ii-shield-check-outline:before { content: '\e8c1'; } /* '' */
+.ii-sliders.ii-weight-600:before { content: '\e8c2'; } /* '' */
+.ii-sliders:before { content: '\e8c3'; } /* '' */
+.ii-spiral:before { content: '\e8c4'; } /* '' */
+.ii-square-outline:before { content: '\e8c5'; } /* '' */
+.ii-star-outline.ii-weight-600:before { content: '\e8c6'; } /* '' */
+.ii-star-outline:before { content: '\e8c7'; } /* '' */
+.ii-star:before { content: '\e8c8'; } /* '' */
+.ii-stethoscope:before { content: '\e8c9'; } /* '' */
+.ii-sun:before { content: '\e8ca'; } /* '' */
+.ii-table-chart:before { content: '\e8cb'; } /* '' */
+.ii-ticket-outline:before { content: '\e8cc'; } /* '' */
+.ii-trash-outline:before { content: '\e8cd'; } /* '' */
+.ii-trophy-outline:before { content: '\e8ce'; } /* '' */
+.ii-truck-outline:before { content: '\e8cf'; } /* '' */
+.ii-truck-timer-outline:before { content: '\e8d0'; } /* '' */
+.ii-user-outline.ii-weight-600:before { content: '\e8d1'; } /* '' */
+.ii-user-outline:before { content: '\e8d2'; } /* '' */
+.ii-user-pass-outline:before { content: '\e8d3'; } /* '' */
+.ii-user-screen-outline:before { content: '\e8d4'; } /* '' */
+.ii-user:before { content: '\e8d5'; } /* '' */
+.ii-users-outline:before { content: '\e8d6'; } /* '' */
+.ii-wallet-outline:before { content: '\e8d7'; } /* '' */
+.ii-warning-circle-outline.ii-weight-600:before { content: '\e8d8'; } /* '' */
+.ii-warning-circle-outline:before { content: '\e8d9'; } /* '' */
+.ii-warning-circle:before { content: '\e8da'; } /* '' */
+.ii-warning-triangle-outline:before { content: '\e8db'; } /* '' */
+.ii-warning-triangle:before { content: '\e8dc'; } /* '' */
