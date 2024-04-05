@@ -217,9 +217,10 @@
 .ii-user-screen-outline:before { content: '\e8d7'; } /* '' */
 .ii-user:before { content: '\e8d8'; } /* '' */
 .ii-users-outline:before { content: '\e8d9'; } /* '' */
-.ii-wallet-outline:before { content: '\e8da'; } /* '' */
-.ii-warning-circle-outline.ii-weight-600:before { content: '\e8db'; } /* '' */
-.ii-warning-circle-outline:before { content: '\e8dc'; } /* '' */
-.ii-warning-circle:before { content: '\e8dd'; } /* '' */
-.ii-warning-triangle-outline:before { content: '\e8de'; } /* '' */
-.ii-warning-triangle:before { content: '\e8df'; } /* '' */
+.ii-vote-outline:before { content: '\e8da'; } /* '' */
+.ii-wallet-outline:before { content: '\e8db'; } /* '' */
+.ii-warning-circle-outline.ii-weight-600:before { content: '\e8dc'; } /* '' */
+.ii-warning-circle-outline:before { content: '\e8dd'; } /* '' */
+.ii-warning-circle:before { content: '\e8de'; } /* '' */
+.ii-warning-triangle-outline:before { content: '\e8df'; } /* '' */
+.ii-warning-triangle:before { content: '\e8e0'; } /* '' */
