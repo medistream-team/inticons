@@ -217,9 +217,10 @@
 .ii-user-screen-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8d7;&nbsp;'); }
 .ii-user { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8d8;&nbsp;'); }
 .ii-users-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8d9;&nbsp;'); }
-.ii-wallet-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8da;&nbsp;'); }
-.ii-warning-circle-outline.ii-weight-600 { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8db;&nbsp;'); }
-.ii-warning-circle-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8dc;&nbsp;'); }
-.ii-warning-circle { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8dd;&nbsp;'); }
-.ii-warning-triangle-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8de;&nbsp;'); }
-.ii-warning-triangle { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8df;&nbsp;'); }
+.ii-vote-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8da;&nbsp;'); }
+.ii-wallet-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8db;&nbsp;'); }
+.ii-warning-circle-outline.ii-weight-600 { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8dc;&nbsp;'); }
+.ii-warning-circle-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8dd;&nbsp;'); }
+.ii-warning-circle { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8de;&nbsp;'); }
+.ii-warning-triangle-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8df;&nbsp;'); }
+.ii-warning-triangle { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8e0;&nbsp;'); }
