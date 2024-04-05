@@ -686,24 +686,27 @@
 .ii-users-outline:before {
   content: "\e8d9";
 } /* '' */
-.ii-wallet-outline:before {
+.ii-vote-outline:before {
   content: "\e8da";
 } /* '' */
-.ii-warning-circle-outline.ii-weight-600:before {
+.ii-wallet-outline:before {
   content: "\e8db";
 } /* '' */
-.ii-warning-circle-outline:before {
+.ii-warning-circle-outline.ii-weight-600:before {
   content: "\e8dc";
 } /* '' */
-.ii-warning-circle:before {
+.ii-warning-circle-outline:before {
   content: "\e8dd";
 } /* '' */
-.ii-warning-triangle-outline:before {
+.ii-warning-circle:before {
   content: "\e8de";
 } /* '' */
-.ii-warning-triangle:before {
+.ii-warning-triangle-outline:before {
   content: "\e8df";
 } /* '' */
+.ii-warning-triangle:before {
+  content: "\e8e0";
+} /* '' */
 .ii-spin::before {
   animation: spin 2s infinite linear;
 }

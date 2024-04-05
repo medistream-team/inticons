@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'inticons';
-  src: url('../font/inticons.eot?50060726');
-  src: url('../font/inticons.eot?50060726#iefix') format('embedded-opentype'),
-       url('../font/inticons.woff2?50060726') format('woff2'),
-       url('../font/inticons.woff?50060726') format('woff'),
-       url('../font/inticons.ttf?50060726') format('truetype'),
-       url('../font/inticons.svg?50060726#inticons') format('svg');
+  src: url('../font/inticons.eot?78548238');
+  src: url('../font/inticons.eot?78548238#iefix') format('embedded-opentype'),
+       url('../font/inticons.woff2?78548238') format('woff2'),
+       url('../font/inticons.woff?78548238') format('woff'),
+       url('../font/inticons.ttf?78548238') format('truetype'),
+       url('../font/inticons.svg?78548238#inticons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'inticons';
-    src: url('../font/inticons.svg?50060726#inticons') format('svg');
+    src: url('../font/inticons.svg?78548238#inticons') format('svg');
   }
 }
 */
@@ -272,9 +272,10 @@
 .ii-user-screen-outline:before { content: '\e8d7'; } /* '' */
 .ii-user:before { content: '\e8d8'; } /* '' */
 .ii-users-outline:before { content: '\e8d9'; } /* '' */
-.ii-wallet-outline:before { content: '\e8da'; } /* '' */
-.ii-warning-circle-outline.ii-weight-600:before { content: '\e8db'; } /* '' */
-.ii-warning-circle-outline:before { content: '\e8dc'; } /* '' */
-.ii-warning-circle:before { content: '\e8dd'; } /* '' */
-.ii-warning-triangle-outline:before { content: '\e8de'; } /* '' */
-.ii-warning-triangle:before { content: '\e8df'; } /* '' */
+.ii-vote-outline:before { content: '\e8da'; } /* '' */
+.ii-wallet-outline:before { content: '\e8db'; } /* '' */
+.ii-warning-circle-outline.ii-weight-600:before { content: '\e8dc'; } /* '' */
+.ii-warning-circle-outline:before { content: '\e8dd'; } /* '' */
+.ii-warning-circle:before { content: '\e8de'; } /* '' */
+.ii-warning-triangle-outline:before { content: '\e8df'; } /* '' */
+.ii-warning-triangle:before { content: '\e8e0'; } /* '' */
