@@ -416,297 +416,303 @@
 .ii-list-line:before {
   content: "\e87f";
 } /* '' */
-.ii-location-outline.ii-weight-600:before {
+.ii-location-crosshairs-outline.ii-weight-600:before {
   content: "\e880";
 } /* '' */
-.ii-location-outline:before {
+.ii-location-crosshairs-outline:before {
   content: "\e881";
 } /* '' */
-.ii-lock-outline:before {
+.ii-location-outline.ii-weight-600:before {
   content: "\e882";
 } /* '' */
-.ii-lock:before {
+.ii-location-outline:before {
   content: "\e883";
 } /* '' */
-.ii-magic-wand-outline:before {
+.ii-lock-outline:before {
   content: "\e884";
 } /* '' */
-.ii-mail:before {
+.ii-lock:before {
   content: "\e885";
 } /* '' */
-.ii-map-search-outline:before {
+.ii-magic-wand-outline:before {
   content: "\e886";
 } /* '' */
-.ii-medal-outline:before {
+.ii-mail:before {
   content: "\e887";
 } /* '' */
-.ii-medical-outline.ii-weight-600:before {
+.ii-map-search-outline:before {
   content: "\e888";
 } /* '' */
-.ii-medical-outline:before {
+.ii-medal-outline:before {
   content: "\e889";
 } /* '' */
-.ii-medicash:before {
+.ii-medical-outline.ii-weight-600:before {
   content: "\e88a";
 } /* '' */
-.ii-medistream:before {
+.ii-medical-outline:before {
   content: "\e88b";
 } /* '' */
-.ii-megaphone-outline:before {
+.ii-medicash:before {
   content: "\e88c";
 } /* '' */
-.ii-menu.ii-weight-600:before {
+.ii-medistream:before {
   content: "\e88d";
 } /* '' */
-.ii-menu:before {
+.ii-megaphone-outline:before {
   content: "\e88e";
 } /* '' */
-.ii-message-dots-outline.ii-weight-600:before {
+.ii-menu.ii-weight-600:before {
   content: "\e88f";
 } /* '' */
-.ii-message-dots-outline:before {
+.ii-menu:before {
   content: "\e890";
 } /* '' */
-.ii-message-dots:before {
+.ii-message-dots-outline.ii-weight-600:before {
   content: "\e891";
 } /* '' */
-.ii-message-line-outline:before {
+.ii-message-dots-outline:before {
   content: "\e892";
 } /* '' */
-.ii-message-outline.ii-weight-600:before {
+.ii-message-dots:before {
   content: "\e893";
 } /* '' */
-.ii-message-outline:before {
+.ii-message-line-outline:before {
   content: "\e894";
 } /* '' */
-.ii-message-question-outline:before {
+.ii-message-outline.ii-weight-600:before {
   content: "\e895";
 } /* '' */
-.ii-minus.ii-weight-600:before {
+.ii-message-outline:before {
   content: "\e896";
 } /* '' */
-.ii-minus-circle-outline.ii-weight-600:before {
+.ii-message-question-outline:before {
   content: "\e897";
 } /* '' */
-.ii-minus-circle-outline:before {
+.ii-minus.ii-weight-600:before {
   content: "\e898";
 } /* '' */
-.ii-minus-circle:before {
+.ii-minus-circle-outline.ii-weight-600:before {
   content: "\e899";
 } /* '' */
-.ii-minus:before {
+.ii-minus-circle-outline:before {
   content: "\e89a";
 } /* '' */
-.ii-moon-over-sun:before {
+.ii-minus-circle:before {
   content: "\e89b";
 } /* '' */
-.ii-moon:before {
+.ii-minus:before {
   content: "\e89c";
 } /* '' */
-.ii-navigate-outline.ii-weight-600:before {
+.ii-moon-over-sun:before {
   content: "\e89d";
 } /* '' */
-.ii-navigate-outline:before {
+.ii-moon:before {
   content: "\e89e";
 } /* '' */
-.ii-palette-outline:before {
+.ii-navigate-outline.ii-weight-600:before {
   content: "\e89f";
 } /* '' */
-.ii-paragraph:before {
+.ii-navigate-outline:before {
   content: "\e8a0";
 } /* '' */
-.ii-pen-outline.ii-weight-600:before {
+.ii-palette-outline:before {
   content: "\e8a1";
 } /* '' */
-.ii-pen-outline:before {
+.ii-paragraph:before {
   content: "\e8a2";
 } /* '' */
-.ii-phone-call-outline:before {
+.ii-pen-outline.ii-weight-600:before {
   content: "\e8a3";
 } /* '' */
-.ii-phone:before {
+.ii-pen-outline:before {
   content: "\e8a4";
 } /* '' */
-.ii-picture-frame-outline:before {
+.ii-phone-call-outline:before {
   content: "\e8a5";
 } /* '' */
-.ii-picture-square-outline.ii-weight-600:before {
+.ii-phone:before {
   content: "\e8a6";
 } /* '' */
-.ii-picture-square-outline:before {
+.ii-picture-frame-outline:before {
   content: "\e8a7";
 } /* '' */
-.ii-pin-outline.ii-weight-600:before {
+.ii-picture-square-outline.ii-weight-600:before {
   content: "\e8a8";
 } /* '' */
-.ii-pin-outline:before {
+.ii-picture-square-outline:before {
   content: "\e8a9";
 } /* '' */
-.ii-play-circle:before {
+.ii-pin-outline.ii-weight-600:before {
   content: "\e8aa";
 } /* '' */
-.ii-play:before {
+.ii-pin-outline:before {
   content: "\e8ab";
 } /* '' */
-.ii-plus.ii-weight-600:before {
+.ii-play-circle:before {
   content: "\e8ac";
 } /* '' */
-.ii-plus:before {
+.ii-play:before {
   content: "\e8ad";
 } /* '' */
-.ii-preintern:before {
+.ii-plus.ii-weight-600:before {
   content: "\e8ae";
 } /* '' */
-.ii-question-circle-outline.ii-weight-600:before {
+.ii-plus:before {
   content: "\e8af";
 } /* '' */
-.ii-question-circle-outline:before {
+.ii-preintern:before {
   content: "\e8b0";
 } /* '' */
-.ii-question-circle:before {
+.ii-question-circle-outline.ii-weight-600:before {
   content: "\e8b1";
 } /* '' */
-.ii-refresh.ii-weight-600:before {
+.ii-question-circle-outline:before {
   content: "\e8b2";
 } /* '' */
-.ii-refresh:before {
+.ii-question-circle:before {
   content: "\e8b3";
 } /* '' */
-.ii-remove.ii-weight-600:before {
+.ii-refresh.ii-weight-600:before {
   content: "\e8b4";
 } /* '' */
-.ii-remove-circle.ii-weight-600:before {
+.ii-refresh:before {
   content: "\e8b5";
 } /* '' */
-.ii-remove-circle-outline.ii-weight-600:before {
+.ii-remove.ii-weight-600:before {
   content: "\e8b6";
 } /* '' */
-.ii-remove-circle-outline:before {
+.ii-remove-circle.ii-weight-600:before {
   content: "\e8b7";
 } /* '' */
-.ii-remove-circle:before {
+.ii-remove-circle-outline.ii-weight-600:before {
   content: "\e8b8";
 } /* '' */
-.ii-remove:before {
+.ii-remove-circle-outline:before {
   content: "\e8b9";
 } /* '' */
-.ii-reply:before {
+.ii-remove-circle:before {
   content: "\e8ba";
 } /* '' */
-.ii-search.ii-weight-600:before {
+.ii-remove:before {
   content: "\e8bb";
 } /* '' */
-.ii-search-chart:before {
+.ii-reply:before {
   content: "\e8bc";
 } /* '' */
-.ii-search:before {
+.ii-search.ii-weight-600:before {
   content: "\e8bd";
 } /* '' */
-.ii-send-to:before {
+.ii-search-chart:before {
   content: "\e8be";
 } /* '' */
-.ii-settings-outline.ii-weight-600:before {
+.ii-search:before {
   content: "\e8bf";
 } /* '' */
-.ii-settings-outline:before {
+.ii-send-to:before {
   content: "\e8c0";
 } /* '' */
-.ii-share-outline.ii-weight-600:before {
+.ii-settings-outline.ii-weight-600:before {
   content: "\e8c1";
 } /* '' */
-.ii-share-outline:before {
+.ii-settings-outline:before {
   content: "\e8c2";
 } /* '' */
-.ii-shield-check-outline.ii-weight-600:before {
+.ii-share-outline.ii-weight-600:before {
   content: "\e8c3";
 } /* '' */
-.ii-shield-check-outline:before {
+.ii-share-outline:before {
   content: "\e8c4";
 } /* '' */
-.ii-sliders.ii-weight-600:before {
+.ii-shield-check-outline.ii-weight-600:before {
   content: "\e8c5";
 } /* '' */
-.ii-sliders:before {
+.ii-shield-check-outline:before {
   content: "\e8c6";
 } /* '' */
-.ii-spiral:before {
+.ii-sliders.ii-weight-600:before {
   content: "\e8c7";
 } /* '' */
-.ii-square-outline:before {
+.ii-sliders:before {
   content: "\e8c8";
 } /* '' */
-.ii-star-outline.ii-weight-600:before {
+.ii-spiral:before {
   content: "\e8c9";
 } /* '' */
-.ii-star-outline:before {
+.ii-square-outline:before {
   content: "\e8ca";
 } /* '' */
-.ii-star:before {
+.ii-star-outline.ii-weight-600:before {
   content: "\e8cb";
 } /* '' */
-.ii-stethoscope:before {
+.ii-star-outline:before {
   content: "\e8cc";
 } /* '' */
-.ii-sun:before {
+.ii-star:before {
   content: "\e8cd";
 } /* '' */
-.ii-table-chart:before {
+.ii-stethoscope:before {
   content: "\e8ce";
 } /* '' */
-.ii-ticket-outline:before {
+.ii-sun:before {
   content: "\e8cf";
 } /* '' */
-.ii-trash-outline:before {
+.ii-table-chart:before {
   content: "\e8d0";
 } /* '' */
-.ii-trophy-outline:before {
+.ii-ticket-outline:before {
   content: "\e8d1";
 } /* '' */
-.ii-truck-outline:before {
+.ii-trash-outline:before {
   content: "\e8d2";
 } /* '' */
-.ii-truck-timer-outline:before {
+.ii-trophy-outline:before {
   content: "\e8d3";
 } /* '' */
-.ii-user-outline.ii-weight-600:before {
+.ii-truck-outline:before {
   content: "\e8d4";
 } /* '' */
-.ii-user-outline:before {
+.ii-truck-timer-outline:before {
   content: "\e8d5";
 } /* '' */
-.ii-user-pass-outline:before {
+.ii-user-outline.ii-weight-600:before {
   content: "\e8d6";
 } /* '' */
-.ii-user-screen-outline:before {
+.ii-user-outline:before {
   content: "\e8d7";
 } /* '' */
-.ii-user:before {
+.ii-user-pass-outline:before {
   content: "\e8d8";
 } /* '' */
-.ii-users-outline:before {
+.ii-user-screen-outline:before {
   content: "\e8d9";
 } /* '' */
-.ii-vote-outline:before {
+.ii-user:before {
   content: "\e8da";
 } /* '' */
-.ii-wallet-outline:before {
+.ii-users-outline:before {
   content: "\e8db";
 } /* '' */
-.ii-warning-circle-outline.ii-weight-600:before {
+.ii-vote-outline:before {
   content: "\e8dc";
 } /* '' */
-.ii-warning-circle-outline:before {
+.ii-wallet-outline:before {
   content: "\e8dd";
 } /* '' */
-.ii-warning-circle:before {
+.ii-warning-circle-outline.ii-weight-600:before {
   content: "\e8de";
 } /* '' */
-.ii-warning-triangle-outline:before {
+.ii-warning-circle-outline:before {
   content: "\e8df";
 } /* '' */
-.ii-warning-triangle:before {
+.ii-warning-circle:before {
   content: "\e8e0";
 } /* '' */
+.ii-warning-triangle-outline:before {
+  content: "\e8e1";
+} /* '' */
+.ii-warning-triangle:before {
+  content: "\e8e2";
+} /* '' */
 .ii-spin::before {
   animation: spin 2s infinite linear;
 }
