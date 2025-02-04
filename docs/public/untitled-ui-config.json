@@ -13519,8 +13519,22 @@
     },
     {
       "uid": "1201",
-      "css": "untitledui-shopping-bag-01",
+      "css": "untitledui-shoes",
       "code": 60592,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M126 410l64-78 61-77c40-39 70-97 101-78 64 41 7 96 100 155 72 46 81-95 121 20l61 155c40 78 87 91 121 97 101 20 101 126 101 152m-730-346l387 307c13 13 80 39 121 39l222 0m-730-346l-28 36c-14 19-41 73 7 104l346 264c36 23 96 59 160 59h185c20 0 60-12 60-59v-58m-311-303l115-35m-70 137l120-37",
+        "width": 1000
+      },
+      "search": [
+        "untitledui-shoes"
+      ]
+    },
+    {
+      "uid": "1202",
+      "css": "untitledui-shopping-bag-01",
+      "code": 60593,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -13532,9 +13546,9 @@
       ]
     },
     {
-      "uid": "1202",
+      "uid": "1203",
       "css": "untitledui-shopping-bag-02",
-      "code": 60593,
+      "code": 60594,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -13546,9 +13560,9 @@
       ]
     },
     {
-      "uid": "1203",
+      "uid": "1204",
       "css": "untitledui-shopping-bag-03",
-      "code": 60594,
+      "code": 60595,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -13560,9 +13574,9 @@
       ]
     },
     {
-      "uid": "1204",
+      "uid": "1205",
       "css": "untitledui-shopping-cart-01",
-      "code": 60595,
+      "code": 60596,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -13574,9 +13588,9 @@
       ]
     },
     {
-      "uid": "1205",
+      "uid": "1206",
       "css": "untitledui-shopping-cart-02",
-      "code": 60596,
+      "code": 60597,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -13588,9 +13602,9 @@
       ]
     },
     {
-      "uid": "1206",
+      "uid": "1207",
       "css": "untitledui-shopping-cart-03",
-      "code": 60597,
+      "code": 60598,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -13602,9 +13616,9 @@
       ]
     },
     {
-      "uid": "1207",
+      "uid": "1208",
       "css": "untitledui-shuffle-01",
-      "code": 60598,
+      "code": 60599,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -13616,9 +13630,9 @@
       ]
     },
     {
-      "uid": "1208",
+      "uid": "1209",
       "css": "untitledui-shuffle-02",
-      "code": 60599,
+      "code": 60600,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -13630,9 +13644,9 @@
       ]
     },
     {
-      "uid": "1209",
+      "uid": "1210",
       "css": "untitledui-signal-01",
-      "code": 60600,
+      "code": 60601,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -13644,9 +13658,9 @@
       ]
     },
     {
-      "uid": "1210",
+      "uid": "1211",
       "css": "untitledui-signal-02",
-      "code": 60601,
+      "code": 60602,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -13658,9 +13672,9 @@
       ]
     },
     {
-      "uid": "1211",
+      "uid": "1212",
       "css": "untitledui-signal-03",
-      "code": 60602,
+      "code": 60603,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -13672,9 +13686,9 @@
       ]
     },
     {
-      "uid": "1212",
+      "uid": "1213",
       "css": "untitledui-simcard",
-      "code": 60603,
+      "code": 60604,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -13686,9 +13700,9 @@
       ]
     },
     {
-      "uid": "1213",
+      "uid": "1214",
       "css": "untitledui-skew",
-      "code": 60604,
+      "code": 60605,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -13700,9 +13714,9 @@
       ]
     },
     {
-      "uid": "1214",
+      "uid": "1215",
       "css": "untitledui-skip-back",
-      "code": 60605,
+      "code": 60606,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -13714,9 +13728,9 @@
       ]
     },
     {
-      "uid": "1215",
+      "uid": "1216",
       "css": "untitledui-skip-forward",
-      "code": 60606,
+      "code": 60607,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -13728,9 +13742,9 @@
       ]
     },
     {
-      "uid": "1216",
+      "uid": "1217",
       "css": "untitledui-slash-circle-01",
-      "code": 60607,
+      "code": 60608,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -13742,9 +13756,9 @@
       ]
     },
     {
-      "uid": "1217",
+      "uid": "1218",
       "css": "untitledui-slash-circle-02",
-      "code": 60608,
+      "code": 60609,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -13756,9 +13770,9 @@
       ]
     },
     {
-      "uid": "1218",
+      "uid": "1219",
       "css": "untitledui-slash-divider",
-      "code": 60609,
+      "code": 60610,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -13770,9 +13784,9 @@
       ]
     },
     {
-      "uid": "1219",
+      "uid": "1220",
       "css": "untitledui-slash-octagon",
-      "code": 60610,
+      "code": 60611,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -13784,9 +13798,9 @@
       ]
     },
     {
-      "uid": "1220",
+      "uid": "1221",
       "css": "untitledui-sliders-01",
-      "code": 60611,
+      "code": 60612,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -13798,9 +13812,9 @@
       ]
     },
     {
-      "uid": "1221",
+      "uid": "1222",
       "css": "untitledui-sliders-02",
-      "code": 60612,
+      "code": 60613,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -13812,9 +13826,9 @@
       ]
     },
     {
-      "uid": "1222",
+      "uid": "1223",
       "css": "untitledui-sliders-03",
-      "code": 60613,
+      "code": 60614,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -13826,9 +13840,9 @@
       ]
     },
     {
-      "uid": "1223",
+      "uid": "1224",
       "css": "untitledui-sliders-04",
-      "code": 60614,
+      "code": 60615,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -13840,9 +13854,9 @@
       ]
     },
     {
-      "uid": "1224",
+      "uid": "1225",
       "css": "untitledui-snowflake-01",
-      "code": 60615,
+      "code": 60616,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -13854,9 +13868,9 @@
       ]
     },
     {
-      "uid": "1225",
+      "uid": "1226",
       "css": "untitledui-snowflake-02",
-      "code": 60616,
+      "code": 60617,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -13868,9 +13882,9 @@
       ]
     },
     {
-      "uid": "1226",
+      "uid": "1227",
       "css": "untitledui-spacing-height-01",
-      "code": 60617,
+      "code": 60618,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -13882,9 +13896,9 @@
       ]
     },
     {
-      "uid": "1227",
+      "uid": "1228",
       "css": "untitledui-spacing-height-02",
-      "code": 60618,
+      "code": 60619,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -13896,9 +13910,9 @@
       ]
     },
     {
-      "uid": "1228",
+      "uid": "1229",
       "css": "untitledui-spacing-width-01",
-      "code": 60619,
+      "code": 60620,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -13910,9 +13924,9 @@
       ]
     },
     {
-      "uid": "1229",
+      "uid": "1230",
       "css": "untitledui-spacing-width-02",
-      "code": 60620,
+      "code": 60621,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -13924,9 +13938,9 @@
       ]
     },
     {
-      "uid": "1230",
+      "uid": "1231",
       "css": "untitledui-speaker-01",
-      "code": 60621,
+      "code": 60622,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -13938,9 +13952,9 @@
       ]
     },
     {
-      "uid": "1231",
+      "uid": "1232",
       "css": "untitledui-speaker-02",
-      "code": 60622,
+      "code": 60623,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -13952,9 +13966,9 @@
       ]
     },
     {
-      "uid": "1232",
+      "uid": "1233",
       "css": "untitledui-speaker-03",
-      "code": 60623,
+      "code": 60624,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -13966,9 +13980,9 @@
       ]
     },
     {
-      "uid": "1233",
+      "uid": "1234",
       "css": "untitledui-speedometer-01",
-      "code": 60624,
+      "code": 60625,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -13980,9 +13994,9 @@
       ]
     },
     {
-      "uid": "1234",
+      "uid": "1235",
       "css": "untitledui-speedometer-02",
-      "code": 60625,
+      "code": 60626,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -13994,9 +14008,9 @@
       ]
     },
     {
-      "uid": "1235",
+      "uid": "1236",
       "css": "untitledui-speedometer-03",
-      "code": 60626,
+      "code": 60627,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14008,9 +14022,9 @@
       ]
     },
     {
-      "uid": "1236",
+      "uid": "1237",
       "css": "untitledui-speedometer-04",
-      "code": 60627,
+      "code": 60628,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14022,9 +14036,9 @@
       ]
     },
     {
-      "uid": "1237",
+      "uid": "1238",
       "css": "untitledui-square",
-      "code": 60628,
+      "code": 60629,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14036,9 +14050,9 @@
       ]
     },
     {
-      "uid": "1238",
+      "uid": "1239",
       "css": "untitledui-stand",
-      "code": 60629,
+      "code": 60630,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14050,9 +14064,9 @@
       ]
     },
     {
-      "uid": "1239",
+      "uid": "1240",
       "css": "untitledui-star-01",
-      "code": 60630,
+      "code": 60631,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14064,9 +14078,9 @@
       ]
     },
     {
-      "uid": "1240",
+      "uid": "1241",
       "css": "untitledui-star-02",
-      "code": 60631,
+      "code": 60632,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14078,9 +14092,9 @@
       ]
     },
     {
-      "uid": "1241",
+      "uid": "1242",
       "css": "untitledui-star-03",
-      "code": 60632,
+      "code": 60633,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14092,9 +14106,9 @@
       ]
     },
     {
-      "uid": "1242",
+      "uid": "1243",
       "css": "untitledui-star-04",
-      "code": 60633,
+      "code": 60634,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14106,9 +14120,9 @@
       ]
     },
     {
-      "uid": "1243",
+      "uid": "1244",
       "css": "untitledui-star-05",
-      "code": 60634,
+      "code": 60635,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14120,9 +14134,9 @@
       ]
     },
     {
-      "uid": "1244",
+      "uid": "1245",
       "css": "untitledui-star-06",
-      "code": 60635,
+      "code": 60636,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14134,9 +14148,9 @@
       ]
     },
     {
-      "uid": "1245",
+      "uid": "1246",
       "css": "untitledui-star-07",
-      "code": 60636,
+      "code": 60637,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14148,9 +14162,9 @@
       ]
     },
     {
-      "uid": "1246",
+      "uid": "1247",
       "css": "untitledui-stars-01",
-      "code": 60637,
+      "code": 60638,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14162,9 +14176,9 @@
       ]
     },
     {
-      "uid": "1247",
+      "uid": "1248",
       "css": "untitledui-stars-02",
-      "code": 60638,
+      "code": 60639,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14176,9 +14190,9 @@
       ]
     },
     {
-      "uid": "1248",
+      "uid": "1249",
       "css": "untitledui-stars-03",
-      "code": 60639,
+      "code": 60640,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14190,9 +14204,9 @@
       ]
     },
     {
-      "uid": "1249",
+      "uid": "1250",
       "css": "untitledui-stethosope",
-      "code": 60640,
+      "code": 60641,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14204,9 +14218,9 @@
       ]
     },
     {
-      "uid": "1250",
+      "uid": "1251",
       "css": "untitledui-sticker-circle",
-      "code": 60641,
+      "code": 60642,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14218,9 +14232,9 @@
       ]
     },
     {
-      "uid": "1251",
+      "uid": "1252",
       "css": "untitledui-sticker-square",
-      "code": 60642,
+      "code": 60643,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14232,9 +14246,9 @@
       ]
     },
     {
-      "uid": "1252",
+      "uid": "1253",
       "css": "untitledui-stop-circle",
-      "code": 60643,
+      "code": 60644,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14246,9 +14260,9 @@
       ]
     },
     {
-      "uid": "1253",
+      "uid": "1254",
       "css": "untitledui-stop-square",
-      "code": 60644,
+      "code": 60645,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14260,9 +14274,9 @@
       ]
     },
     {
-      "uid": "1254",
+      "uid": "1255",
       "css": "untitledui-stop",
-      "code": 60645,
+      "code": 60646,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14274,9 +14288,9 @@
       ]
     },
     {
-      "uid": "1255",
+      "uid": "1256",
       "css": "untitledui-strikethrough-01",
-      "code": 60646,
+      "code": 60647,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14288,9 +14302,9 @@
       ]
     },
     {
-      "uid": "1256",
+      "uid": "1257",
       "css": "untitledui-strikethrough-02",
-      "code": 60647,
+      "code": 60648,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14302,9 +14316,9 @@
       ]
     },
     {
-      "uid": "1257",
+      "uid": "1258",
       "css": "untitledui-strikethrough-square",
-      "code": 60648,
+      "code": 60649,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14316,9 +14330,9 @@
       ]
     },
     {
-      "uid": "1258",
+      "uid": "1259",
       "css": "untitledui-subscript",
-      "code": 60649,
+      "code": 60650,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14330,9 +14344,9 @@
       ]
     },
     {
-      "uid": "1259",
+      "uid": "1260",
       "css": "untitledui-sun-setting-01",
-      "code": 60650,
+      "code": 60651,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14344,9 +14358,9 @@
       ]
     },
     {
-      "uid": "1260",
+      "uid": "1261",
       "css": "untitledui-sun-setting-02",
-      "code": 60651,
+      "code": 60652,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14358,9 +14372,9 @@
       ]
     },
     {
-      "uid": "1261",
+      "uid": "1262",
       "css": "untitledui-sun-setting-03",
-      "code": 60652,
+      "code": 60653,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14372,9 +14386,9 @@
       ]
     },
     {
-      "uid": "1262",
+      "uid": "1263",
       "css": "untitledui-sun",
-      "code": 60653,
+      "code": 60654,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14386,9 +14400,9 @@
       ]
     },
     {
-      "uid": "1263",
+      "uid": "1264",
       "css": "untitledui-sunrise",
-      "code": 60654,
+      "code": 60655,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14400,9 +14414,9 @@
       ]
     },
     {
-      "uid": "1264",
+      "uid": "1265",
       "css": "untitledui-sunset",
-      "code": 60655,
+      "code": 60656,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14414,9 +14428,9 @@
       ]
     },
     {
-      "uid": "1265",
+      "uid": "1266",
       "css": "untitledui-switch-horizontal-01",
-      "code": 60656,
+      "code": 60657,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14428,9 +14442,9 @@
       ]
     },
     {
-      "uid": "1266",
+      "uid": "1267",
       "css": "untitledui-switch-horizontal-02",
-      "code": 60657,
+      "code": 60658,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14442,9 +14456,9 @@
       ]
     },
     {
-      "uid": "1267",
+      "uid": "1268",
       "css": "untitledui-switch-vertical-01",
-      "code": 60658,
+      "code": 60659,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14456,9 +14470,9 @@
       ]
     },
     {
-      "uid": "1268",
+      "uid": "1269",
       "css": "untitledui-switch-vertical-02",
-      "code": 60659,
+      "code": 60660,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14470,9 +14484,9 @@
       ]
     },
     {
-      "uid": "1269",
+      "uid": "1270",
       "css": "untitledui-table",
-      "code": 60660,
+      "code": 60661,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14484,9 +14498,9 @@
       ]
     },
     {
-      "uid": "1270",
+      "uid": "1271",
       "css": "untitledui-tablet-01",
-      "code": 60661,
+      "code": 60662,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14498,9 +14512,9 @@
       ]
     },
     {
-      "uid": "1271",
+      "uid": "1272",
       "css": "untitledui-tablet-02",
-      "code": 60662,
+      "code": 60663,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14512,9 +14526,9 @@
       ]
     },
     {
-      "uid": "1272",
+      "uid": "1273",
       "css": "untitledui-tag-01",
-      "code": 60663,
+      "code": 60664,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14526,9 +14540,9 @@
       ]
     },
     {
-      "uid": "1273",
+      "uid": "1274",
       "css": "untitledui-tag-02",
-      "code": 60664,
+      "code": 60665,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14540,9 +14554,9 @@
       ]
     },
     {
-      "uid": "1274",
+      "uid": "1275",
       "css": "untitledui-tag-03",
-      "code": 60665,
+      "code": 60666,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14554,9 +14568,9 @@
       ]
     },
     {
-      "uid": "1275",
+      "uid": "1276",
       "css": "untitledui-target-01",
-      "code": 60666,
+      "code": 60667,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14568,9 +14582,9 @@
       ]
     },
     {
-      "uid": "1276",
+      "uid": "1277",
       "css": "untitledui-target-02",
-      "code": 60667,
+      "code": 60668,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14582,9 +14596,9 @@
       ]
     },
     {
-      "uid": "1277",
+      "uid": "1278",
       "css": "untitledui-target-03",
-      "code": 60668,
+      "code": 60669,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14596,9 +14610,9 @@
       ]
     },
     {
-      "uid": "1278",
+      "uid": "1279",
       "css": "untitledui-target-04",
-      "code": 60669,
+      "code": 60670,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14610,9 +14624,9 @@
       ]
     },
     {
-      "uid": "1279",
+      "uid": "1280",
       "css": "untitledui-target-05",
-      "code": 60670,
+      "code": 60671,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14624,9 +14638,9 @@
       ]
     },
     {
-      "uid": "1280",
+      "uid": "1281",
       "css": "untitledui-telescope",
-      "code": 60671,
+      "code": 60672,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14638,9 +14652,9 @@
       ]
     },
     {
-      "uid": "1281",
+      "uid": "1282",
       "css": "untitledui-terminal-browser",
-      "code": 60672,
+      "code": 60673,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14652,9 +14666,9 @@
       ]
     },
     {
-      "uid": "1282",
+      "uid": "1283",
       "css": "untitledui-terminal-circle",
-      "code": 60673,
+      "code": 60674,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14666,9 +14680,9 @@
       ]
     },
     {
-      "uid": "1283",
+      "uid": "1284",
       "css": "untitledui-terminal-square",
-      "code": 60674,
+      "code": 60675,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14680,9 +14694,9 @@
       ]
     },
     {
-      "uid": "1284",
+      "uid": "1285",
       "css": "untitledui-terminal",
-      "code": 60675,
+      "code": 60676,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14694,9 +14708,9 @@
       ]
     },
     {
-      "uid": "1285",
+      "uid": "1286",
       "css": "untitledui-text-input",
-      "code": 60676,
+      "code": 60677,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14708,9 +14722,9 @@
       ]
     },
     {
-      "uid": "1286",
+      "uid": "1287",
       "css": "untitledui-thermometer-01",
-      "code": 60677,
+      "code": 60678,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14722,9 +14736,9 @@
       ]
     },
     {
-      "uid": "1287",
+      "uid": "1288",
       "css": "untitledui-thermometer-02",
-      "code": 60678,
+      "code": 60679,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14736,9 +14750,9 @@
       ]
     },
     {
-      "uid": "1288",
+      "uid": "1289",
       "css": "untitledui-thermometer-03",
-      "code": 60679,
+      "code": 60680,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14750,9 +14764,9 @@
       ]
     },
     {
-      "uid": "1289",
+      "uid": "1290",
       "css": "untitledui-thermometer-cold",
-      "code": 60680,
+      "code": 60681,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14764,9 +14778,9 @@
       ]
     },
     {
-      "uid": "1290",
+      "uid": "1291",
       "css": "untitledui-thermometer-warm",
-      "code": 60681,
+      "code": 60682,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14778,9 +14792,9 @@
       ]
     },
     {
-      "uid": "1291",
+      "uid": "1292",
       "css": "untitledui-thumbs-down",
-      "code": 60682,
+      "code": 60683,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14792,9 +14806,9 @@
       ]
     },
     {
-      "uid": "1292",
+      "uid": "1293",
       "css": "untitledui-thumbs-up",
-      "code": 60683,
+      "code": 60684,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14806,9 +14820,9 @@
       ]
     },
     {
-      "uid": "1293",
+      "uid": "1294",
       "css": "untitledui-ticket-01",
-      "code": 60684,
+      "code": 60685,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14820,9 +14834,9 @@
       ]
     },
     {
-      "uid": "1294",
+      "uid": "1295",
       "css": "untitledui-ticket-02",
-      "code": 60685,
+      "code": 60686,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14834,9 +14848,9 @@
       ]
     },
     {
-      "uid": "1295",
+      "uid": "1296",
       "css": "untitledui-toggle-01-left",
-      "code": 60686,
+      "code": 60687,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14848,9 +14862,9 @@
       ]
     },
     {
-      "uid": "1296",
+      "uid": "1297",
       "css": "untitledui-toggle-01-right",
-      "code": 60687,
+      "code": 60688,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14862,9 +14876,9 @@
       ]
     },
     {
-      "uid": "1297",
+      "uid": "1298",
       "css": "untitledui-toggle-02-left",
-      "code": 60688,
+      "code": 60689,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14876,9 +14890,9 @@
       ]
     },
     {
-      "uid": "1298",
+      "uid": "1299",
       "css": "untitledui-toggle-02-right",
-      "code": 60689,
+      "code": 60690,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14890,9 +14904,9 @@
       ]
     },
     {
-      "uid": "1299",
+      "uid": "1300",
       "css": "untitledui-toggle-03-left",
-      "code": 60690,
+      "code": 60691,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14904,9 +14918,9 @@
       ]
     },
     {
-      "uid": "1300",
+      "uid": "1301",
       "css": "untitledui-toggle-03-right",
-      "code": 60691,
+      "code": 60692,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14918,9 +14932,9 @@
       ]
     },
     {
-      "uid": "1301",
+      "uid": "1302",
       "css": "untitledui-tool-01",
-      "code": 60692,
+      "code": 60693,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14932,9 +14946,9 @@
       ]
     },
     {
-      "uid": "1302",
+      "uid": "1303",
       "css": "untitledui-tool-02",
-      "code": 60693,
+      "code": 60694,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14946,9 +14960,9 @@
       ]
     },
     {
-      "uid": "1303",
+      "uid": "1304",
       "css": "untitledui-train",
-      "code": 60694,
+      "code": 60695,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14960,9 +14974,9 @@
       ]
     },
     {
-      "uid": "1304",
+      "uid": "1305",
       "css": "untitledui-tram",
-      "code": 60695,
+      "code": 60696,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14974,9 +14988,9 @@
       ]
     },
     {
-      "uid": "1305",
+      "uid": "1306",
       "css": "untitledui-transform",
-      "code": 60696,
+      "code": 60697,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -14988,9 +15002,9 @@
       ]
     },
     {
-      "uid": "1306",
+      "uid": "1307",
       "css": "untitledui-translate-01",
-      "code": 60697,
+      "code": 60698,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15002,9 +15016,9 @@
       ]
     },
     {
-      "uid": "1307",
+      "uid": "1308",
       "css": "untitledui-translate-02",
-      "code": 60698,
+      "code": 60699,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15016,9 +15030,9 @@
       ]
     },
     {
-      "uid": "1308",
+      "uid": "1309",
       "css": "untitledui-trash-01",
-      "code": 60699,
+      "code": 60700,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15030,9 +15044,9 @@
       ]
     },
     {
-      "uid": "1309",
+      "uid": "1310",
       "css": "untitledui-trash-02",
-      "code": 60700,
+      "code": 60701,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15044,9 +15058,9 @@
       ]
     },
     {
-      "uid": "1310",
+      "uid": "1311",
       "css": "untitledui-trash-03",
-      "code": 60701,
+      "code": 60702,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15058,9 +15072,9 @@
       ]
     },
     {
-      "uid": "1311",
+      "uid": "1312",
       "css": "untitledui-trash-04",
-      "code": 60702,
+      "code": 60703,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15072,9 +15086,9 @@
       ]
     },
     {
-      "uid": "1312",
+      "uid": "1313",
       "css": "untitledui-trend-down-01",
-      "code": 60703,
+      "code": 60704,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15086,9 +15100,9 @@
       ]
     },
     {
-      "uid": "1313",
+      "uid": "1314",
       "css": "untitledui-trend-down-02",
-      "code": 60704,
+      "code": 60705,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15100,9 +15114,9 @@
       ]
     },
     {
-      "uid": "1314",
+      "uid": "1315",
       "css": "untitledui-trend-up-01",
-      "code": 60705,
+      "code": 60706,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15114,9 +15128,9 @@
       ]
     },
     {
-      "uid": "1315",
+      "uid": "1316",
       "css": "untitledui-trend-up-02",
-      "code": 60706,
+      "code": 60707,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15128,9 +15142,9 @@
       ]
     },
     {
-      "uid": "1316",
+      "uid": "1317",
       "css": "untitledui-triangle",
-      "code": 60707,
+      "code": 60708,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15142,9 +15156,9 @@
       ]
     },
     {
-      "uid": "1317",
+      "uid": "1318",
       "css": "untitledui-trophy-01",
-      "code": 60708,
+      "code": 60709,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15156,9 +15170,9 @@
       ]
     },
     {
-      "uid": "1318",
+      "uid": "1319",
       "css": "untitledui-trophy-02",
-      "code": 60709,
+      "code": 60710,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15170,9 +15184,9 @@
       ]
     },
     {
-      "uid": "1319",
+      "uid": "1320",
       "css": "untitledui-truck-01",
-      "code": 60710,
+      "code": 60711,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15184,9 +15198,9 @@
       ]
     },
     {
-      "uid": "1320",
+      "uid": "1321",
       "css": "untitledui-truck-02",
-      "code": 60711,
+      "code": 60712,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15198,9 +15212,9 @@
       ]
     },
     {
-      "uid": "1321",
+      "uid": "1322",
       "css": "untitledui-tv-01",
-      "code": 60712,
+      "code": 60713,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15212,9 +15226,9 @@
       ]
     },
     {
-      "uid": "1322",
+      "uid": "1323",
       "css": "untitledui-tv-02",
-      "code": 60713,
+      "code": 60714,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15226,9 +15240,9 @@
       ]
     },
     {
-      "uid": "1323",
+      "uid": "1324",
       "css": "untitledui-tv-03",
-      "code": 60714,
+      "code": 60715,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15240,9 +15254,9 @@
       ]
     },
     {
-      "uid": "1324",
+      "uid": "1325",
       "css": "untitledui-type-01",
-      "code": 60715,
+      "code": 60716,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15254,9 +15268,9 @@
       ]
     },
     {
-      "uid": "1325",
+      "uid": "1326",
       "css": "untitledui-type-02",
-      "code": 60716,
+      "code": 60717,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15268,9 +15282,9 @@
       ]
     },
     {
-      "uid": "1326",
+      "uid": "1327",
       "css": "untitledui-type-square",
-      "code": 60717,
+      "code": 60718,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15282,9 +15296,9 @@
       ]
     },
     {
-      "uid": "1327",
+      "uid": "1328",
       "css": "untitledui-type-strikethrough-01",
-      "code": 60718,
+      "code": 60719,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15296,9 +15310,9 @@
       ]
     },
     {
-      "uid": "1328",
+      "uid": "1329",
       "css": "untitledui-type-strikethrough-02",
-      "code": 60719,
+      "code": 60720,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15310,9 +15324,9 @@
       ]
     },
     {
-      "uid": "1329",
+      "uid": "1330",
       "css": "untitledui-umbrella-01",
-      "code": 60720,
+      "code": 60721,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15324,9 +15338,9 @@
       ]
     },
     {
-      "uid": "1330",
+      "uid": "1331",
       "css": "untitledui-umbrella-02",
-      "code": 60721,
+      "code": 60722,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15338,9 +15352,9 @@
       ]
     },
     {
-      "uid": "1331",
+      "uid": "1332",
       "css": "untitledui-umbrella-03",
-      "code": 60722,
+      "code": 60723,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15352,9 +15366,9 @@
       ]
     },
     {
-      "uid": "1332",
+      "uid": "1333",
       "css": "untitledui-underline-01",
-      "code": 60723,
+      "code": 60724,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15366,9 +15380,9 @@
       ]
     },
     {
-      "uid": "1333",
+      "uid": "1334",
       "css": "untitledui-underline-02",
-      "code": 60724,
+      "code": 60725,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15380,9 +15394,9 @@
       ]
     },
     {
-      "uid": "1334",
+      "uid": "1335",
       "css": "untitledui-underline-square",
-      "code": 60725,
+      "code": 60726,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15394,9 +15408,9 @@
       ]
     },
     {
-      "uid": "1335",
+      "uid": "1336",
       "css": "untitledui-upload-01",
-      "code": 60726,
+      "code": 60727,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15408,9 +15422,9 @@
       ]
     },
     {
-      "uid": "1336",
+      "uid": "1337",
       "css": "untitledui-upload-02",
-      "code": 60727,
+      "code": 60728,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15422,9 +15436,9 @@
       ]
     },
     {
-      "uid": "1337",
+      "uid": "1338",
       "css": "untitledui-upload-03",
-      "code": 60728,
+      "code": 60729,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15436,9 +15450,9 @@
       ]
     },
     {
-      "uid": "1338",
+      "uid": "1339",
       "css": "untitledui-upload-04",
-      "code": 60729,
+      "code": 60730,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15450,9 +15464,9 @@
       ]
     },
     {
-      "uid": "1339",
+      "uid": "1340",
       "css": "untitledui-upload-cloud-01",
-      "code": 60730,
+      "code": 60731,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15464,9 +15478,9 @@
       ]
     },
     {
-      "uid": "1340",
+      "uid": "1341",
       "css": "untitledui-upload-cloud-02",
-      "code": 60731,
+      "code": 60732,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15478,9 +15492,9 @@
       ]
     },
     {
-      "uid": "1341",
+      "uid": "1342",
       "css": "untitledui-usb-flash-drive",
-      "code": 60732,
+      "code": 60733,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15492,9 +15506,9 @@
       ]
     },
     {
-      "uid": "1342",
+      "uid": "1343",
       "css": "untitledui-user-01",
-      "code": 60733,
+      "code": 60734,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15506,9 +15520,9 @@
       ]
     },
     {
-      "uid": "1343",
+      "uid": "1344",
       "css": "untitledui-user-02",
-      "code": 60734,
+      "code": 60735,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15520,9 +15534,9 @@
       ]
     },
     {
-      "uid": "1344",
+      "uid": "1345",
       "css": "untitledui-user-03",
-      "code": 60735,
+      "code": 60736,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15534,9 +15548,9 @@
       ]
     },
     {
-      "uid": "1345",
+      "uid": "1346",
       "css": "untitledui-user-check-01",
-      "code": 60736,
+      "code": 60737,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15548,9 +15562,9 @@
       ]
     },
     {
-      "uid": "1346",
+      "uid": "1347",
       "css": "untitledui-user-check-02",
-      "code": 60737,
+      "code": 60738,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15562,9 +15576,9 @@
       ]
     },
     {
-      "uid": "1347",
+      "uid": "1348",
       "css": "untitledui-user-circle",
-      "code": 60738,
+      "code": 60739,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15576,9 +15590,9 @@
       ]
     },
     {
-      "uid": "1348",
+      "uid": "1349",
       "css": "untitledui-user-down-01",
-      "code": 60739,
+      "code": 60740,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15590,9 +15604,9 @@
       ]
     },
     {
-      "uid": "1349",
+      "uid": "1350",
       "css": "untitledui-user-down-02",
-      "code": 60740,
+      "code": 60741,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15604,9 +15618,9 @@
       ]
     },
     {
-      "uid": "1350",
+      "uid": "1351",
       "css": "untitledui-user-edit",
-      "code": 60741,
+      "code": 60742,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15618,9 +15632,9 @@
       ]
     },
     {
-      "uid": "1351",
+      "uid": "1352",
       "css": "untitledui-user-left-01",
-      "code": 60742,
+      "code": 60743,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15632,9 +15646,9 @@
       ]
     },
     {
-      "uid": "1352",
+      "uid": "1353",
       "css": "untitledui-user-left-02",
-      "code": 60743,
+      "code": 60744,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15646,9 +15660,9 @@
       ]
     },
     {
-      "uid": "1353",
+      "uid": "1354",
       "css": "untitledui-user-minus-01",
-      "code": 60744,
+      "code": 60745,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15660,9 +15674,9 @@
       ]
     },
     {
-      "uid": "1354",
+      "uid": "1355",
       "css": "untitledui-user-minus-02",
-      "code": 60745,
+      "code": 60746,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15674,9 +15688,9 @@
       ]
     },
     {
-      "uid": "1355",
+      "uid": "1356",
       "css": "untitledui-user-plus-01",
-      "code": 60746,
+      "code": 60747,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15688,9 +15702,9 @@
       ]
     },
     {
-      "uid": "1356",
+      "uid": "1357",
       "css": "untitledui-user-plus-02",
-      "code": 60747,
+      "code": 60748,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15702,9 +15716,9 @@
       ]
     },
     {
-      "uid": "1357",
+      "uid": "1358",
       "css": "untitledui-user-right-01",
-      "code": 60748,
+      "code": 60749,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15716,9 +15730,9 @@
       ]
     },
     {
-      "uid": "1358",
+      "uid": "1359",
       "css": "untitledui-user-right-02",
-      "code": 60749,
+      "code": 60750,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15730,9 +15744,9 @@
       ]
     },
     {
-      "uid": "1359",
+      "uid": "1360",
       "css": "untitledui-user-square",
-      "code": 60750,
+      "code": 60751,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15744,9 +15758,9 @@
       ]
     },
     {
-      "uid": "1360",
+      "uid": "1361",
       "css": "untitledui-user-up-01",
-      "code": 60751,
+      "code": 60752,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15758,9 +15772,9 @@
       ]
     },
     {
-      "uid": "1361",
+      "uid": "1362",
       "css": "untitledui-user-up-02",
-      "code": 60752,
+      "code": 60753,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15772,9 +15786,9 @@
       ]
     },
     {
-      "uid": "1362",
+      "uid": "1363",
       "css": "untitledui-user-x-01",
-      "code": 60753,
+      "code": 60754,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15786,9 +15800,9 @@
       ]
     },
     {
-      "uid": "1363",
+      "uid": "1364",
       "css": "untitledui-user-x-02",
-      "code": 60754,
+      "code": 60755,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15800,9 +15814,9 @@
       ]
     },
     {
-      "uid": "1364",
+      "uid": "1365",
       "css": "untitledui-users-01",
-      "code": 60755,
+      "code": 60756,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15814,9 +15828,9 @@
       ]
     },
     {
-      "uid": "1365",
+      "uid": "1366",
       "css": "untitledui-users-02",
-      "code": 60756,
+      "code": 60757,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15828,9 +15842,9 @@
       ]
     },
     {
-      "uid": "1366",
+      "uid": "1367",
       "css": "untitledui-users-03",
-      "code": 60757,
+      "code": 60758,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15842,9 +15856,9 @@
       ]
     },
     {
-      "uid": "1367",
+      "uid": "1368",
       "css": "untitledui-users-check",
-      "code": 60758,
+      "code": 60759,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15856,9 +15870,9 @@
       ]
     },
     {
-      "uid": "1368",
+      "uid": "1369",
       "css": "untitledui-users-down",
-      "code": 60759,
+      "code": 60760,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15870,9 +15884,9 @@
       ]
     },
     {
-      "uid": "1369",
+      "uid": "1370",
       "css": "untitledui-users-edit",
-      "code": 60760,
+      "code": 60761,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15884,9 +15898,9 @@
       ]
     },
     {
-      "uid": "1370",
+      "uid": "1371",
       "css": "untitledui-users-left",
-      "code": 60761,
+      "code": 60762,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15898,9 +15912,9 @@
       ]
     },
     {
-      "uid": "1371",
+      "uid": "1372",
       "css": "untitledui-users-minus",
-      "code": 60762,
+      "code": 60763,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15912,9 +15926,9 @@
       ]
     },
     {
-      "uid": "1372",
+      "uid": "1373",
       "css": "untitledui-users-plus",
-      "code": 60763,
+      "code": 60764,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15926,9 +15940,9 @@
       ]
     },
     {
-      "uid": "1373",
+      "uid": "1374",
       "css": "untitledui-users-right",
-      "code": 60764,
+      "code": 60765,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15940,9 +15954,9 @@
       ]
     },
     {
-      "uid": "1374",
+      "uid": "1375",
       "css": "untitledui-users-up",
-      "code": 60765,
+      "code": 60766,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15954,9 +15968,9 @@
       ]
     },
     {
-      "uid": "1375",
+      "uid": "1376",
       "css": "untitledui-users-x",
-      "code": 60766,
+      "code": 60767,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15968,9 +15982,9 @@
       ]
     },
     {
-      "uid": "1376",
+      "uid": "1377",
       "css": "untitledui-variable",
-      "code": 60767,
+      "code": 60768,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15982,9 +15996,9 @@
       ]
     },
     {
-      "uid": "1377",
+      "uid": "1378",
       "css": "untitledui-video-recorder-off",
-      "code": 60768,
+      "code": 60769,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15996,9 +16010,9 @@
       ]
     },
     {
-      "uid": "1378",
+      "uid": "1379",
       "css": "untitledui-video-recorder",
-      "code": 60769,
+      "code": 60770,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16010,9 +16024,9 @@
       ]
     },
     {
-      "uid": "1379",
+      "uid": "1380",
       "css": "untitledui-virus",
-      "code": 60770,
+      "code": 60771,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16024,9 +16038,9 @@
       ]
     },
     {
-      "uid": "1380",
+      "uid": "1381",
       "css": "untitledui-voicemail",
-      "code": 60771,
+      "code": 60772,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16038,9 +16052,9 @@
       ]
     },
     {
-      "uid": "1381",
+      "uid": "1382",
       "css": "untitledui-volume-max",
-      "code": 60772,
+      "code": 60773,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16052,9 +16066,9 @@
       ]
     },
     {
-      "uid": "1382",
+      "uid": "1383",
       "css": "untitledui-volume-min",
-      "code": 60773,
+      "code": 60774,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16066,9 +16080,9 @@
       ]
     },
     {
-      "uid": "1383",
+      "uid": "1384",
       "css": "untitledui-volume-minus",
-      "code": 60774,
+      "code": 60775,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16080,9 +16094,9 @@
       ]
     },
     {
-      "uid": "1384",
+      "uid": "1385",
       "css": "untitledui-volume-plus",
-      "code": 60775,
+      "code": 60776,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16094,9 +16108,9 @@
       ]
     },
     {
-      "uid": "1385",
+      "uid": "1386",
       "css": "untitledui-volume-x",
-      "code": 60776,
+      "code": 60777,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16108,9 +16122,9 @@
       ]
     },
     {
-      "uid": "1386",
+      "uid": "1387",
       "css": "untitledui-wallet-01",
-      "code": 60777,
+      "code": 60778,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16122,9 +16136,9 @@
       ]
     },
     {
-      "uid": "1387",
+      "uid": "1388",
       "css": "untitledui-wallet-02",
-      "code": 60778,
+      "code": 60779,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16136,9 +16150,9 @@
       ]
     },
     {
-      "uid": "1388",
+      "uid": "1389",
       "css": "untitledui-wallet-03",
-      "code": 60779,
+      "code": 60780,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16150,9 +16164,9 @@
       ]
     },
     {
-      "uid": "1389",
+      "uid": "1390",
       "css": "untitledui-wallet-04",
-      "code": 60780,
+      "code": 60781,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16164,9 +16178,9 @@
       ]
     },
     {
-      "uid": "1390",
+      "uid": "1391",
       "css": "untitledui-wallet-05",
-      "code": 60781,
+      "code": 60782,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16178,9 +16192,9 @@
       ]
     },
     {
-      "uid": "1391",
+      "uid": "1392",
       "css": "untitledui-watch-circle",
-      "code": 60782,
+      "code": 60783,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16192,9 +16206,9 @@
       ]
     },
     {
-      "uid": "1392",
+      "uid": "1393",
       "css": "untitledui-watch-square",
-      "code": 60783,
+      "code": 60784,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16206,9 +16220,9 @@
       ]
     },
     {
-      "uid": "1393",
+      "uid": "1394",
       "css": "untitledui-waves",
-      "code": 60784,
+      "code": 60785,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16220,9 +16234,9 @@
       ]
     },
     {
-      "uid": "1394",
+      "uid": "1395",
       "css": "untitledui-webcam-01",
-      "code": 60785,
+      "code": 60786,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16234,9 +16248,9 @@
       ]
     },
     {
-      "uid": "1395",
+      "uid": "1396",
       "css": "untitledui-webcam-02",
-      "code": 60786,
+      "code": 60787,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16248,9 +16262,9 @@
       ]
     },
     {
-      "uid": "1396",
+      "uid": "1397",
       "css": "untitledui-wifi-off",
-      "code": 60787,
+      "code": 60788,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16262,9 +16276,9 @@
       ]
     },
     {
-      "uid": "1397",
+      "uid": "1398",
       "css": "untitledui-wifi",
-      "code": 60788,
+      "code": 60789,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16276,9 +16290,9 @@
       ]
     },
     {
-      "uid": "1398",
+      "uid": "1399",
       "css": "untitledui-wind-01",
-      "code": 60789,
+      "code": 60790,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16290,9 +16304,9 @@
       ]
     },
     {
-      "uid": "1399",
+      "uid": "1400",
       "css": "untitledui-wind-02",
-      "code": 60790,
+      "code": 60791,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16304,9 +16318,9 @@
       ]
     },
     {
-      "uid": "1400",
+      "uid": "1401",
       "css": "untitledui-wind-03",
-      "code": 60791,
+      "code": 60792,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16318,9 +16332,9 @@
       ]
     },
     {
-      "uid": "1401",
+      "uid": "1402",
       "css": "untitledui-x-circle",
-      "code": 60792,
+      "code": 60793,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16332,9 +16346,9 @@
       ]
     },
     {
-      "uid": "1402",
+      "uid": "1403",
       "css": "untitledui-x-close",
-      "code": 60793,
+      "code": 60794,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16346,9 +16360,9 @@
       ]
     },
     {
-      "uid": "1403",
+      "uid": "1404",
       "css": "untitledui-x-square",
-      "code": 60794,
+      "code": 60795,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16360,9 +16374,9 @@
       ]
     },
     {
-      "uid": "1404",
+      "uid": "1405",
       "css": "untitledui-x",
-      "code": 60795,
+      "code": 60796,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16374,9 +16388,9 @@
       ]
     },
     {
-      "uid": "1405",
+      "uid": "1406",
       "css": "untitledui-youtube",
-      "code": 60796,
+      "code": 60797,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16388,9 +16402,9 @@
       ]
     },
     {
-      "uid": "1406",
+      "uid": "1407",
       "css": "untitledui-zap-circle",
-      "code": 60797,
+      "code": 60798,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16402,9 +16416,9 @@
       ]
     },
     {
-      "uid": "1407",
+      "uid": "1408",
       "css": "untitledui-zap-fast",
-      "code": 60798,
+      "code": 60799,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16416,9 +16430,9 @@
       ]
     },
     {
-      "uid": "1408",
+      "uid": "1409",
       "css": "untitledui-zap-off",
-      "code": 60799,
+      "code": 60800,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16430,9 +16444,9 @@
       ]
     },
     {
-      "uid": "1409",
+      "uid": "1410",
       "css": "untitledui-zap-square",
-      "code": 60800,
+      "code": 60801,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16444,9 +16458,9 @@
       ]
     },
     {
-      "uid": "1410",
+      "uid": "1411",
       "css": "untitledui-zap",
-      "code": 60801,
+      "code": 60802,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16458,9 +16472,9 @@
       ]
     },
     {
-      "uid": "1411",
+      "uid": "1412",
       "css": "untitledui-zoom-in",
-      "code": 60802,
+      "code": 60803,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16472,9 +16486,9 @@
       ]
     },
     {
-      "uid": "1412",
+      "uid": "1413",
       "css": "untitledui-zoom-out",
-      "code": 60803,
+      "code": 60804,
       "src": "custom_icons",
       "selected": true,
       "svg": {
