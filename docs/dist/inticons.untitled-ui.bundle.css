@@ -3534,57 +3534,60 @@
 .ii-untitledui-webcam-02:before {
   content: "\ed7b";
 } /* '' */
-.ii-untitledui-wifi-off:before {
+.ii-untitledui-weight-scales:before {
   content: "\ed7c";
 } /* '' */
-.ii-untitledui-wifi:before {
+.ii-untitledui-wifi-off:before {
   content: "\ed7d";
 } /* '' */
-.ii-untitledui-wind-01:before {
+.ii-untitledui-wifi:before {
   content: "\ed7e";
 } /* '' */
-.ii-untitledui-wind-02:before {
+.ii-untitledui-wind-01:before {
   content: "\ed7f";
 } /* '' */
-.ii-untitledui-wind-03:before {
+.ii-untitledui-wind-02:before {
   content: "\ed80";
 } /* '' */
-.ii-untitledui-x-circle:before {
+.ii-untitledui-wind-03:before {
   content: "\ed81";
 } /* '' */
-.ii-untitledui-x-close:before {
+.ii-untitledui-x-circle:before {
   content: "\ed82";
 } /* '' */
-.ii-untitledui-x-square:before {
+.ii-untitledui-x-close:before {
   content: "\ed83";
 } /* '' */
-.ii-untitledui-x:before {
+.ii-untitledui-x-square:before {
   content: "\ed84";
 } /* '' */
-.ii-untitledui-youtube:before {
+.ii-untitledui-x:before {
   content: "\ed85";
 } /* '' */
-.ii-untitledui-zap-circle:before {
+.ii-untitledui-youtube:before {
   content: "\ed86";
 } /* '' */
-.ii-untitledui-zap-fast:before {
+.ii-untitledui-zap-circle:before {
   content: "\ed87";
 } /* '' */
-.ii-untitledui-zap-off:before {
+.ii-untitledui-zap-fast:before {
   content: "\ed88";
 } /* '' */
-.ii-untitledui-zap-square:before {
+.ii-untitledui-zap-off:before {
   content: "\ed89";
 } /* '' */
-.ii-untitledui-zap:before {
+.ii-untitledui-zap-square:before {
   content: "\ed8a";
 } /* '' */
-.ii-untitledui-zoom-in:before {
+.ii-untitledui-zap:before {
   content: "\ed8b";
 } /* '' */
-.ii-untitledui-zoom-out:before {
+.ii-untitledui-zoom-in:before {
   content: "\ed8c";
 } /* '' */
+.ii-untitledui-zoom-out:before {
+  content: "\ed8d";
+} /* '' */
 .ii-spin::before {
   animation: spin 2s infinite linear;
 }
