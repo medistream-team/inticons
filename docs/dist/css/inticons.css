@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'inticons';
-  src: url('../font/inticons.eot?46958353');
-  src: url('../font/inticons.eot?46958353#iefix') format('embedded-opentype'),
-       url('../font/inticons.woff2?46958353') format('woff2'),
-       url('../font/inticons.woff?46958353') format('woff'),
-       url('../font/inticons.ttf?46958353') format('truetype'),
-       url('../font/inticons.svg?46958353#inticons') format('svg');
+  src: url('../font/inticons.eot?45509512');
+  src: url('../font/inticons.eot?45509512#iefix') format('embedded-opentype'),
+       url('../font/inticons.woff2?45509512') format('woff2'),
+       url('../font/inticons.woff?45509512') format('woff'),
+       url('../font/inticons.ttf?45509512') format('truetype'),
+       url('../font/inticons.svg?45509512#inticons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'inticons';
-    src: url('../font/inticons.svg?46958353#inticons') format('svg');
+    src: url('../font/inticons.svg?45509512#inticons') format('svg');
   }
 }
 */
