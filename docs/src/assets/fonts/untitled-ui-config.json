@@ -15493,8 +15493,22 @@
     },
     {
       "uid": "1344",
-      "css": "untitledui-upload-01",
+      "css": "untitledui-unpin",
       "code": 60735,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M26 48c18-17 47-17 64 0l166 166c1 1 2 2 3 2 1 2 2 3 4 5l646 646c17 17 17 46 0 64-18 18-47 18-65 0l-202-202-11 58c-4 21-8 39-12 54-4 14-11 32-27 46-20 18-46 26-73 22-20-3-36-14-47-24-12-9-26-23-41-38l-128-129-225 225c-18 18-47 18-65 0-17-17-17-46 0-64l225-225-129-129c-15-15-28-28-38-40-9-11-21-27-23-48-4-26 4-53 22-72 13-16 32-23 46-27 14-4 33-8 54-12l57-12-201-201c-18-18-18-47 0-65z m162 367c-23 4-37 7-46 10-1 0-1 0-2 1 0 0 1 0 1 1 7 8 16 18 33 34l322 322c16 16 26 26 34 33 0 0 1 0 1 1 0-1 0-1 1-2 2-10 5-23 10-46l23-117-260-261-117 24z m396-415l9 2 7 1c14 5 26 13 34 20 10 9 22 20 34 32l234 234c12 12 23 23 31 33 9 10 18 24 22 42 4 20 1 41-9 60l-4 7c-10 16-24 25-36 31-11 6-26 12-41 19l-114 49c-2 1-4 1-5 2 0 0 0 0 0 0-19 15-48 12-64-8-15-19-12-48 8-63 3-3 7-6 11-8l8-4c2-1 4-2 6-3l114-49c17-7 27-11 34-15 1 0 1-1 1-1 0 0 0 0-1-1-5-6-12-14-26-27l-233-234c-14-13-22-21-28-26 0 0 0 0-1-1 0 1 0 1 0 1-4 7-8 18-16 35l-48 113 0 0c-2 4-4 9-7 14-2 4-5 8-8 12-15 20-44 23-64 7-19-15-23-44-7-64l0 0c0-1 1-2 2-5l49-113c6-16 13-30 19-42 6-11 15-25 30-35 18-12 39-17 59-15z",
+        "width": 1000
+      },
+      "search": [
+        "untitledui-unpin"
+      ]
+    },
+    {
+      "uid": "1345",
+      "css": "untitledui-upload-01",
+      "code": 60736,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15506,9 +15520,9 @@
       ]
     },
     {
-      "uid": "1345",
+      "uid": "1346",
       "css": "untitledui-upload-02",
-      "code": 60736,
+      "code": 60737,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15520,9 +15534,9 @@
       ]
     },
     {
-      "uid": "1346",
+      "uid": "1347",
       "css": "untitledui-upload-03",
-      "code": 60737,
+      "code": 60738,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15534,9 +15548,9 @@
       ]
     },
     {
-      "uid": "1347",
+      "uid": "1348",
       "css": "untitledui-upload-04",
-      "code": 60738,
+      "code": 60739,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15548,9 +15562,9 @@
       ]
     },
     {
-      "uid": "1348",
+      "uid": "1349",
       "css": "untitledui-upload-cloud-01",
-      "code": 60739,
+      "code": 60740,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15562,9 +15576,9 @@
       ]
     },
     {
-      "uid": "1349",
+      "uid": "1350",
       "css": "untitledui-upload-cloud-02",
-      "code": 60740,
+      "code": 60741,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15576,9 +15590,9 @@
       ]
     },
     {
-      "uid": "1350",
+      "uid": "1351",
       "css": "untitledui-usb-flash-drive",
-      "code": 60741,
+      "code": 60742,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15590,9 +15604,9 @@
       ]
     },
     {
-      "uid": "1351",
+      "uid": "1352",
       "css": "untitledui-user-01",
-      "code": 60742,
+      "code": 60743,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15604,9 +15618,9 @@
       ]
     },
     {
-      "uid": "1352",
+      "uid": "1353",
       "css": "untitledui-user-02",
-      "code": 60743,
+      "code": 60744,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15618,9 +15632,9 @@
       ]
     },
     {
-      "uid": "1353",
+      "uid": "1354",
       "css": "untitledui-user-03",
-      "code": 60744,
+      "code": 60745,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15632,9 +15646,9 @@
       ]
     },
     {
-      "uid": "1354",
+      "uid": "1355",
       "css": "untitledui-user-check-01",
-      "code": 60745,
+      "code": 60746,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15646,9 +15660,9 @@
       ]
     },
     {
-      "uid": "1355",
+      "uid": "1356",
       "css": "untitledui-user-check-02",
-      "code": 60746,
+      "code": 60747,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15660,9 +15674,9 @@
       ]
     },
     {
-      "uid": "1356",
+      "uid": "1357",
       "css": "untitledui-user-circle",
-      "code": 60747,
+      "code": 60748,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15674,9 +15688,9 @@
       ]
     },
     {
-      "uid": "1357",
+      "uid": "1358",
       "css": "untitledui-user-down-01",
-      "code": 60748,
+      "code": 60749,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15688,9 +15702,9 @@
       ]
     },
     {
-      "uid": "1358",
+      "uid": "1359",
       "css": "untitledui-user-down-02",
-      "code": 60749,
+      "code": 60750,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15702,9 +15716,9 @@
       ]
     },
     {
-      "uid": "1359",
+      "uid": "1360",
       "css": "untitledui-user-edit",
-      "code": 60750,
+      "code": 60751,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15716,9 +15730,9 @@
       ]
     },
     {
-      "uid": "1360",
+      "uid": "1361",
       "css": "untitledui-user-left-01",
-      "code": 60751,
+      "code": 60752,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15730,9 +15744,9 @@
       ]
     },
     {
-      "uid": "1361",
+      "uid": "1362",
       "css": "untitledui-user-left-02",
-      "code": 60752,
+      "code": 60753,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15744,9 +15758,9 @@
       ]
     },
     {
-      "uid": "1362",
+      "uid": "1363",
       "css": "untitledui-user-minus-01",
-      "code": 60753,
+      "code": 60754,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15758,9 +15772,9 @@
       ]
     },
     {
-      "uid": "1363",
+      "uid": "1364",
       "css": "untitledui-user-minus-02",
-      "code": 60754,
+      "code": 60755,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15772,9 +15786,9 @@
       ]
     },
     {
-      "uid": "1364",
+      "uid": "1365",
       "css": "untitledui-user-plus-01",
-      "code": 60755,
+      "code": 60756,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15786,9 +15800,9 @@
       ]
     },
     {
-      "uid": "1365",
+      "uid": "1366",
       "css": "untitledui-user-plus-02",
-      "code": 60756,
+      "code": 60757,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15800,9 +15814,9 @@
       ]
     },
     {
-      "uid": "1366",
+      "uid": "1367",
       "css": "untitledui-user-right-01",
-      "code": 60757,
+      "code": 60758,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15814,9 +15828,9 @@
       ]
     },
     {
-      "uid": "1367",
+      "uid": "1368",
       "css": "untitledui-user-right-02",
-      "code": 60758,
+      "code": 60759,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15828,9 +15842,9 @@
       ]
     },
     {
-      "uid": "1368",
+      "uid": "1369",
       "css": "untitledui-user-square",
-      "code": 60759,
+      "code": 60760,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15842,9 +15856,9 @@
       ]
     },
     {
-      "uid": "1369",
+      "uid": "1370",
       "css": "untitledui-user-up-01",
-      "code": 60760,
+      "code": 60761,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15856,9 +15870,9 @@
       ]
     },
     {
-      "uid": "1370",
+      "uid": "1371",
       "css": "untitledui-user-up-02",
-      "code": 60761,
+      "code": 60762,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15870,9 +15884,9 @@
       ]
     },
     {
-      "uid": "1371",
+      "uid": "1372",
       "css": "untitledui-user-x-01",
-      "code": 60762,
+      "code": 60763,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15884,9 +15898,9 @@
       ]
     },
     {
-      "uid": "1372",
+      "uid": "1373",
       "css": "untitledui-user-x-02",
-      "code": 60763,
+      "code": 60764,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15898,9 +15912,9 @@
       ]
     },
     {
-      "uid": "1373",
+      "uid": "1374",
       "css": "untitledui-users-01",
-      "code": 60764,
+      "code": 60765,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15912,9 +15926,9 @@
       ]
     },
     {
-      "uid": "1374",
+      "uid": "1375",
       "css": "untitledui-users-02",
-      "code": 60765,
+      "code": 60766,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15926,9 +15940,9 @@
       ]
     },
     {
-      "uid": "1375",
+      "uid": "1376",
       "css": "untitledui-users-03",
-      "code": 60766,
+      "code": 60767,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15940,9 +15954,9 @@
       ]
     },
     {
-      "uid": "1376",
+      "uid": "1377",
       "css": "untitledui-users-check",
-      "code": 60767,
+      "code": 60768,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15954,9 +15968,9 @@
       ]
     },
     {
-      "uid": "1377",
+      "uid": "1378",
       "css": "untitledui-users-down",
-      "code": 60768,
+      "code": 60769,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15968,9 +15982,9 @@
       ]
     },
     {
-      "uid": "1378",
+      "uid": "1379",
       "css": "untitledui-users-edit",
-      "code": 60769,
+      "code": 60770,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15982,9 +15996,9 @@
       ]
     },
     {
-      "uid": "1379",
+      "uid": "1380",
       "css": "untitledui-users-left",
-      "code": 60770,
+      "code": 60771,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -15996,9 +16010,9 @@
       ]
     },
     {
-      "uid": "1380",
+      "uid": "1381",
       "css": "untitledui-users-minus",
-      "code": 60771,
+      "code": 60772,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16010,9 +16024,9 @@
       ]
     },
     {
-      "uid": "1381",
+      "uid": "1382",
       "css": "untitledui-users-plus",
-      "code": 60772,
+      "code": 60773,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16024,9 +16038,9 @@
       ]
     },
     {
-      "uid": "1382",
+      "uid": "1383",
       "css": "untitledui-users-right",
-      "code": 60773,
+      "code": 60774,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16038,9 +16052,9 @@
       ]
     },
     {
-      "uid": "1383",
+      "uid": "1384",
       "css": "untitledui-users-up",
-      "code": 60774,
+      "code": 60775,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16052,9 +16066,9 @@
       ]
     },
     {
-      "uid": "1384",
+      "uid": "1385",
       "css": "untitledui-users-x",
-      "code": 60775,
+      "code": 60776,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16066,9 +16080,9 @@
       ]
     },
     {
-      "uid": "1385",
+      "uid": "1386",
       "css": "untitledui-variable",
-      "code": 60776,
+      "code": 60777,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16080,9 +16094,9 @@
       ]
     },
     {
-      "uid": "1386",
+      "uid": "1387",
       "css": "untitledui-video-recorder-off",
-      "code": 60777,
+      "code": 60778,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16094,9 +16108,9 @@
       ]
     },
     {
-      "uid": "1387",
+      "uid": "1388",
       "css": "untitledui-video-recorder",
-      "code": 60778,
+      "code": 60779,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16108,9 +16122,9 @@
       ]
     },
     {
-      "uid": "1388",
+      "uid": "1389",
       "css": "untitledui-virus",
-      "code": 60779,
+      "code": 60780,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16122,9 +16136,9 @@
       ]
     },
     {
-      "uid": "1389",
+      "uid": "1390",
       "css": "untitledui-voicemail",
-      "code": 60780,
+      "code": 60781,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16136,9 +16150,9 @@
       ]
     },
     {
-      "uid": "1390",
+      "uid": "1391",
       "css": "untitledui-volume-max",
-      "code": 60781,
+      "code": 60782,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16150,9 +16164,9 @@
       ]
     },
     {
-      "uid": "1391",
+      "uid": "1392",
       "css": "untitledui-volume-min",
-      "code": 60782,
+      "code": 60783,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16164,9 +16178,9 @@
       ]
     },
     {
-      "uid": "1392",
+      "uid": "1393",
       "css": "untitledui-volume-minus",
-      "code": 60783,
+      "code": 60784,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16178,9 +16192,9 @@
       ]
     },
     {
-      "uid": "1393",
+      "uid": "1394",
       "css": "untitledui-volume-plus",
-      "code": 60784,
+      "code": 60785,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16192,9 +16206,9 @@
       ]
     },
     {
-      "uid": "1394",
+      "uid": "1395",
       "css": "untitledui-volume-x",
-      "code": 60785,
+      "code": 60786,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16206,9 +16220,9 @@
       ]
     },
     {
-      "uid": "1395",
+      "uid": "1396",
       "css": "untitledui-wallet-01",
-      "code": 60786,
+      "code": 60787,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16220,9 +16234,9 @@
       ]
     },
     {
-      "uid": "1396",
+      "uid": "1397",
       "css": "untitledui-wallet-02",
-      "code": 60787,
+      "code": 60788,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16234,9 +16248,9 @@
       ]
     },
     {
-      "uid": "1397",
+      "uid": "1398",
       "css": "untitledui-wallet-03",
-      "code": 60788,
+      "code": 60789,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16248,9 +16262,9 @@
       ]
     },
     {
-      "uid": "1398",
+      "uid": "1399",
       "css": "untitledui-wallet-04",
-      "code": 60789,
+      "code": 60790,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16262,9 +16276,9 @@
       ]
     },
     {
-      "uid": "1399",
+      "uid": "1400",
       "css": "untitledui-wallet-05",
-      "code": 60790,
+      "code": 60791,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16276,9 +16290,9 @@
       ]
     },
     {
-      "uid": "1400",
+      "uid": "1401",
       "css": "untitledui-watch-circle",
-      "code": 60791,
+      "code": 60792,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16290,9 +16304,9 @@
       ]
     },
     {
-      "uid": "1401",
+      "uid": "1402",
       "css": "untitledui-watch-square",
-      "code": 60792,
+      "code": 60793,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16304,9 +16318,9 @@
       ]
     },
     {
-      "uid": "1402",
+      "uid": "1403",
       "css": "untitledui-waves",
-      "code": 60793,
+      "code": 60794,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16318,9 +16332,9 @@
       ]
     },
     {
-      "uid": "1403",
+      "uid": "1404",
       "css": "untitledui-webcam-01",
-      "code": 60794,
+      "code": 60795,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16332,9 +16346,9 @@
       ]
     },
     {
-      "uid": "1404",
+      "uid": "1405",
       "css": "untitledui-webcam-02",
-      "code": 60795,
+      "code": 60796,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16346,9 +16360,9 @@
       ]
     },
     {
-      "uid": "1405",
+      "uid": "1406",
       "css": "untitledui-weight-scales",
-      "code": 60796,
+      "code": 60797,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16360,9 +16374,9 @@
       ]
     },
     {
-      "uid": "1406",
+      "uid": "1407",
       "css": "untitledui-wifi-off",
-      "code": 60797,
+      "code": 60798,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16374,9 +16388,9 @@
       ]
     },
     {
-      "uid": "1407",
+      "uid": "1408",
       "css": "untitledui-wifi",
-      "code": 60798,
+      "code": 60799,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16388,9 +16402,9 @@
       ]
     },
     {
-      "uid": "1408",
+      "uid": "1409",
       "css": "untitledui-wind-01",
-      "code": 60799,
+      "code": 60800,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16402,9 +16416,9 @@
       ]
     },
     {
-      "uid": "1409",
+      "uid": "1410",
       "css": "untitledui-wind-02",
-      "code": 60800,
+      "code": 60801,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16416,9 +16430,9 @@
       ]
     },
     {
-      "uid": "1410",
+      "uid": "1411",
       "css": "untitledui-wind-03",
-      "code": 60801,
+      "code": 60802,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16430,9 +16444,9 @@
       ]
     },
     {
-      "uid": "1411",
+      "uid": "1412",
       "css": "untitledui-x-circle",
-      "code": 60802,
+      "code": 60803,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16444,9 +16458,9 @@
       ]
     },
     {
-      "uid": "1412",
+      "uid": "1413",
       "css": "untitledui-x-close",
-      "code": 60803,
+      "code": 60804,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16458,9 +16472,9 @@
       ]
     },
     {
-      "uid": "1413",
+      "uid": "1414",
       "css": "untitledui-x-square",
-      "code": 60804,
+      "code": 60805,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16472,9 +16486,9 @@
       ]
     },
     {
-      "uid": "1414",
+      "uid": "1415",
       "css": "untitledui-x",
-      "code": 60805,
+      "code": 60806,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16486,9 +16500,9 @@
       ]
     },
     {
-      "uid": "1415",
+      "uid": "1416",
       "css": "untitledui-youtube",
-      "code": 60806,
+      "code": 60807,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16500,9 +16514,9 @@
       ]
     },
     {
-      "uid": "1416",
+      "uid": "1417",
       "css": "untitledui-zap-circle",
-      "code": 60807,
+      "code": 60808,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16514,9 +16528,9 @@
       ]
     },
     {
-      "uid": "1417",
+      "uid": "1418",
       "css": "untitledui-zap-fast",
-      "code": 60808,
+      "code": 60809,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16528,9 +16542,9 @@
       ]
     },
     {
-      "uid": "1418",
+      "uid": "1419",
       "css": "untitledui-zap-off",
-      "code": 60809,
+      "code": 60810,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16542,9 +16556,9 @@
       ]
     },
     {
-      "uid": "1419",
+      "uid": "1420",
       "css": "untitledui-zap-square",
-      "code": 60810,
+      "code": 60811,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16556,9 +16570,9 @@
       ]
     },
     {
-      "uid": "1420",
+      "uid": "1421",
       "css": "untitledui-zap",
-      "code": 60811,
+      "code": 60812,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16570,9 +16584,9 @@
       ]
     },
     {
-      "uid": "1421",
+      "uid": "1422",
       "css": "untitledui-zoom-in",
-      "code": 60812,
+      "code": 60813,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -16584,9 +16598,9 @@
       ]
     },
     {
-      "uid": "1422",
+      "uid": "1423",
       "css": "untitledui-zoom-out",
-      "code": 60813,
+      "code": 60814,
       "src": "custom_icons",
       "selected": true,
       "svg": {
