@@ -3351,243 +3351,246 @@
 .ii-untitledui-underline-square:before {
   content: "\ed3e";
 } /* '' */
-.ii-untitledui-upload-01:before {
+.ii-untitledui-unpin:before {
   content: "\ed3f";
 } /* '' */
-.ii-untitledui-upload-02:before {
+.ii-untitledui-upload-01:before {
   content: "\ed40";
 } /* '' */
-.ii-untitledui-upload-03:before {
+.ii-untitledui-upload-02:before {
   content: "\ed41";
 } /* '' */
-.ii-untitledui-upload-04:before {
+.ii-untitledui-upload-03:before {
   content: "\ed42";
 } /* '' */
-.ii-untitledui-upload-cloud-01:before {
+.ii-untitledui-upload-04:before {
   content: "\ed43";
 } /* '' */
-.ii-untitledui-upload-cloud-02:before {
+.ii-untitledui-upload-cloud-01:before {
   content: "\ed44";
 } /* '' */
-.ii-untitledui-usb-flash-drive:before {
+.ii-untitledui-upload-cloud-02:before {
   content: "\ed45";
 } /* '' */
-.ii-untitledui-user-01:before {
+.ii-untitledui-usb-flash-drive:before {
   content: "\ed46";
 } /* '' */
-.ii-untitledui-user-02:before {
+.ii-untitledui-user-01:before {
   content: "\ed47";
 } /* '' */
-.ii-untitledui-user-03:before {
+.ii-untitledui-user-02:before {
   content: "\ed48";
 } /* '' */
-.ii-untitledui-user-check-01:before {
+.ii-untitledui-user-03:before {
   content: "\ed49";
 } /* '' */
-.ii-untitledui-user-check-02:before {
+.ii-untitledui-user-check-01:before {
   content: "\ed4a";
 } /* '' */
-.ii-untitledui-user-circle:before {
+.ii-untitledui-user-check-02:before {
   content: "\ed4b";
 } /* '' */
-.ii-untitledui-user-down-01:before {
+.ii-untitledui-user-circle:before {
   content: "\ed4c";
 } /* '' */
-.ii-untitledui-user-down-02:before {
+.ii-untitledui-user-down-01:before {
   content: "\ed4d";
 } /* '' */
-.ii-untitledui-user-edit:before {
+.ii-untitledui-user-down-02:before {
   content: "\ed4e";
 } /* '' */
-.ii-untitledui-user-left-01:before {
+.ii-untitledui-user-edit:before {
   content: "\ed4f";
 } /* '' */
-.ii-untitledui-user-left-02:before {
+.ii-untitledui-user-left-01:before {
   content: "\ed50";
 } /* '' */
-.ii-untitledui-user-minus-01:before {
+.ii-untitledui-user-left-02:before {
   content: "\ed51";
 } /* '' */
-.ii-untitledui-user-minus-02:before {
+.ii-untitledui-user-minus-01:before {
   content: "\ed52";
 } /* '' */
-.ii-untitledui-user-plus-01:before {
+.ii-untitledui-user-minus-02:before {
   content: "\ed53";
 } /* '' */
-.ii-untitledui-user-plus-02:before {
+.ii-untitledui-user-plus-01:before {
   content: "\ed54";
 } /* '' */
-.ii-untitledui-user-right-01:before {
+.ii-untitledui-user-plus-02:before {
   content: "\ed55";
 } /* '' */
-.ii-untitledui-user-right-02:before {
+.ii-untitledui-user-right-01:before {
   content: "\ed56";
 } /* '' */
-.ii-untitledui-user-square:before {
+.ii-untitledui-user-right-02:before {
   content: "\ed57";
 } /* '' */
-.ii-untitledui-user-up-01:before {
+.ii-untitledui-user-square:before {
   content: "\ed58";
 } /* '' */
-.ii-untitledui-user-up-02:before {
+.ii-untitledui-user-up-01:before {
   content: "\ed59";
 } /* '' */
-.ii-untitledui-user-x-01:before {
+.ii-untitledui-user-up-02:before {
   content: "\ed5a";
 } /* '' */
-.ii-untitledui-user-x-02:before {
+.ii-untitledui-user-x-01:before {
   content: "\ed5b";
 } /* '' */
-.ii-untitledui-users-01:before {
+.ii-untitledui-user-x-02:before {
   content: "\ed5c";
 } /* '' */
-.ii-untitledui-users-02:before {
+.ii-untitledui-users-01:before {
   content: "\ed5d";
 } /* '' */
-.ii-untitledui-users-03:before {
+.ii-untitledui-users-02:before {
   content: "\ed5e";
 } /* '' */
-.ii-untitledui-users-check:before {
+.ii-untitledui-users-03:before {
   content: "\ed5f";
 } /* '' */
-.ii-untitledui-users-down:before {
+.ii-untitledui-users-check:before {
   content: "\ed60";
 } /* '' */
-.ii-untitledui-users-edit:before {
+.ii-untitledui-users-down:before {
   content: "\ed61";
 } /* '' */
-.ii-untitledui-users-left:before {
+.ii-untitledui-users-edit:before {
   content: "\ed62";
 } /* '' */
-.ii-untitledui-users-minus:before {
+.ii-untitledui-users-left:before {
   content: "\ed63";
 } /* '' */
-.ii-untitledui-users-plus:before {
+.ii-untitledui-users-minus:before {
   content: "\ed64";
 } /* '' */
-.ii-untitledui-users-right:before {
+.ii-untitledui-users-plus:before {
   content: "\ed65";
 } /* '' */
-.ii-untitledui-users-up:before {
+.ii-untitledui-users-right:before {
   content: "\ed66";
 } /* '' */
-.ii-untitledui-users-x:before {
+.ii-untitledui-users-up:before {
   content: "\ed67";
 } /* '' */
-.ii-untitledui-variable:before {
+.ii-untitledui-users-x:before {
   content: "\ed68";
 } /* '' */
-.ii-untitledui-video-recorder-off:before {
+.ii-untitledui-variable:before {
   content: "\ed69";
 } /* '' */
-.ii-untitledui-video-recorder:before {
+.ii-untitledui-video-recorder-off:before {
   content: "\ed6a";
 } /* '' */
-.ii-untitledui-virus:before {
+.ii-untitledui-video-recorder:before {
   content: "\ed6b";
 } /* '' */
-.ii-untitledui-voicemail:before {
+.ii-untitledui-virus:before {
   content: "\ed6c";
 } /* '' */
-.ii-untitledui-volume-max:before {
+.ii-untitledui-voicemail:before {
   content: "\ed6d";
 } /* '' */
-.ii-untitledui-volume-min:before {
+.ii-untitledui-volume-max:before {
   content: "\ed6e";
 } /* '' */
-.ii-untitledui-volume-minus:before {
+.ii-untitledui-volume-min:before {
   content: "\ed6f";
 } /* '' */
-.ii-untitledui-volume-plus:before {
+.ii-untitledui-volume-minus:before {
   content: "\ed70";
 } /* '' */
-.ii-untitledui-volume-x:before {
+.ii-untitledui-volume-plus:before {
   content: "\ed71";
 } /* '' */
-.ii-untitledui-wallet-01:before {
+.ii-untitledui-volume-x:before {
   content: "\ed72";
 } /* '' */
-.ii-untitledui-wallet-02:before {
+.ii-untitledui-wallet-01:before {
   content: "\ed73";
 } /* '' */
-.ii-untitledui-wallet-03:before {
+.ii-untitledui-wallet-02:before {
   content: "\ed74";
 } /* '' */
-.ii-untitledui-wallet-04:before {
+.ii-untitledui-wallet-03:before {
   content: "\ed75";
 } /* '' */
-.ii-untitledui-wallet-05:before {
+.ii-untitledui-wallet-04:before {
   content: "\ed76";
 } /* '' */
-.ii-untitledui-watch-circle:before {
+.ii-untitledui-wallet-05:before {
   content: "\ed77";
 } /* '' */
-.ii-untitledui-watch-square:before {
+.ii-untitledui-watch-circle:before {
   content: "\ed78";
 } /* '' */
-.ii-untitledui-waves:before {
+.ii-untitledui-watch-square:before {
   content: "\ed79";
 } /* '' */
-.ii-untitledui-webcam-01:before {
+.ii-untitledui-waves:before {
   content: "\ed7a";
 } /* '' */
-.ii-untitledui-webcam-02:before {
+.ii-untitledui-webcam-01:before {
   content: "\ed7b";
 } /* '' */
-.ii-untitledui-weight-scales:before {
+.ii-untitledui-webcam-02:before {
   content: "\ed7c";
 } /* '' */
-.ii-untitledui-wifi-off:before {
+.ii-untitledui-weight-scales:before {
   content: "\ed7d";
 } /* '' */
-.ii-untitledui-wifi:before {
+.ii-untitledui-wifi-off:before {
   content: "\ed7e";
 } /* '' */
-.ii-untitledui-wind-01:before {
+.ii-untitledui-wifi:before {
   content: "\ed7f";
 } /* '' */
-.ii-untitledui-wind-02:before {
+.ii-untitledui-wind-01:before {
   content: "\ed80";
 } /* '' */
-.ii-untitledui-wind-03:before {
+.ii-untitledui-wind-02:before {
   content: "\ed81";
 } /* '' */
-.ii-untitledui-x-circle:before {
+.ii-untitledui-wind-03:before {
   content: "\ed82";
 } /* '' */
-.ii-untitledui-x-close:before {
+.ii-untitledui-x-circle:before {
   content: "\ed83";
 } /* '' */
-.ii-untitledui-x-square:before {
+.ii-untitledui-x-close:before {
   content: "\ed84";
 } /* '' */
-.ii-untitledui-x:before {
+.ii-untitledui-x-square:before {
   content: "\ed85";
 } /* '' */
-.ii-untitledui-youtube:before {
+.ii-untitledui-x:before {
   content: "\ed86";
 } /* '' */
-.ii-untitledui-zap-circle:before {
+.ii-untitledui-youtube:before {
   content: "\ed87";
 } /* '' */
-.ii-untitledui-zap-fast:before {
+.ii-untitledui-zap-circle:before {
   content: "\ed88";
 } /* '' */
-.ii-untitledui-zap-off:before {
+.ii-untitledui-zap-fast:before {
   content: "\ed89";
 } /* '' */
-.ii-untitledui-zap-square:before {
+.ii-untitledui-zap-off:before {
   content: "\ed8a";
 } /* '' */
-.ii-untitledui-zap:before {
+.ii-untitledui-zap-square:before {
   content: "\ed8b";
 } /* '' */
-.ii-untitledui-zoom-in:before {
+.ii-untitledui-zap:before {
   content: "\ed8c";
 } /* '' */
-.ii-untitledui-zoom-out:before {
+.ii-untitledui-zoom-in:before {
   content: "\ed8d";
 } /* '' */
+.ii-untitledui-zoom-out:before {
+  content: "\ed8e";
+} /* '' */
 .ii-spin::before {
   animation: spin 2s infinite linear;
 }
