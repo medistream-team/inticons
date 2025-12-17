@@ -11,15 +11,13 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           ref: main
           persist-credentials: false
-      - name: Clear auth token for OIDC
-        run: echo "NODE_AUTH_TOKEN=" >> $GITHUB_ENV
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
-          node-version: "20"
+          node-version: 24
           registry-url: "https://registry.npmjs.org"
       - name: Install Dependencies
         run: npm install
@@ -28,4 +26,4 @@ jobs:
         run: npm run build-font
 
       - name: Publish to npm
-        run: npm publish
+        run: NODE_AUTH_TOKEN="" npm publish
