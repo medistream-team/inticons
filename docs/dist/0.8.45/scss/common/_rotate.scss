@@ -1,0 +1,5 @@
+@for $rotate from 1 through 7 {
+  .ii-rotate-#{$rotate * 45}::before {
+    transform: rotate(#{$rotate * 45}deg);
+  }
+}

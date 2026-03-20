@@ -1,0 +1,5 @@
+@for $size from 2 through 4 {
+  .ii-#{$size}x::before {
+    font-size: #{$size}em;
+  }
+}
