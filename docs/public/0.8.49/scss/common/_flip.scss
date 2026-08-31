@@ -1,0 +1,9 @@
+.ii-flip-h::before {
+  transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+}
+
+.ii-flip-v::before {
+  transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+}
